@@ -1,4 +1,4 @@
-# ╭─────────────────────────────────ImplementationGuide-fish.json──────────────────────────────────╮
+pa# ╭─────────────────────────────────ImplementationGuide-fish.json──────────────────────────────────╮
 # │  The properties below are used to create the ImplementationGuide resource.                     │
 # │  For a list of supported properties, see:                                                      │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
@@ -10,13 +10,13 @@
 id: hl7.fhir.be.patientdossier
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
+name: BePatientDossier
+title: "HL7 Belgium Patient Dossier"
+description: Belgian Patient profiles
 status: active
 license: CC0-1.0
 date: 2020-02-26
-version: 1.0.0
+version: 0.0.1
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -30,15 +30,15 @@ fhirVersion: 4.0.1
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
 copyrightYear: 2021+
-releaseLabel: STU1
+# releaseLabel: STU1
 
 # The publisher can be a single item or a list, each with a name and
 # optional url and/or email. The first publisher's name will be used
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
+  name: HL7 Belgium
+  url: http://hl7belgium.org
   email: my-group@example.com
 
 # ContactDetail is required by the template.
