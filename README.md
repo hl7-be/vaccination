@@ -6,7 +6,9 @@ This is an empty IG
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/<handle>/<repo>/branches/main/index.html__  
+
+
+Continuous Build: __http://build.fhir.org/ig/${{ env.GITHUB_REPOSITORY }}/branches/main/index.html__  
 Canonical / permanent URL: 
 <br> </br>
 
