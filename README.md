@@ -1,6 +1,6 @@
 Empty IG
 
-- [SemVer](https://semver.org/) version observance: ![semver](https://img.shields.io/badge/semver-2.0.0-blue)
+
 [![License][Badge-License]][Link-License]
 
 
