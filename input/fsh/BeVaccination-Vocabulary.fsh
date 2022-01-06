@@ -2,32 +2,6 @@
 ========================================================== VOCABULARY ==========================================================
 
  */
-/*
-CodeSystem:  BeCSStatusReason
-Id: be-cs-vaccination-status-reason
-//Usage: #definition
-Title: "vaccination status reason Code System."
-Description:  "vaccination reason status Code System."
-* #other "other"
-* #IMMUNE "immunity"
-* #MEDPREC "medical precaution"
-* #OSTOCK "product out of stock"
-* #PATOBJ "patient objection"
-
-//* #PHILISOP "philosophical objection"
-//* #RELIG "religious objection"
-//* #VACEFF "vaccine efficacy concerns"
-//* #VACSAF "vaccine safety concerns" 
-*/
-
-/*
-CodeSystem:  BeCSVaccineAdministrationRoute
-Id: be-cs-vaccination-administration-route
-//Usage: #definition
-Title: "Vaccine Administration Route"
-Description:  "Vaccine Administration Route"
-* #IM "Intramuscular"
-*/
 
 
 ValueSet: BeVSVaccineAdministrationRoute
@@ -54,16 +28,6 @@ Description:  "Vaccination status reason Value Set - the reasons for an vaccinat
 
 
 
-/*
-CodeSystem:  BeCSVaccinationConfirmationStatus
-Id: be-cs-vaccination-confirmation-status
-//Usage: #definition
-Title: "vaccination status Code System."
-Description:  "vaccination status Code System."
-* #unconfirmed "unconfirmed"
-* #confirmed "confirmed"
-* #other "other"
-*/
 
 ValueSet: BeVSVaccinationConfirmationStatus
 //Usage: #definition
@@ -74,36 +38,6 @@ Description:  "Vaccination status Value Set"
 * codes from system BeCSVaccinationConfirmationStatus
 
 
-/*
-CodeSystem:  BeCSCareLocation
-//Usage: #definition
-Id: be-cs-care-location
-Title: "Care Location Code System"
-Description:  "Care Location Code System"
-* #hospital "Hospital"
-* #patient-home "Patient home"
-* #nursing-home "Nursing home"
-* #recovery-home "Recovery home (?)"
-* #workplace "Workplace"
-* #medical-center "Medical center"
-* #clinic "Clinic"
-* #pediatric-ic "Pediatric IC"
-* #neonatal-ic "Neonatal IC"
-* #prenatal-consult "Prenatal consult"
-* #m-accueil "Milieu d’accueil"
-* #child-consult "Child consult"
-* #one "ONE"
-* #kind-gezin "Kind&Gezin"
-* #ambulance "Ambulance"
-* #school "School"
-* #school-health-serv "School health service"
-* #pharmacy "Pharmacy"
-* #med-monde "Doctor of the world"
-* #ong "ONG"
-* #family-planning "Family planning center"
-* #abroad "Another country"
-* #other "other"
-*/
 
 
 ValueSet: BeVSCareLocation
@@ -151,13 +85,47 @@ Usage: #definition
 Description: "Naming System - ONE Vaccination"
 * status = #active
 * date = "2020-07-24"
-* name = "BeNSONEVaccination"
+* name = "BeNSONEVaccineCode"
 * kind = #identifier
 * description = "Naming System - ONE Vaccination"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-vaccination"
 * uniqueId[0].preferred = true
 * jurisdiction = urn:iso:std:iso:3166#BE
+
+
+
+
+Instance: be-ns-vaccinnet-vaccinecode
+InstanceOf: NamingSystem
+Usage: #definition
+Description: "Naming System - Vaccinnet Vaccine Codes"
+* status = #active
+* name = "BeNSVaccinetVaccineCode"
+* date = "2020-07-24"
+* kind = #codesystem
+* description = "Naming System - Vaccinnet Vaccine Codes"
+* uniqueId[0].type = #uri
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/vaccinnet-vaccinecode"
+* uniqueId[0].preferred = true
+* jurisdiction = urn:iso:std:iso:3166#BE
+
+
+Instance: be-ns-cti-extended
+InstanceOf: NamingSystem
+Usage: #definition
+Description: "Naming System - CTI Extended Codes"
+* status = #active
+* name = "BeNSCTI"
+* date = "2020-07-24"
+* kind = #codesystem
+* description = "Naming System - CTI Extended Codes"
+* uniqueId[0].type = #uri
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cti-ext-code"
+* uniqueId[0].preferred = true
+* jurisdiction = urn:iso:std:iso:3166#BE
+
+
 
 Instance: be-ns-nihdi-professional
 InstanceOf: NamingSystem
@@ -402,3 +370,43 @@ Description: "Vaccination reason status Code System."
 * #OSTOCK ^designation[+].language = #nl-BE
 * #OSTOCK ^designation[=].value = "Geen voorraad"
 
+
+
+
+ValueSet: BeVSVaccineCode
+Id: be-vs-vaccinecode
+Title: "Vaccine Code Value Set"
+Description:  "Vaccine Code Value Set - the types of vacccines that are administered in Belgium"
+* ^status = #draft
+* codes from system BeCSVaccineCode
+
+
+
+CodeSystem: BeCSVaccineCode
+Id: be-cs-vaccine-code
+Title: "Vaccine Code System"
+Description:  "Vaccine Code Code System - set of Belgian codes for types of vacccines that are administered"
+* ^version = "0.1.0"
+* ^status = #draft
+* ^content = #complete
+
+
+
+
+
+ValueSet: BeVSVaccineTargetDisease
+Id: be-vs-vaccine-target-disease
+Title: "Vaccine Target Disease Value Set"
+Description:  "Vaccine Target Disease Value Set - the types of diseases that targeted by the vacccines"
+* ^status = #draft
+* codes from system BeCSVaccineCode
+
+
+
+CodeSystem: BeCSVaccineTargetDisease
+Id: be-cs-vaccine-target-disease
+Title: "Vaccine Target Disease Code System"
+Description:  "Vaccine Target Disease Code System - set of Belgian codes for diseases targeted by the vacccines"
+* ^version = "0.1.0"
+* ^status = #draft
+* ^content = #complete

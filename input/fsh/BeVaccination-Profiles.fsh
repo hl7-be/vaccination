@@ -21,6 +21,7 @@ Description:    """
 * performer MS
 * site MS
 * route MS
+* doseQuantity MS
 * identifier 0..* MS
 * identifier.system 1..1 MS
 * identifier.value 1..1 MS
@@ -40,6 +41,7 @@ Description:    """
 * patient ^short = "The patient that this received vaccination entry refers to"
 * vaccineCode ^short = "The vaccine code - a type of vaccine, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa"
 * vaccineCode 1..1
+* vaccineCode from be-vs-vaccine-code
 * protocolApplied.doseNumberString ^short = "Whether this is a first vaccination or a reinforcement" 
 * protocolApplied.doseNumberString MS
 * protocolApplied.doseNumberPositiveInt ^short = "The numeric/sequential number of the dose, when adequate" 
@@ -53,6 +55,10 @@ Description:    """
 * extension contains BeRecorder named recorder 0..1
 * route from be-vs-vaccination-administration-route 
 * statusReason from be-vs-vaccination-status-reason (required)
+
+
+* protocolApplied.targetDisease MS
+* protocolApplied.targetDisease from be-vs-vaccine-target-disease
 
 // Add extension: recordedString
 // Add extension: type
@@ -78,7 +84,7 @@ Extension: BeAdministeredProduct
 Id: be-ext-administeredProduct
 Title: "Product administered"
 Description: "The product administered"
-* value[x] only Reference
+* value[x] only Reference 
 * valueReference only Reference(Medication)
 
 Extension: BeVaccinationConfirmationStatus
