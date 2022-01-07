@@ -1,8 +1,6 @@
 Empty IG
 
 
-[![License][Badge-License]][Link-License]
-
 
 ---
 This is an empty IG
@@ -13,14 +11,14 @@ This ImplementationGuide is published in the following locations:
 
 ${{env.GITHUB_REPOSITORY}}
 
-Continuous Build: __http://build.fhir.org/ig/${{ env.GITHUB_REPOSITORY }}/branches/main/index.html__  
+Continuous Build: __http://build.fhir.org/ig/hl7-be/hl7-be-patient-dossier/branches/main/index.html__  
 Canonical / permanent URL: 
 <br> </br>
 
 ### Issues
 Issues and change requests are managed here:  
 
-Issues:  __https://github.com/<handle>/<repo>/issues__  
-Kanban board:  __https://github.com/<handle>/<repo>/projects/1__  
+Issues:  __https://github.com/hl7-be/hl7-be-patient-dossier/issues__  
+Kanban board:  __https://github.com/hl7-be/hl7-be-patient-dossier/projects/1__  
 
 ---
