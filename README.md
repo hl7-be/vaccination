@@ -11,7 +11,7 @@ This ImplementationGuide is published in the following locations:
 
 ${{env.GITHUB_REPOSITORY}}
 
-Continuous Build: __http://build.fhir.org/ig/hl7-be/hl7-be-patient-dossier/branches/main/index.html__  
+Continuous Build: __http://build.fhir.org/ig/hl7-be/hl7-be-patient-dossier/index.html__  
 Canonical / permanent URL: 
 <br> </br>
 
