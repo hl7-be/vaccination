@@ -374,7 +374,7 @@ Description: "Vaccination reason status Code System."
 
 
 ValueSet: BeVSVaccineCode
-Id: be-vs-vaccinecode
+Id: be-vs-vaccine-code
 Title: "Vaccine Code Value Set"
 Description:  "Vaccine Code Value Set - the types of vacccines that are administered in Belgium"
 * ^status = #draft
