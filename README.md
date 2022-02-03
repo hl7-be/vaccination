@@ -22,3 +22,4 @@ Issues:  __https://github.com/hl7-be/hl7-be-patient-dossier/issues__
 Kanban board:  __https://github.com/hl7-be/hl7-be-patient-dossier/projects/1__  
 
 ---
+ 
