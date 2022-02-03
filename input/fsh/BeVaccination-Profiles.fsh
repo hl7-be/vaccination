@@ -73,6 +73,9 @@ Description:    """
 // added constraint
 * obeys be-rule-vaccination-1
 
+// force code to always have a code
+* vaccineCode.coding.code 1..*
+
 
 
 Extension: BeVaccinationOriginalOrder
