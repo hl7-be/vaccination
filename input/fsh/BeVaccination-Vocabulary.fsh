@@ -379,7 +379,7 @@ Title: "Vaccine Code Value Set"
 Description:  "Vaccine Code Value Set - the types of vacccines that are administered in Belgium"
 * ^status = #draft
 * codes from system BeCSVaccineCode
-
+* ^url = "https://ehealth.fgov.be/standards/fhir/patient-dossier/be-vs-vaccine-code"
 
 
 CodeSystem: BeCSVaccineCode
@@ -389,7 +389,8 @@ Description:  "Vaccine Code Code System - set of Belgian codes for types of vacc
 * ^version = "0.1.0"
 * ^status = #draft
 * ^content = #complete
-
+* ^url = "https://ehealth.fgov.be/standards/fhir/patient-dossier/be-cs-vaccine-code"
+* #other "Other"
 
 
 

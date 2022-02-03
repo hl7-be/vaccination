@@ -797,3 +797,28 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 
 
 
+/*===========================================================================================*/
+
+
+/*============================================= Example 2 =============================================*/
+
+Instance: othercode
+InstanceOf: Immunization
+Usage: #example
+* meta.source = "#dLjvJf7nbN6fO26H"
+* meta.profile = "http://example.com/fhir/example/StructureDefinition/be-vaccination"
+* identifier.system = "https://www.one.be/vaccination/immunisation-register"
+* identifier.value = "e15cd3d6-cfd8-4f77-9c78-9eb1a0fe5671"
+* status = #completed
+* vaccineCode = https://ehealth.fgov.be/standards/fhir/patient-dossier/be-cs-vaccine-code#other
+* patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* patient.identifier.value = "16032376921"
+* occurrenceDateTime = "2016-07-04"
+* recorded = "2016-07-04"
+* lotNumber = "L00156"
+* doseQuantity.value = 1
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
+* performer[=].actor.identifier.value = "NIHDI_ONE"
+* performer[+].actor.identifier.value = "ONE Nurse  1"
+* protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.seriesDosesPositiveInt = 4
