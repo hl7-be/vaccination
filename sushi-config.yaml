@@ -1,4 +1,4 @@
-# ╭─────────────────────────────────ImplementationGuide-fish.json──────────────────────────────────╮
+pa# ╭─────────────────────────────────ImplementationGuide-fish.json──────────────────────────────────╮
 # │  The properties below are used to create the ImplementationGuide resource.                     │
 # │  For a list of supported properties, see:                                                      │
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
@@ -30,7 +30,7 @@ fhirVersion: 4.0.1
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
 copyrightYear: 2021+
-releaseLabel: STU1
+# releaseLabel: STU1
 
 # The publisher can be a single item or a list, each with a name and
 # optional url and/or email. The first publisher's name will be used
@@ -173,9 +173,10 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # values, the value in the YAML should be a sequence/array. For a
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-#parameters:
+parameters:
 #  excludettl: true
 #  validation: [allow-any-extensions, no-broken-links]
+show-inherited-invariants: false
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.

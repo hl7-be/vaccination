@@ -41,7 +41,7 @@ Description:    """
 * patient ^short = "The patient that this received vaccination entry refers to"
 * vaccineCode ^short = "The vaccine code - a type of vaccine, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa"
 * vaccineCode 1..1
-* vaccineCode from be-vs-vaccine-code
+* vaccineCode from be-vs-vaccine-code (required)
 * protocolApplied.doseNumberString ^short = "Whether this is a first vaccination or a reinforcement" 
 * protocolApplied.doseNumberString MS
 * protocolApplied.doseNumberPositiveInt ^short = "The numeric/sequential number of the dose, when adequate" 
@@ -69,12 +69,6 @@ Description:    """
 * reasonCode ^short = "Why vaccination has occurred or not (code or text)"
 * reasonReference MS
 * reasonReference ^short = "Why vaccination has occurred or not (reference to a finding)"
-
-// added constraint
-* obeys be-rule-vaccination-1
-
-// force code to always have a code
-* vaccineCode.coding.code 1..*
 
 
 
@@ -118,8 +112,3 @@ Description: "Location (reference, code or text) of the vaccination"
 * valueReference only Reference(Location or be-organization)
 * valueCodeableConcept from BeVSCareLocation (preferred)
 
-
-Invariant:   be-rule-vaccination-1
-Description: "If vaccineCode.code is other, then vaccinecode text must exist"
-Expression:  "vaccineCode.coding.code = 'other'  implies vaccineCode.text.exists() "
-Severity:    #error
