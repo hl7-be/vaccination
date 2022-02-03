@@ -70,6 +70,8 @@ Description:    """
 * reasonReference MS
 * reasonReference ^short = "Why vaccination has occurred or not (reference to a finding)"
 
+// added constraint
+* obeys be-rule-vaccination-1
 
 
 Extension: BeVaccinationOriginalOrder
@@ -112,3 +114,7 @@ Description: "Location (reference, code or text) of the vaccination"
 * valueReference only Reference(Location or be-organization)
 * valueCodeableConcept from BeVSCareLocation (preferred)
 
+Invariant:   be-rule-vaccination-1
+Description: "If vaccineCode.code is other, then vaccinecode text must exist"
+Expression:  "vaccineCode.coding.code = 'other'  implies vaccineCode.text.exists() "
+Severity:    #error
