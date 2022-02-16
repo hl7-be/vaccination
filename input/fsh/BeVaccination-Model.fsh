@@ -3,6 +3,7 @@ Logical: BeModelVaccination
 
 * identifier 0..1 Identifier "The business identifier(s) for the vaccination entry" "The business identifier(s) for the vaccination entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults."
 * status 1..1 http://hl7.org/fhir/StructureDefinition/code "The status of this vaccination record entry" "The status of the vaccination record entry - whether it is active, entered in error, etc."
+* certitude 0..1 CodeableConcept "The certitude of the vaccination information" "The certitude of the vaccination information - for example 'presumed' or 'declared'..."
 * statusReason 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "The reason for the status e.g. 'not completed because...'" "Supporting reason for status information."
 * statusReason from https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason (required)
 * statusReason ^binding.description = "Belgium codes to describe reasons considered for status of vaccination actions, e.g. reasons for not administering vaccine"
@@ -24,7 +25,8 @@ Logical: BeModelVaccination
 * administeredProduct.lotNumber 0..1 string "The lot number" "The lot number"
 * administeredProduct.expirationDate 0..1 date "The expiration date of the product." "The expiration date of the product."
 * location 0..1 Reference "The location where the immunization is performed." "The location where the immunization administration was performed. This can be a text (e.g. 'at the physician's office' or a code e.g. '00078' meaning 'patient's home' or a resource (Location) if one exists e.g. 'Location/kind-en-gezin-092375' which could be defining 'Kind en Gezin Gent Koepoortkaai' "
-* note 0..1 http://hl7.org/fhir/StructureDefinition/Attachment "Additional notes for the vaccination." "Additional notes for the vaccination"
+* reaction 0..* Reference or CodeableConcept "Description of a reaction to the vaccine." "Description of a reaction to the vaccine."
+* note 0..1 http://hl7.org/fhir/StructureDefinition/Attachment "Additional notes for the vaccination (outside reaction)." "Additional notes for the vaccination"
 
 
 
