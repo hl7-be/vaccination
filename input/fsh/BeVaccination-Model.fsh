@@ -25,7 +25,7 @@ Logical: BeModelVaccination
 * administeredProduct.lotNumber 0..1 string "The lot number" "The lot number"
 * administeredProduct.expirationDate 0..1 date "The expiration date of the product." "The expiration date of the product."
 * location 0..1 Reference "The location where the immunization is performed." "The location where the immunization administration was performed. This can be a text (e.g. 'at the physician's office' or a code e.g. '00078' meaning 'patient's home' or a resource (Location) if one exists e.g. 'Location/kind-en-gezin-092375' which could be defining 'Kind en Gezin Gent Koepoortkaai' "
-* reaction 0..* Reference or CodeableConcept "Description of a reaction to the vaccine." "Description of a reaction to the vaccine."
+* reaction[x] 0..* Reference or CodeableConcept "Description of a reaction to the vaccine." "Description of a reaction to the vaccine."
 * note 0..1 http://hl7.org/fhir/StructureDefinition/Attachment "Additional notes for the vaccination (outside reaction)." "Additional notes for the vaccination"
 
 
