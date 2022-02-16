@@ -382,18 +382,6 @@ Description:  "Vaccine Code Value Set - the types of vacccines that are administ
 * ^url = "https://ehealth.fgov.be/standards/fhir/patient-dossier/be-vs-vaccine-code"
 
 
-CodeSystem: BeCSVaccineCode
-Id: be-cs-vaccine-code
-Title: "Vaccine Code System"
-Description:  "Vaccine Code Code System - set of Belgian codes for types of vacccines that are administered"
-* ^version = "0.1.0"
-* ^status = #draft
-* ^content = #complete
-* ^url = "https://ehealth.fgov.be/standards/fhir/patient-dossier/be-cs-vaccine-code"
-* #other "Other"
-
-
-
 
 ValueSet: BeVSVaccineTargetDisease
 Id: be-vs-vaccine-target-disease
@@ -411,3 +399,90 @@ Description:  "Vaccine Target Disease Code System - set of Belgian codes for dis
 * ^version = "0.1.0"
 * ^status = #draft
 * ^content = #complete
+
+
+
+
+
+RuleSet: BeCode(code, en, fr, nl)
+* #{code}
+  * ^designation[0].language = #en
+  * ^designation[=].value = "{en}"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "{nl}"
+  * ^designation[+].language = #fr-BE
+  * ^designation[=].value = "{fr}"
+
+
+
+
+
+CodeSystem: BeCSVaccineCode
+Id: be-cs-vaccine-code
+Title: "Vaccine Code System"
+Description:  "Vaccine Code Code System - set of Belgian codes for types of vacccines that are administered"
+* ^version = "0.1.0"
+* ^status = #draft
+* ^content = #complete
+* ^url = "https://ehealth.fgov.be/standards/fhir/patient-dossier/be-cs-vaccine-code"
+* #other "Other"
+* ^experimental = true
+* ^publisher = "eHealth Platform"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "https://www.ehealth.fgov.be/standards/fhir"
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
+* ^caseSensitive = false
+* insert BeCode(2, 13 Valent polysaccharide against pneumonia, 13 types de pneumocoques, Pneumokokken 13 types)
+* insert BeCode(3, 7 valent polysaccharide against pneumonia, 7 types de pneumocoques, Pneumokokken 7 types)
+* insert BeCode(4, Pneumococcal vaccine, Pneumocoque\, non specifié, Pneumokokken)
+* insert BeCode(5, Pertussis, Coqueluche, Kinkhoest)
+* insert BeCode(6, Diphteria, Diphtérie, Difterie)
+* insert BeCode(7, Tick-borne encephalitis, Encéphalite à tiques, Tekenencefalitis virus)
+* insert BeCode(8, Japanese encephalitis, Encéphalite japonaise, Japanse encephalitis)
+* insert BeCode(9, Yellow fever, Fièvre jaune, Gele koorts)
+* insert BeCode(10, Thyphoid, Fièvre typhoïde, Tyfus)
+* insert BeCode(11, --EN designation missing--, Grippe, Griep)
+* insert BeCode(12, Hepatitis A, Hépatite A, Hepatitis A)
+* insert BeCode(13, Hepatitis B, Hépatite B, Hepatitis B)
+* insert BeCode(15, Hepatitis A + B, Hépatite A + B, Hepatitis A + B)
+* insert BeCode(16, Hib (haemophilus influenzae type B\), Infections a Hib (Haemophilus influenzae\), Haemophilus influenzae b)
+* insert BeCode(16, --EN designation missing--, Infections à Hib + meningococcus C, Haemophilus influenzae b + meningokok C)
+* insert BeCode(17, --EN designation missing--, Infections à méningocoques du sérogroupe A, Meningokok A)
+* insert BeCode(18, --EN designation missing--, Infections à méningocoques du sérogroupe B, Meningokok B)
+* insert BeCode(18, --EN designation missing--, Infections à méningocoques du sérogroupe W, Meningokok W)
+* insert BeCode(18, --EN designation missing--, Infections à méningocoques du sérogroupe Y, Meningokok Y)
+* insert BeCode(20, --EN designation missing--, Infections à méningocoques des sérogroupes A\, C, Meningokok A\, C)
+* insert BeCode(20, --EN designation missing--, Infections à méningocoques des sérogroupes A\, C\, W et Y, Meningokok A\, C\, W en Y)
+* insert BeCode(21, meningococcus, Infections à méningocoques non spécifié, Meningokok)
+* insert BeCode(22, Mumps, Oreillons, Bof)
+* insert BeCode(24, --EN designation missing--, Papillomavirus humain bivalent HPV2, humaan papillomavirus (HPV 16\, 18\))
+* insert BeCode(28, --EN designation missing--, Poliomyélite, Polio)
+* insert BeCode(31, --EN designation missing--, Rage, Hondsdolheid)
+* insert BeCode(32, --EN designation missing--, Rotavirus, Rotavirus)
+* insert BeCode(33, Measles, Rougeole, Mazelen)
+* insert BeCode(34, --EN designation missing--, Rubéole, Rubella)
+* insert BeCode(35, Tetanus, Tétanos, Tetanus)
+* insert BeCode(36, Tuberculosis (BSG\), Tuberculose (BCG\), Tuberculose (BSG\))
+* insert BeCode(37, Varicella, Varicelle, Windpokken)
+* insert BeCode(38, Cholera, Choléra, Cholera)
+* insert BeCode(39, --EN designation missing--, Variole, Variola (pokken\))
+* insert BeCode(40, Diphtheria + tetanus, Diphtérie + tétanos, Difterie + tetanus)
+* insert BeCode(41, Diphtheria + tetanus + pertussis + poliomyelitis + haemophilus influenzae b, Diphtérie + tétanos + coqueluche + poliomyélite + hemophilus influenzae B, Difterie + tetanus + kinkhoest + polio + Haemophilus influenzae b)
+* insert BeCode(42, Diphtheria + tetanus + pertussis + poliomyelitis + haemophilus influenzae b + hepatitis B, Diphtérie + tétanos + coqueluche + poliomyélite + hemophilus influenzae B + hépatite B, Difterie + tetanus + kinkhoest + polio + Haemophilus influenzae b + hepatitis B)
+* insert BeCode(43, Diphtheria + tetanus + pertussis + poliomyelitis, Diphtérie + tétanos + coqueluche + poliomyélite, Difterie + tetanus + kinkhoest + polio)
+* insert BeCode(44, Diphtheria + tetanus + pertussis, Diphtérie + tétanos + coqueluche, Difterie + tetanus + kinkhoest)
+* insert BeCode(45, Measles + mumps + rubella, Rougeole + oreillons + rubéole, Mazelen + bof + rubella)
+* insert BeCode(46, Measles + mumps + rubella + varicella, Rougeole + oreillons + rubéole + varicelle, Mazelen + bof + rubella + windpokken)
+* insert BeCode(47, Typhoid + hepatitis A, Fièvre thyphoïde + hépatite A, Tyfus + hepatitis A)
+* insert BeCode(51, --EN designation missing--, Dengue, )
+* insert BeCode(52, --EN designation missing--, Ebola, Ebola)
+* insert BeCode(56, --EN designation missing--, Zona, Zona)
+* insert BeCode(57, --EN designation missing--, COVID19, COVID19)
+* insert BeCode(58, 10 Valent polysaccharide against pneumonia, 10 types de pneumocoques, Pneumokokken 10 types)
+* insert BeCode(59, other, Vaccin non spécifié, Komt niet voor in de lijst)
+* insert BeCode(60, Diphtheria + tetanus + Polio, Diphtérie + tétanos + poliomyélite, Difterie + tetanus + polio)
+* insert BeCode(61, --EN designation missing--, Diphtérie + tétanos + coqueluche + poliomyélite + hépatite B, Difterie + tetanus + kinkhoest + polio + hepatitis B)
+* insert BeCode(62, --EN designation missing--, Diphtérie + tétanos + coqueluche + hemophilus influenzae B + hépatite B, Difterie + tetanus + kinkhoest + Haemophilus influenzae b + hepatitis B)
+* insert BeCode(63, Human papillomavirus, Papillomavirus humain non spécifié, Humaan papillomavirus)
+* insert BeCode(64, --EN designation missing--, Papillomavirus humain quadrivalent HPV4, humaan papillomavirus (HPV 6\, 11\, 16\, 18\))
+* insert BeCode(65, --EN designation missing--, Papillomavirus humain nonavalent HPV9, humaan papillomavirus (HPV 6\, 11\, 16\, 18\, 31\, 33\, 45\, 53\, 58\))
