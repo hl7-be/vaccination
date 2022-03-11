@@ -52,7 +52,7 @@ Description:    """
 * extension contains BeAdministeredProduct named administeredProduct 0..1
 * extension contains BeVaccinationLocation named vaccination-location 0..1
 * extension contains BeVaccinationConfirmationStatus named vaccination-confirmationStatus 0..1
-* extension contains BeRecorder named recorder 0..1
+* extension contains BeRecorder named recorder 1..1
 * route from be-vs-vaccination-administration-route 
 * statusReason from be-vs-vaccination-status-reason (required)
 
