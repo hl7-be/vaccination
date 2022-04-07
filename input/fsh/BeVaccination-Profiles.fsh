@@ -58,7 +58,7 @@ Description:    """
 
 
 * protocolApplied.targetDisease MS
-* protocolApplied.targetDisease from be-vs-vaccine-target-disease
+* protocolApplied.targetDisease from be-vs-vaccine-target-disease (example)
 
 // Add extension: recordedString
 // Add extension: type

@@ -376,7 +376,7 @@ Description: "Vaccination reason status Code System."
 ValueSet: BeVSVaccineCode
 Id: be-vs-vaccine-code
 Title: "Vaccine Code Value Set"
-Description:  "Vaccine Code Value Set - the types of vacccines that are administered in Belgium"
+Description:  "Vaccine Code Value Set - the types of vaccines that are administered in Belgium"
 * ^status = #draft
 * codes from system BeCSVaccineCode
 * ^url = "https://ehealth.fgov.be/standards/fhir/patient-dossier/be-vs-vaccine-code"
@@ -385,29 +385,28 @@ Description:  "Vaccine Code Value Set - the types of vacccines that are administ
 CodeSystem: BeCSVaccineCode
 Id: be-cs-vaccine-code
 Title: "Vaccine Code System"
-Description:  "Vaccine Code Code System - set of Belgian codes for types of vacccines that are administered"
+Description:  "Vaccine Code Code System - set of Belgian codes for types of vaccines that are administered"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^content = #complete
-* ^url = "https://ehealth.fgov.be/standards/fhir/patient-dossier/be-cs-vaccine-code"
+* ^url = "https://ehealth.fgov.be/standards/fhir/vaccine/be-cs-vaccine-code"
+// Add codes here //
 * #other "Other"
-
-
 
 
 ValueSet: BeVSVaccineTargetDisease
 Id: be-vs-vaccine-target-disease
 Title: "Vaccine Target Disease Value Set"
-Description:  "Vaccine Target Disease Value Set - the types of diseases that targeted by the vacccines"
+Description:  "Vaccine Target Disease Value Set - the types of diseases that targeted by the vaccines"
 * ^status = #draft
-* codes from system BeCSVaccineCode
+* codes from system BeCSVaccineTargetDisease
 
 
 
 CodeSystem: BeCSVaccineTargetDisease
 Id: be-cs-vaccine-target-disease
 Title: "Vaccine Target Disease Code System"
-Description:  "Vaccine Target Disease Code System - set of Belgian codes for diseases targeted by the vacccines"
+Description:  "Vaccine Target Disease Code System - set of Belgian codes for diseases targeted by the vaccines"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^content = #complete
