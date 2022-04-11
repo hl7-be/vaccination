@@ -1,7 +1,7 @@
 ValueSet: BeVSVaccineAdministrationRoute
 Id: be-vs-vaccination-administration-route
 //Usage: #definition
-Title: "Vaccine Administration Route"
+Title: "BeVSVaccineAdministrationRoute"
 Description:  "Vaccine Administration Route"
 * ^status = #draft
 * codes from system BeCSVaccineAdministrationRoute

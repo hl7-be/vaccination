@@ -1,7 +1,7 @@
 ValueSet: BeVSVaccinationStatusReason
 Id: be-vs-vaccination-status-reason
 //Usage: #definition
-Title: "Vaccination status reason Value Set"
+Title: "BeVSVaccinationStatusReason"
 Description:  "Vaccination status reason Value Set - the reasons for an vaccination status - typically representing the reason why a vaccination is not performed"
 * ^status = #draft
 * codes from system BeCSStatusReason

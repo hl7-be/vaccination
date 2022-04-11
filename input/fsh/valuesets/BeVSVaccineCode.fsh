@@ -1,6 +1,6 @@
 ValueSet: BeVSVaccineCode
 Id: be-vs-vaccine-code
-Title: "Vaccine Code Value Set"
+Title: "BeVSVaccineCode"
 Description:  "Vaccine Code Value Set - the types of vaccines that are administered in Belgium"
 * ^status = #draft
 * codes from system BeCSVaccineCode

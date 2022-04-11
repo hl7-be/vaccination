@@ -1,6 +1,6 @@
 CodeSystem: BeCSVaccineAdministrationRoute
 Id: be-cs-vaccination-administration-route
-Title: "Vaccine Administration Route"
+Title: "BeCSVaccineAdministrationRoute"
 Description: "Vaccine Administration Route"
 * ^version = "0.1.0"
 * ^status = #draft

@@ -1,6 +1,6 @@
 CodeSystem: BeCSVaccinationConfirmationStatus
 Id: be-cs-vaccination-confirmation-status
-Title: "Vaccination status Code System."
+Title: "BeCSVaccinationConfirmationStatus"
 Description: "Vaccination status Code System."
 * ^status = #draft
 * ^content = #complete
