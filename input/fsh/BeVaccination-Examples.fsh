@@ -60,9 +60,8 @@ Title:   "Toto - First hexavalent vaccination"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "NIHDI_ONE"
 * performer[1].actor.identifier.value = "Hospital Midwife 1"
-* vaccineCode.coding[0].system = "http://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code"
-* vaccineCode.coding[0].code = #146
-* vaccineCode.coding[1].code = #3050176
+* vaccineCode.coding[0].system = "http://snomed.info/sct"
+* vaccineCode.coding[0].code = #871895005
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 4
 * extension[administeredProduct].valueReference.identifier.system = "http://snomed.info/sct"
@@ -91,8 +90,7 @@ Title:   "Toto - 2nd hexavalent vaccination"
 * performer[0].actor.identifier.value = "NIHDI_ONE"
 * performer[1].actor.identifier.value = "ONE Nurse  1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[0].code = #146
-* vaccineCode.coding[1].code = #3050176
+* vaccineCode.coding[0].code = #871895005
 * protocolApplied.doseNumberPositiveInt = 2
 * protocolApplied.seriesDosesPositiveInt = 4
 * extension[administeredProduct].valueReference.identifier.system = "http://snomed.info/sct"
@@ -121,8 +119,7 @@ Title:   "Toto - 3rd hexavalent  vaccination"
 * performer[0].actor.identifier.value = "NIHDI_ONE"
 * performer[1].actor.identifier.value = "ONE Dr 1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[0].code = #146
-* vaccineCode.coding[1].code = #3050176
+* vaccineCode.coding[0].code = #871895005
 * protocolApplied.doseNumberPositiveInt = 3
 * protocolApplied.seriesDosesPositiveInt = 4
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
@@ -138,7 +135,7 @@ Title:   "Toto - 4th hexavalent  vaccination - skipped (fever)"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
 * status = #not-done
 * statusReason.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ActReason"
-* statusReason.coding.code = #MEDPREC
+* statusReason.coding.code = http://terminology.hl7.org/CodeSystem/v3-ActReason#MEDPREC
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"
 * recorded = "2017-06-16"
@@ -149,7 +146,7 @@ Title:   "Toto - 4th hexavalent  vaccination - skipped (fever)"
 * performer[0].actor.identifier.value = "NIHDI_ONE"
 * performer[1].actor.identifier.value = "ONE Nurse 2"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[0].code = #146
+* vaccineCode.coding[0].code = #871895005
 * protocolApplied.doseNumberPositiveInt = 4
 * protocolApplied.seriesDosesPositiveInt = 4
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
@@ -177,8 +174,7 @@ Title:   "Toto - 4th hexavalent vaccination"
 * performer[0].actor.identifier.value = "NIHDI_ONE"
 * performer[1].actor.identifier.value = "ONE Nurse  1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[0].code = #146
-* vaccineCode.coding[1].code = #3050176
+* vaccineCode.coding[0].code = #871895005
 * reaction.detail = Reference (erythema)
 * protocolApplied.doseNumberPositiveInt = 4
 * protocolApplied.seriesDosesPositiveInt = 4
@@ -205,8 +201,7 @@ Title:   "Juan - 1st hexa (reported)"
 * doseQuantity.value = 1
 * performer[0].actor.identifier.value = "Reference(Spain)"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[0].code = #146
-* vaccineCode.coding[1].code = #3050176
+* vaccineCode.coding[0].code = #871895005
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-confirmationStatus].valueCode = #unconfirmed
@@ -231,8 +226,7 @@ Title:   "Juan - 2nd hexa (hospital)"
 * performer[0].actor.identifier.value = "NIHDI_HOSPITAL1"
 * performer[1].actor.identifier.value = "Hospital Nurse 2"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[0].code = #146
-* vaccineCode.coding[1].code = #3050176
+* vaccineCode.coding[0].code = #871895005
 * protocolApplied.doseNumberPositiveInt = 2
 * protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-confirmationStatus].valueCode = #unconfirmed
@@ -257,8 +251,7 @@ Title:   "Juan - 3rd hexa (not done)"
 * performer[0].actor.identifier.value = "NIHDI_ONE"
 * performer[1].actor.identifier.value = "ONE Dr 2"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[0].code = #146
-* vaccineCode.coding[1].code = #3050176
+* vaccineCode.coding[0].code = #871895005
 * protocolApplied.doseNumberPositiveInt = 3
 * protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
@@ -282,7 +275,7 @@ Title:   "Juan - 3rd hexa (effective)"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "NIHDI_ONE"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[0].code = #146
+* vaccineCode.coding[0].code = #871895005
 * protocolApplied.doseNumberPositiveInt = 3
 * protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
@@ -303,7 +296,7 @@ Title:   "Eva - HPV 1st dose"
 * doseQuantity.value = 1
 * performer[0].actor.identifier.value = "Reference(School2)"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[0].code = #911000221103
+* vaccineCode.coding[=].code = http://snomed.info/sct#911000221103
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 2
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
@@ -603,6 +596,7 @@ Title:    "Immunization Example - 3. Emergency reinforcement"
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
+* vaccineCode.coding = http://snomed.info/sct#871742003
 * vaccineCode.text = "tetanus"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
@@ -663,13 +657,10 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* statusReason.coding.code = #MEDPREC
-* statusReason.coding.display = "Contra-indicatie"
+* statusReason.coding = http://terminology.hl7.org/CodeSystem/v3-ActReason#MEDPREC
 * occurrenceDateTime = "2020-03-25"
 * recorded = "2020-05-26"
-
-* vaccineCode.coding.code = #911000221103
-* vaccineCode.coding.display = "Hepatitis B"
+* vaccineCode.coding = http://snomed.info/sct#871822003
 * occurrenceDateTime = "2020-03-12"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
@@ -721,9 +712,9 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding.code = #911000221103
+* vaccineCode.coding.code = #871765008
 * vaccineCode.coding.system = "http://snomed.info/sct"
-* vaccineCode.coding.display = "Measles"
+* vaccineCode.coding.display = "Measles vaccine"
 * occurrenceString = "Summer 2018"
 * recorded = "2020"
 
@@ -748,9 +739,9 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding.code = #911000221103
+* vaccineCode.coding.code = #871732000
 * vaccineCode.coding.system = "http://snomed.info/sct"
-* vaccineCode.coding.display = "Rubella"
+* vaccineCode.coding.display = "Rubella vaccine"
 * occurrenceString = "Summer 2018"
 * recorded = "2020"
 

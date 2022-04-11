@@ -6,7 +6,7 @@ Description: "Pfizer Belgium"
 * active = true
 * name = "Pfizer - Belgium"
 * identifier.value = "0400.778.165"
-* identifier.system = "https://kbopub.economie.fgov.be"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe"
 
 Instance: org-astrazeneca
 InstanceOf: BeOrganization
@@ -15,7 +15,7 @@ Description: "AstraZeneca Belgium"
 * active = true
 * name = "AstraZeneca - Belgium"
 * identifier.value = "0400.165.679"
-* identifier.system = "https://kbopub.economie.fgov.be"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe"
 
 Instance: org-vub-brussels
 InstanceOf: BeOrganization
@@ -24,7 +24,7 @@ Description: "AstraZeneca Belgium"
 * active = true
 * name = "AstraZeneca - Belgium"
 * identifier.value = "0400.165.679"
-* identifier.system = "https://kbopub.economie.fgov.be"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe"
 
 
 
@@ -99,7 +99,7 @@ Title:   "Jan's second failed COVID-19 vaccination"
 * identifier.value = "134c357c-745b-4a55-43b5-1248340bc711"
 * identifier.system = "https://www.ehealth.fgov.be/covid-vaccination/vaccination-register"
 * status = #not-done
-* statusReason.coding.code = https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason#OTHER
+* statusReason.coding.code = BeCSStatusReason#OTHER
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "70072376921"
 * recorded = "2020-03-22"
