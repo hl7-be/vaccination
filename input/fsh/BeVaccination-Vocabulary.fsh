@@ -50,19 +50,6 @@ Description:  "Care Location Value Set"
 
 
 
-Instance: be-ns-cnk-code
-InstanceOf: NamingSystem
-Usage: #definition
-Description: "Naming System - CNK Product Codes"
-* status = #active
-* name = "BeNSCNK"
-* date = "2020-07-24"
-* kind = #codesystem
-* description = "Naming System - CNK Product Codes"
-* uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-code"
-* uniqueId[0].preferred = true
-* jurisdiction = urn:iso:std:iso:3166#BE
 
           
 Instance: be-ns-product-manufacturer
@@ -75,7 +62,7 @@ Description: "Naming System - Product Manufacturer"
 * kind = #codesystem
 * description = "Naming System - Product Manufacturer"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/product-manufacturer"
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/product-manufacturer"
 * uniqueId[0].preferred = true
 * jurisdiction = urn:iso:std:iso:3166#BE
 
@@ -89,7 +76,7 @@ Description: "Naming System - ONE Vaccination"
 * kind = #identifier
 * description = "Naming System - ONE Vaccination"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/one-vaccination"
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/one-vaccination"
 * uniqueId[0].preferred = true
 * jurisdiction = urn:iso:std:iso:3166#BE
 
@@ -106,55 +93,10 @@ Description: "Naming System - Vaccinnet Vaccine Codes"
 * kind = #codesystem
 * description = "Naming System - Vaccinnet Vaccine Codes"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/vaccinnet-vaccinecode"
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/vaccinnet-vaccinecode"
 * uniqueId[0].preferred = true
 * jurisdiction = urn:iso:std:iso:3166#BE
 
-
-Instance: be-ns-cti-extended
-InstanceOf: NamingSystem
-Usage: #definition
-Description: "Naming System - CTI Extended Codes"
-* status = #active
-* name = "BeNSCTI"
-* date = "2020-07-24"
-* kind = #codesystem
-* description = "Naming System - CTI Extended Codes"
-* uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cti-ext-code"
-* uniqueId[0].preferred = true
-* jurisdiction = urn:iso:std:iso:3166#BE
-
-
-
-Instance: be-ns-nihdi-professional
-InstanceOf: NamingSystem
-Usage: #definition
-Description: "Naming System - Nihdi - Professional"
-* status = #active
-* date = "2020-07-24"
-* name = "BeNSNIHDIProfessional"
-* kind = #identifier
-* description = "Naming System - Nihdi - Professional"
-* uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-professional"
-* uniqueId[0].preferred = true
-* jurisdiction = urn:iso:std:iso:3166#BE
-
-
-Instance: be-ns-nihdi-organization
-InstanceOf: NamingSystem
-Usage: #definition
-Description: "Naming System - Nihdi - Organization"
-* status = #active
-* date = "2020-07-24"
-* name = "BeNSNIHDIOrganization"
-* kind = #identifier
-* description = "Naming System - Nihdi - Organization"
-* uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
-* uniqueId[0].preferred = true
-* jurisdiction = urn:iso:std:iso:3166#BE
 
 CodeSystem: BeCSCareLocation
 Id: be-cs-care-location
@@ -373,25 +315,9 @@ Description: "Vaccination reason status Code System."
 
 
 
-ValueSet: BeVSVaccineCode
-Id: be-vs-vaccine-code
-Title: "Vaccine Code Value Set"
-Description:  "Vaccine Code Value Set - the types of vaccines that are administered in Belgium"
-* ^status = #draft
-* codes from system BeCSVaccineCode
-* ^url = "https://ehealth.fgov.be/standards/fhir/patient-dossier/be-vs-vaccine-code"
 
 
-CodeSystem: BeCSVaccineCode
-Id: be-cs-vaccine-code
-Title: "Vaccine Code System"
-Description:  "Vaccine Code Code System - set of Belgian codes for types of vaccines that are administered"
-* ^version = "0.1.0"
-* ^status = #draft
-* ^content = #complete
-* ^url = "https://ehealth.fgov.be/standards/fhir/vaccine/be-cs-vaccine-code"
-// Add codes here //
-* #other "Other"
+
 
 
 ValueSet: BeVSVaccineTargetDisease
