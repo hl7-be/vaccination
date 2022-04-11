@@ -15,7 +15,7 @@ Title:    "ONE Brussels"
 * active = true
 * name = "ONE Brussels"
 * identifier.value = "457213512"
-* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"
 * telecom[0].system = #url
 * telecom[0].value = "https://www.one.be"
 * telecom[0].use = #work
@@ -30,7 +30,7 @@ Title:    "Kind en Gezin"
 * active = true
 * name = "Kind en Gezin"
 * identifier.value = "457223509"
-* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"
 * telecom[0].system = #url
 * telecom[0].value = "https://www.kindengezin.be/"
 * telecom[0].use = #work
@@ -43,7 +43,7 @@ Title:    "UZ Gent"
 * active = true
 * name = "UZ Gent"
 * identifier.value = "4342357223509"
-* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"
 * telecom[0].system = #url
 * telecom[0].value = "https://www.uzgent.be/"
 * telecom[0].use = #work
@@ -115,7 +115,7 @@ InstanceOf: BePatient
 Usage: #example
 Description: "Patient Pia Peters"
 Title:    "Pia Peters"
-* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * identifier.value = "59050937740"
 * name.family = "Peters"
 * name.given = "Pia"

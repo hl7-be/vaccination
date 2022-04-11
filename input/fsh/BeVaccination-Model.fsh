@@ -4,7 +4,7 @@ Logical: BeModelVaccination
 * identifier 0..1 Identifier "The business identifier(s) for the vaccination entry" "The business identifier(s) for the vaccination entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults."
 * status 1..1 http://hl7.org/fhir/StructureDefinition/code "The status of this vaccination record entry" "The status of the vaccination record entry - whether it is active, entered in error, etc."
 * statusReason 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "The reason for the status e.g. 'not completed because...'" "Supporting reason for status information."
-* statusReason from https://www.hl7belgium.org/fhir/ValueSet/be-vs-vaccination-status-reason (required)
+* statusReason from https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-status-reason (required)
 * statusReason ^binding.description = "Belgium codes to describe reasons considered for status of vaccination actions, e.g. reasons for not administering vaccine"
 * patient 1..1 Reference(Patient) "The patient that received vaccination." "The patient that has received the vaccination."
 * vaccineCode 1..1 CodeableConcept "The vaccine code, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa" "The vaccine code - a type of vaccine, typically identified by the disease(s) it covers. For example MMR, HPV, Tetanus, DTPa. This should be a coded value."

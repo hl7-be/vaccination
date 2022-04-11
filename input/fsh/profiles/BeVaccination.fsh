@@ -1,7 +1,7 @@
 Profile:        BeVaccination
 Parent:         Immunization
 Id:             be-vaccination
-Title:          "BEVaccination"
+Title:          "BeVaccination"
 Description:    """ 
     Defines constraints and extensions on the immunization resource to represent an immunization event i.e. the administration of a vaccine."""
 
@@ -52,7 +52,7 @@ Description:    """
 * extension contains BeAdministeredProduct named administeredProduct 0..1
 * extension contains BeVaccinationLocation named vaccination-location 0..1
 * extension contains BeVaccinationConfirmationStatus named vaccination-confirmationStatus 0..1
-* extension contains BeRecorder named recorder 1..1
+* extension contains BeExtRecorder named recorder 1..1
 * route from be-vs-vaccination-administration-route 
 * statusReason from be-vs-vaccination-status-reason (required)
 
@@ -73,46 +73,6 @@ Description:    """
 // added constraint
 * obeys be-rule-vaccination-1
 
-
-Extension: BeVaccinationOriginalOrder
-Id: be-ext-vaccination-originalorder
-Title: "Immunization Order, prescription or request"
-Description: "A plan, proposal or order that is fulfilled in whole or in part by an event."
-* value[x] only Reference
-* valueReference only Reference(ImmunizationRecommendation or MedicationRequest or CarePlan)
-
-
-Extension: BeAdministeredProduct
-Id: be-ext-administeredProduct
-Title: "Product administered"
-Description: "The product administered"
-* value[x] only Reference 
-* valueReference only Reference(Medication)
-
-Extension: BeVaccinationConfirmationStatus
-Id: be-ext-vaccination-confirmationStatus
-Title: "How certain is the vaccination information - confirmed, not confirmed"
-Description: "How certain/reliable is the vaccination information"
-* value[x] only code
-* valueCode from be-vs-vaccination-confirmation-status (required)
-
-
-Extension: BeRecorder
-Id: be-ext-recorder
-Title: "Who recorded the information"
-Description: "The recorder of the information - note that this may not always be the same as the asserter - when a patient reports to a nurse and the nurse enters the data, the asserter is the patient, but the recorder is the nurse"
-* value[x] only CodeableConcept or Reference
-* valueReference only Reference(BePatient or BePractitioner or BeOrganization)
- 
-
-
-Extension: BeVaccinationLocation
-Id: be-ext-vaccination-location
-Title: "Location (reference, code or text) of the vaccination"
-Description: "Location (reference, code or text) of the vaccination"
-* value[x] only CodeableConcept or Reference
-* valueReference only Reference(Location or be-organization)
-* valueCodeableConcept from BeVSCareLocation (preferred)
 
 Invariant:   be-rule-vaccination-1
 Description: "If vaccineCode.code is other, then vaccinecode text must exist"

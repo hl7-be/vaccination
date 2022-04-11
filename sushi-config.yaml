@@ -7,11 +7,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: hl7.fhir.be.patientdossier
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: BePatientDossier
-title: "HL7 Belgium Patient Dossier"
+id: hl7.fhir.be.vaccination
+canonical: https://www.ehealth.fgov.be/standards/fhir/vaccination
+url: https://www.ehealth.fgov.be/standards/fhir/vaccination
+name: BeVaccination
+title: "HL7 Belgium Vaccination (Patient Dossier)"
 description: Belgian Patient profiles
 status: active
 license: CC0-1.0
@@ -38,23 +38,23 @@ copyrightYear: 2021+
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: HL7 Belgium
-  url: http://hl7belgium.org
-  email: my-group@example.com
+  name: eHealth Platform
+  url: http://www.ehealth.fgov.be/
+  email: message-structure@ehealth.fgov.be
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Message Structure
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: message-structure@ehealth.fgov.be
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+jurisdiction: urn:iso:std:iso:3166#BE "Belgium" 
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -187,3 +187,7 @@ FSHOnly: false
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
+
+dependencies:
+  hl7.fhir.be.core: 2.0.0
+  hl7.fhir.be.medication: dev
