@@ -191,3 +191,4 @@ FSHOnly: false
 dependencies:
   hl7.fhir.be.core: 2.0.0
   hl7.fhir.be.medication: dev
+  hl7.terminology: current
