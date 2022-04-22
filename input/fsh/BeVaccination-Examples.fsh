@@ -123,6 +123,7 @@ Title:   "Toto - 3rd hexavalent  vaccination"
 * protocolApplied.doseNumberPositiveInt = 3
 * protocolApplied.seriesDosesPositiveInt = 4
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
+* extension[administeredProduct].valueCodeableConcept.coding = http://whocc.no/atc#J07CA09 
 
 /*============================================= Example 4 =============================================*/
 Instance: toto-hexa4-skipped
