@@ -24,6 +24,7 @@ Logical: BeModelVaccination
 * statusReason ^binding.description = "Belgium codes to describe reasons considered for status of vaccination actions, e.g. reasons for not administering vaccine"
 * reaction 0..1 CodeableConcept "Reaction to the immunization - cfr. AllergyIntolerance"
 * note 0..1 http://hl7.org/fhir/StructureDefinition/Attachment "Additional notes for the vaccination." "Additional notes for the vaccination"
+* site 1..1 CodeableConcept "The body site where the vaccination entered the body"
 * identifier 0..1 Identifier "The business identifier(s) for the vaccination entry" "The business identifier(s) for the vaccination entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults."
 // _NOT_ in logical model
 * doseQuantity 0..1 BackboneElement "The number or quantity of product(s) that was administered - e.g. 1/2 dose" "The number or quantity of product(s) that was administered - e.g. 1/2 dose, etc."
@@ -60,7 +61,7 @@ Title: "BeModelVaccinationToBVaccination"
 // _NOT_ in logical model
 * doseQuantity -> "doseQuantity"
 * location -> "location"
-
+* site -> "site"
 
 
 

@@ -20,6 +20,7 @@ Description:    """
 * reaction MS
 * performer MS
 * site MS
+* site from be-vs-vaccination-bodysite (required)
 * route MS
 * doseQuantity MS
 * identifier 0..* MS
