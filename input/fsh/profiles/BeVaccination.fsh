@@ -72,10 +72,16 @@ Description:    """
 * reasonReference ^short = "Why vaccination has occurred or not (reference to a finding)"
 
 // added constraint
-* obeys be-rule-vaccination-1
+* obeys be-rule-vaccination-1 and be-rule-vaccination-2
 
 
 Invariant:   be-rule-vaccination-1
 Description: "If vaccineCode.code is other, then vaccinecode text must exist"
 Expression:  "vaccineCode.coding.code = 'other'  implies vaccineCode.text.exists() "
+Severity:    #error
+
+
+Invariant:   be-rule-vaccination-2
+Description: "The product code SHALL be cnk, cti extended or atc"
+Expression:  "extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.exists().not() or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes').exists()  or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code').exists() or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.coding.where(system = 'http://whocc.no/atc').exists()"
 Severity:    #error
