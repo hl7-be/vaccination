@@ -4,12 +4,12 @@
 ==============================================================================================================================
 */
 
-Instance: erythema
+Instance: angioedema
 InstanceOf: Observation
 Usage: #example
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "16032376921"
-* code = http://snomed.info/sct#247441003
+* code = http://snomed.info/sct#41291007
 * status = #final
 
 Instance: fever
@@ -159,7 +159,7 @@ Usage: #example
 Description: "Toto - 4th hexavalent vaccination"
 Title:   "Toto - 4th hexavalent vaccination"
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* contained = erythema 
+* contained = angioedema 
 * identifier.value = "1c4feb6a-275d-4029-9466-31b353710f84"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
 * status = #completed
@@ -176,7 +176,8 @@ Title:   "Toto - 4th hexavalent vaccination"
 * performer[1].actor.identifier.value = "ONE Nurse  1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-* reaction.detail = Reference (erythema)
+* reaction.detail = Reference (angioedema)
+* reaction.date = "2017-06-23"
 * protocolApplied.doseNumberPositiveInt = 4
 * protocolApplied.seriesDosesPositiveInt = 4
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
