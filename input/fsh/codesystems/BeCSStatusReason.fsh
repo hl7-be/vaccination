@@ -15,8 +15,3 @@ Description: "Vaccination reason status Code System."
 * #ALLERGY ^designation[=].value = "Allergie"
 * #ALLERGY ^designation[+].language = #nl-BE
 * #ALLERGY ^designation[=].value = "Allergie"
-* #OSTOCK "Out of stock or no vaccine available"
-* #OSTOCK ^designation[0].language = #fr-BE
-* #OSTOCK ^designation[=].value = "Hors Stock"
-* #OSTOCK ^designation[+].language = #nl-BE
-* #OSTOCK ^designation[=].value = "Geen voorraad"
