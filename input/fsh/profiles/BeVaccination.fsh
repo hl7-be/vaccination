@@ -86,8 +86,3 @@ Invariant:   be-rule-vaccination-2
 Description: "The product code SHALL be cnk, cti extended or atc"
 Expression:  "extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.exists().not() or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes').exists()  or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code').exists() or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.coding.where(system = 'http://whocc.no/atc').exists()"
 Severity:    #error
-
-Invariant:   be-rule-vaccination-3
-Description: "The reaction detail code SHALL come from be-vs-reaction-manifestation"
-Expression:  "reaction.detail.empty() or reaction.detail.resolve().code.memberOf('https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code').anyTrue()"
-Severity:    #error
