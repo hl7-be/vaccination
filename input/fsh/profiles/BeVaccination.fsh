@@ -11,16 +11,18 @@ Description:    """
 * occurrenceDateTime MS
 * occurrenceString MS
 * recorded MS
-* location MS
-* lotNumber MS
-* expirationDate MS
+* encounter MS
+* lotNumber 0..0
+* expirationDate 0..0 
 * route MS
 * protocolApplied MS
 * reaction MS
 * reaction.date 1..1
+* reaction ^short = "Reaction immediately after vaccination (15-30 minutes)"
 * performer MS
 * site MS
 * site from be-vs-vaccination-bodysite (required)
+* site.extension contains BeExtLaterality named bodyLaterality 0..1
 * route MS
 * doseQuantity MS
 * identifier 0..* MS
@@ -43,32 +45,30 @@ Description:    """
 * vaccineCode ^short = "The vaccine code - a type of vaccine, typically identified by the diseas(s) it covers. For example MMR, HPV, Tetanus, DTPa"
 * vaccineCode 1..1
 * vaccineCode from be-vs-vaccine-code (required)
-* protocolApplied.doseNumberString ^short = "Whether this is a first vaccination or a reinforcement" 
-* protocolApplied.doseNumberString MS
-* protocolApplied.doseNumberPositiveInt ^short = "The numeric/sequential number of the dose, when adequate" 
-* protocolApplied.doseNumberPositiveInt MS
+* protocolApplied 0..0
+//* protocolApplied.doseNumberString ^short = "Whether this is a first vaccination or a reinforcement" 
+//* protocolApplied.doseNumberString MS
+//* protocolApplied.doseNumberPositiveInt ^short = "The numeric/sequential number of the dose, when adequate" 
+//* protocolApplied.doseNumberPositiveInt MS
 * recorded ^short = "The date/time when the vaccination event has been recorded"
 * recorded 1..1
 * extension contains BeVaccinationOriginalOrder named vaccination-originalorder 0..1
 * extension contains BeAdministeredProduct named administeredProduct 0..1
-* extension contains BeVaccinationLocation named vaccination-location 0..1
 * extension contains BeVaccinationConfirmationStatus named vaccination-confirmationStatus 0..1
 * extension contains BeExtRecorder named recorder 1..1
-* extension contains BeExtLaterality named bodyLaterality 0..1
+* extension contains BeExtSimpleNote named note 0..1
 * route from be-vs-vaccination-administration-route 
 * statusReason from be-vs-vaccination-status-reason (required)
 
 
-* protocolApplied.targetDisease MS
-* protocolApplied.targetDisease from be-vs-vaccine-target-disease (example)
+//* protocolApplied.targetDisease MS
+//* protocolApplied.targetDisease from be-vs-vaccine-target-disease (example)
 
 // Add extension: recordedString
 // Add extension: type
 
 
 // added 09-06
-* reasonCode MS
-* reasonCode ^short = "Why vaccination has occurred or not (code or text)"
 * reasonReference MS
 * reasonReference ^short = "Why vaccination has occurred or not (reference to a finding)"
 
@@ -84,5 +84,15 @@ Severity:    #error
 
 Invariant:   be-rule-vaccination-2
 Description: "The product code SHALL be cnk, cti extended or atc"
-Expression:  "extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.exists().not() or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes').exists()  or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code').exists() or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.coding.where(system = 'http://whocc.no/atc').exists()"
+Expression:  "extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').valueCodeableConcept.exists().not() or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').valueCodeableConcept.coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes').exists()  or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').valueCodeableConcept.coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code').exists() or extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').valueCodeableConcept.coding.where(system = 'http://whocc.no/atc').exists()"
+Severity:    #error
+
+Invariant:   be-rule-vaccination-3
+Description: "The reaction detail code SHALL come from be-vs-reaction-manifestation"
+Expression:  "reaction.detail.empty() or reaction.detail.resolve().code.memberOf('https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code').anyTrue()"
+Severity:    #error
+
+Invariant:   be-rule-vaccination-4
+Description: "The encounter should have a location from be-vs-care-location"
+Expression:  "encounter.empty() or encounter.resolve().location.physicalType.code.memberOf('https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location').anyTrue()"
 Severity:    #error
