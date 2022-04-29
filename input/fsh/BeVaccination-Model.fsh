@@ -22,16 +22,16 @@ Logical: BeModelVaccination
 * statusReason 0..1 http://hl7.org/fhir/StructureDefinition/CodeableConcept "The reason for the status e.g. 'not completed because...'" "Supporting reason for status information."
 * statusReason from https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccination-status-reason (required)
 * statusReason ^binding.description = "Belgium codes to describe reasons considered for status of vaccination actions, e.g. reasons for not administering vaccine"
+* location 0..1 Reference "The location where the immunization is performed." "The location where the immunization administration was performed. This can be a text (e.g. 'at the physician's office' or a code e.g. '00078' meaning 'patient's home' or a resource (Location) if one exists e.g. 'Location/kind-en-gezin-092375' which could be defining 'Kind en Gezin Gent Koepoortkaai' "
 * reaction 0..1 BackboneElement "Reaction to the immunization - cfr. AllergyIntolerance"
 * reaction.reactionDate 1..1 dateTime "date of the reaction"
 * reaction.manifestation 0..1 Reference "reference to the observation of the reaction"
 * doseQuantity 0..1 BackboneElement "The number or quantity of product(s) that was administered - e.g. 1/2 dose" "The number or quantity of product(s) that was administered - e.g. 1/2 dose, etc."
 * note 0..1 http://hl7.org/fhir/StructureDefinition/Attachment "Additional notes for the vaccination." "Additional notes for the vaccination"
 * site 1..1 CodeableConcept "The body site where the vaccination entered the body"
-* identifier 0..* Identifier "The business identifier(s) for the vaccination entry" "The business identifier(s) for the vaccination entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults."
+* identifier 0..1 Identifier "The business identifier(s) for the vaccination entry" "The business identifier(s) for the vaccination entry - This is an optional attribute, used for example to track an entry throughout its lifecycle, or across vaults."
 * bodyLaterality 0..1 CodeableConcept "The side of the body (for sites that occur on both sides of the body)"
-* location 0..1 Reference "The location where the immunization is performed." "a resource (Location) if one exists e.g. 'Location/kind-en-gezin-092375' which could be defining 'Kind en Gezin Gent Koepoortkaai' "
-* locationType 0..1 CodeableConcept "The location where the immunization administration was performed. This can be a text (e.g. 'at the physician's office' or a code e.g. '00078' meaning 'patient's home'"
+
 
 Mapping: BeModelVaccinationToBVaccination
 Source: BeModelVaccination
