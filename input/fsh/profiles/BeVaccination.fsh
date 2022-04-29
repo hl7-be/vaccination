@@ -97,7 +97,3 @@ Description: "The encounter should have a location from be-vs-care-location"
 Expression:  "encounter.empty() or encounter.resolve().location.physicalType.code.memberOf('https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location').anyTrue()"
 Severity:    #error
 
-Invariant:   be-rule-vaccination-3
-Description: "The reaction detail code SHALL come from be-vs-reaction-manifestation"
-Expression:  "reaction.detail.empty() or reaction.detail.resolve().code.memberOf('https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code').anyTrue()"
-Severity:    #error
