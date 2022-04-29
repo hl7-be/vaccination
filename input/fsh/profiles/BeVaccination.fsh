@@ -14,10 +14,10 @@ Description:    """
 * location MS
 * lotNumber MS
 * expirationDate MS
+* site MS
 * route MS
 * protocolApplied MS
 * reaction MS
-* reaction.date 1..1
 * performer MS
 * site MS
 * site from be-vs-vaccination-bodysite (required)
@@ -54,7 +54,6 @@ Description:    """
 * extension contains BeVaccinationLocation named vaccination-location 0..1
 * extension contains BeVaccinationConfirmationStatus named vaccination-confirmationStatus 0..1
 * extension contains BeExtRecorder named recorder 1..1
-* extension contains BeExtLaterality named bodyLaterality 0..1
 * route from be-vs-vaccination-administration-route 
 * statusReason from be-vs-vaccination-status-reason (required)
 
@@ -73,7 +72,7 @@ Description:    """
 * reasonReference ^short = "Why vaccination has occurred or not (reference to a finding)"
 
 // added constraint
-* obeys be-rule-vaccination-1 and be-rule-vaccination-2 and be-rule-vaccination-3
+* obeys be-rule-vaccination-1 and be-rule-vaccination-2
 
 
 Invariant:   be-rule-vaccination-1
