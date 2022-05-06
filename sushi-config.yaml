@@ -178,7 +178,11 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 #  validation: [allow-any-extensions, no-broken-links]
 parameters:
   show-inherited-invariants: false
-
+  shownav: true
+  apply-contact: true
+  apply-jurisdiction: true
+  apply-publisher: true
+  apply-version: true
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
@@ -191,4 +195,7 @@ FSHOnly: false
 dependencies:
   hl7.fhir.be.core: 2.0.0
   hl7.fhir.be.medication: dev
+  hl7.fhir.be.core-clinical: dev
   hl7.terminology: current
+
+    

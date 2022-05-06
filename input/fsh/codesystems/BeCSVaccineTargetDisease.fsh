@@ -5,3 +5,4 @@ Description:  "Vaccine Target Disease Code System - set of Belgian codes for dis
 * ^version = "0.1.0"
 * ^status = #draft
 * ^content = #complete
+* ^caseSensitive = true

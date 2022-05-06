@@ -80,8 +80,8 @@ Title:   "Jan's first COVID-19 vaccination"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "4605123"
 * performer[0].actor.display = "Huisarts 1"
-* vaccineCode.coding[0].system = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code"
-* vaccineCode.coding[0].code = #covid19
+* vaccineCode.coding[0].system = "http://snomed.info/sct"
+* vaccineCode.coding[0].code = #28531000087107
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].valueReference = Reference(pfizer-s0001)
@@ -99,7 +99,7 @@ Title:   "Jan's second failed COVID-19 vaccination"
 * identifier.value = "134c357c-745b-4a55-43b5-1248340bc711"
 * identifier.system = "https://www.ehealth.fgov.be/covid-vaccination/vaccination-register"
 * status = #not-done
-* statusReason.coding.code = BeCSStatusReason#OTHER
+* statusReason.coding = https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-status-reason#OTHER
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "70072376921"
 * recorded = "2020-03-22"
@@ -112,8 +112,8 @@ Title:   "Jan's second failed COVID-19 vaccination"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "4605123"
 * performer[0].actor.display = "Huisarts 1"
-* vaccineCode.coding[0].system = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code"
-* vaccineCode.coding[0].code = #covid19
+* vaccineCode.coding[0].system = "http://snomed.info/sct"
+* vaccineCode.coding[0].code = #28531000087107
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].valueReference = Reference(pfizer-s0002)
@@ -142,8 +142,8 @@ Title:   "Jan's second successful COVID-19 vaccination"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "4605123"
 * performer[0].actor.display = "Huisarts 1"
-* vaccineCode.coding[0].system = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code"
-* vaccineCode.coding[0].code = #covid19
+* vaccineCode.coding[0].system = "http://snomed.info/sct"
+* vaccineCode.coding[0].code = #28531000087107
 * protocolApplied.doseNumberPositiveInt = 1
 * protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].valueReference = Reference(pfizer-s0003)
