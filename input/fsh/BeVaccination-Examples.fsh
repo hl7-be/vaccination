@@ -3,21 +3,13 @@
 ========================================================== EXAMPLES ==========================================================
 ==============================================================================================================================
 */
-Instance: demo-encounter
-InstanceOf: Encounter
-Usage: #example
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
-* subject.identifier.value = "16032376921"
-* serviceProvider = Reference(org-one-brussels)
-* status = #finished
-* class = #AMB 
 
-Instance: angioedema
+Instance: erythema
 InstanceOf: Observation
 Usage: #example
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "16032376921"
-* code = http://snomed.info/sct#41291007
+* code = http://snomed.info/sct#247441003
 * status = #final
 
 Instance: fever
@@ -53,7 +45,6 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Toto - First hexavalent vaccination"
 Title:   "Toto - First hexavalent vaccination"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * identifier.value = "c448357c-cf6b-4a55-95c2-1618580bc391"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
@@ -61,8 +52,8 @@ Title:   "Toto - First hexavalent vaccination"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"
 * recorded = "2016-05-30"
-* encounter = Reference(demo-encounter)
-* extension[administeredProduct].extension[lotNumber].valueString = "L00156"
+* extension[vaccination-location].valueReference = Reference(org-one-brussels)
+* lotNumber = "L00156"
 * occurrenceDateTime = "2016-05-30"
 * manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
@@ -71,10 +62,10 @@ Title:   "Toto - First hexavalent vaccination"
 * performer[1].actor.identifier.value = "Hospital Midwife 1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-//* protocolApplied.doseNumberPositiveInt = 1
-//* protocolApplied.seriesDosesPositiveInt = 4
-* extension[administeredProduct].extension[reference].valueReference.identifier.system = "http://snomed.info/sct"
-* extension[administeredProduct].extension[reference].valueReference.identifier.value = "3050176"
+* protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.seriesDosesPositiveInt = 4
+* extension[administeredProduct].valueReference.identifier.system = "http://snomed.info/sct"
+* extension[administeredProduct].valueReference.identifier.value = "3050176"
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 2 =============================================*/
@@ -83,7 +74,6 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Toto - 2nd hexavalent vaccination"
 Title:   "Toto - 2nd hexavalent vaccination"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * identifier.value = "e15cd3d6-cfd8-4f77-9c78-9eb1a0fe5671"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
@@ -91,8 +81,8 @@ Title:   "Toto - 2nd hexavalent vaccination"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"
 * recorded = "2016-07-04"
-* encounter = Reference(demo-encounter)
-* extension[administeredProduct].extension[lotNumber].valueString = "L00156"
+* extension[vaccination-location].valueReference = Reference(org-one-brussels)
+* lotNumber = "L00156"
 * occurrenceDateTime = "2016-07-04"
 * manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
@@ -101,10 +91,10 @@ Title:   "Toto - 2nd hexavalent vaccination"
 * performer[1].actor.identifier.value = "ONE Nurse  1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-//* protocolApplied.doseNumberPositiveInt = 2
-//* protocolApplied.seriesDosesPositiveInt = 4
-* extension[administeredProduct].extension[reference].valueReference.identifier.system = "http://snomed.info/sct"
-* extension[administeredProduct].extension[reference].valueReference.identifier.value = "3050176"
+* protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.seriesDosesPositiveInt = 4
+* extension[administeredProduct].valueReference.identifier.system = "http://snomed.info/sct"
+* extension[administeredProduct].valueReference.identifier.value = "3050176"
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 3 =============================================*/
@@ -113,7 +103,6 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Toto - 3rd hexavalent  vaccination"
 Title:   "Toto - 3rd hexavalent  vaccination"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * identifier.value = "fb2e2bbb-6a25-4d02-b3d7-8ac0b3efb57b"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
@@ -121,8 +110,8 @@ Title:   "Toto - 3rd hexavalent  vaccination"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"
 * recorded = "2016-09-01"
-* encounter = Reference(demo-encounter)
-* extension[administeredProduct].extension[lotNumber].valueString = "L00168"
+* extension[vaccination-location].valueReference = Reference(org-one-brussels)
+* lotNumber = "L00168"
 * occurrenceDateTime = "2016-09-01"
 * manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
@@ -131,10 +120,10 @@ Title:   "Toto - 3rd hexavalent  vaccination"
 * performer[1].actor.identifier.value = "ONE Dr 1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-//* protocolApplied.doseNumberPositiveInt = 3
-//* protocolApplied.seriesDosesPositiveInt = 4
+* protocolApplied.doseNumberPositiveInt = 3
+* protocolApplied.seriesDosesPositiveInt = 4
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
-* extension[administeredProduct].extension[coded].valueCodeableConcept.coding = http://whocc.no/atc#J07CA09 
+* extension[administeredProduct].valueCodeableConcept.coding = http://whocc.no/atc#J07CA09 
 
 /*============================================= Example 4 =============================================*/
 Instance: toto-hexa4-skipped
@@ -142,7 +131,6 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Toto - 4th hexavalent  vaccination - skipped (fever)"
 Title:   "Toto - 4th hexavalent  vaccination - skipped (fever)"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * identifier.value = "c3743217-7b07-4370-b5e2-3eb0f2af108a"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
@@ -153,15 +141,15 @@ Title:   "Toto - 4th hexavalent  vaccination - skipped (fever)"
 * patient.identifier.value = "16032376921"
 * recorded = "2017-06-16"
 * reasonReference = Reference(fever)
-* encounter = Reference(demo-encounter)
+* extension[vaccination-location].valueReference = Reference(org-one-brussels)
 * occurrenceDateTime = "2017-06-16"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "NIHDI_ONE"
 * performer[1].actor.identifier.value = "ONE Nurse 2"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-//* protocolApplied.doseNumberPositiveInt = 4
-//* protocolApplied.seriesDosesPositiveInt = 4
+* protocolApplied.doseNumberPositiveInt = 4
+* protocolApplied.seriesDosesPositiveInt = 4
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 5 =============================================*/
@@ -170,17 +158,16 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Toto - 4th hexavalent vaccination"
 Title:   "Toto - 4th hexavalent vaccination"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* contained = angioedema 
+* contained = erythema 
 * identifier.value = "1c4feb6a-275d-4029-9466-31b353710f84"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
 * status = #completed
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"
 * recorded = "2017-06-23"
-* encounter = Reference(demo-encounter)
-* extension[administeredProduct].extension[lotNumber].valueString = "L16855"
+* extension[vaccination-location].valueReference = Reference(org-one-brussels)
+* lotNumber = "L16855"
 * occurrenceDateTime = "2017-06-23"
 * manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
@@ -189,10 +176,9 @@ Title:   "Toto - 4th hexavalent vaccination"
 * performer[1].actor.identifier.value = "ONE Nurse  1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-* reaction.detail = Reference (angioedema)
-* reaction.date = "2017-06-23"
-//* protocolApplied.doseNumberPositiveInt = 4
-//* protocolApplied.seriesDosesPositiveInt = 4
+* reaction.detail = Reference (erythema)
+* protocolApplied.doseNumberPositiveInt = 4
+* protocolApplied.seriesDosesPositiveInt = 4
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 
@@ -202,7 +188,6 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Juan - 1st hexa (reported)"
 Title:   "Juan - 1st hexa (reported)"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * identifier.value = "9fa7c8fd-318e-45ff-9373-5cdbe8e0f778"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
@@ -210,16 +195,16 @@ Title:   "Juan - 1st hexa (reported)"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/one-patientid"
 * patient.identifier.value = "3564564568"
 * recorded = "2016-05-30"
-* encounter = Reference(demo-encounter)
-* extension[administeredProduct].extension[lotNumber].valueString = "NA"
+* extension[vaccination-location].valueReference = Reference(org-one-brussels)
+* lotNumber = "NA"
 * occurrenceDateTime = "2016-05-30"
 * manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.value = "Reference(Spain)"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-//* protocolApplied.doseNumberPositiveInt = 1
-//* protocolApplied.seriesDosesPositiveInt = 3
+* protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-confirmationStatus].valueCode = #unconfirmed
 /*============================================= Example 7 =============================================*/
 Instance: juan-hexa2-reported-hospital
@@ -234,7 +219,7 @@ Title:   "Juan - 2nd hexa (hospital)"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/one-patientid"
 * patient.identifier.value = "3564564568"
 * recorded = "2016-07-29"
-* extension[administeredProduct].extension[lotNumber].valueString = "NA"
+* lotNumber = "NA"
 * occurrenceDateTime = "2016-07-29"
 * manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
@@ -243,8 +228,8 @@ Title:   "Juan - 2nd hexa (hospital)"
 * performer[1].actor.identifier.value = "Hospital Nurse 2"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-//* protocolApplied.doseNumberPositiveInt = 2
-//* protocolApplied.seriesDosesPositiveInt = 3
+* protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-confirmationStatus].valueCode = #unconfirmed
 /*============================================= Example 8 =============================================*/
 Instance: juan-hexa3-skipped
@@ -259,7 +244,7 @@ Title:   "Juan - 3rd hexa (not done)"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/one-patientid"
 * patient.identifier.value = "3564564568"
 * recorded = "2017-03-22"
-* extension[administeredProduct].extension[lotNumber].valueString = "NA"
+* lotNumber = "NA"
 * occurrenceDateTime = "2017-03-22"
 * manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
@@ -268,8 +253,8 @@ Title:   "Juan - 3rd hexa (not done)"
 * performer[1].actor.identifier.value = "ONE Dr 2"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-//* protocolApplied.doseNumberPositiveInt = 3
-//* protocolApplied.seriesDosesPositiveInt = 3
+* protocolApplied.doseNumberPositiveInt = 3
+* protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 9 =============================================*/
 Instance: juan-hexa4
@@ -284,7 +269,7 @@ Title:   "Juan - 3rd hexa (effective)"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/one-patientid"
 * patient.identifier.value = "3564564568"
 * recorded = "2017-03-23"
-* extension[administeredProduct].extension[lotNumber].valueString = "L43476"
+* lotNumber = "L43476"
 * occurrenceDateTime = "2017-03-23"
 * manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
@@ -292,8 +277,8 @@ Title:   "Juan - 3rd hexa (effective)"
 * performer[0].actor.identifier.value = "NIHDI_ONE"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
-//* protocolApplied.doseNumberPositiveInt = 3
-//* protocolApplied.seriesDosesPositiveInt = 3
+* protocolApplied.doseNumberPositiveInt = 3
+* protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 10 =============================================*/
 Instance: eva-hpv1-school
@@ -313,8 +298,8 @@ Title:   "Eva - HPV 1st dose"
 * performer[0].actor.identifier.value = "Reference(School2)"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[=].code = http://snomed.info/sct#911000221103
-//* protocolApplied.doseNumberPositiveInt = 1
-//* protocolApplied.seriesDosesPositiveInt = 2
+* protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.seriesDosesPositiveInt = 2
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 11 =============================================*/
 Instance: eva-hpv2-school
@@ -334,8 +319,8 @@ Title:   "Eva - HPV 2nd dose"
 * performer[0].actor.identifier.value = "Reference(School2)"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #911000221103
-//* protocolApplied.doseNumberPositiveInt = 2
-//* protocolApplied.seriesDosesPositiveInt = 2
+* protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.seriesDosesPositiveInt = 2
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 12 =============================================*/
 Instance: julia-refuse-hpv
@@ -352,8 +337,8 @@ Title:   "Julia - refuse HPV"
 * performer[0].actor.identifier.value = "Reference(School2)"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #911000221103
-//* protocolApplied.doseNumberPositiveInt = 1
-//* protocolApplied.seriesDosesPositiveInt = 2
+* protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.seriesDosesPositiveInt = 2
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 Instance: simon-hpv-at-work
 InstanceOf: BeVaccination 
@@ -370,8 +355,8 @@ Title:   "Simon HPV - work"
 * performer[0].actor.identifier.value = "Reference(Company1)"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #911000221103
-//* protocolApplied.doseNumberPositiveInt = 1
-//* protocolApplied.seriesDosesPositiveInt = 1
+* protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.seriesDosesPositiveInt = 1
 * extension[vaccination-originalorder].valueReference = Reference(order-simon-hpv)
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 14 =============================================*/
@@ -404,8 +389,8 @@ Title:   "Aymeric - rotavirus 1st dose"
 * performer[0].actor.identifier.value = "NIHDI_GP1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871761004
-//* protocolApplied.doseNumberPositiveInt = 1
-//* protocolApplied.seriesDosesPositiveInt = 3
+* protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-originalorder].valueReference = Reference(aymeric-rota)
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 15 =============================================*/
@@ -425,8 +410,8 @@ Title:   "Aymeric - rotavirus 2nd dose"
 * performer[0].actor.identifier.value = "NIHDI_GP1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871761004
-//* protocolApplied.doseNumberPositiveInt = 2
-//* protocolApplied.seriesDosesPositiveInt = 3
+* protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-originalorder].valueReference = Reference(aymeric-rota)
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 16 =============================================*/
@@ -446,8 +431,8 @@ Title:   "Aymeric - rotavirus 3rd dose"
 * performer[0].actor.identifier.value = "NIHDI_GP1"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871761004
-//* protocolApplied.doseNumberPositiveInt = 3
-//* protocolApplied.seriesDosesPositiveInt = 3
+* protocolApplied.doseNumberPositiveInt = 3
+* protocolApplied.seriesDosesPositiveInt = 3
 * extension[vaccination-originalorder].valueReference = Reference(aymeric-rota)
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 /*============================================= Example 17 =============================================*/
@@ -467,8 +452,8 @@ Title:   "Gabriel - influenza vaccine"
 * performer[0].actor.identifier.value = "NIHDI_GP2"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #1181000221105
-//* protocolApplied.doseNumberString = "2020"
-//* protocolApplied.seriesDosesString = "Yearly"
+* protocolApplied.doseNumberString = "2020"
+* protocolApplied.seriesDosesString = "Yearly"
 * extension[vaccination-originalorder].valueReference = Reference(order-gabriel-flu)
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 
@@ -588,7 +573,7 @@ Title:    "Immunization Example - 2. childhood measles"
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding = http://snomed.info/sct#871765008
+* vaccineCode.text = "mazelen"
 //* patient = Reference(pia)
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
@@ -604,7 +589,6 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination in unknown date by an organization"
 Title:    "Immunization Example - 3. Emergency reinforcement"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * language = #nl-BE
 * identifier.value = "82786523"
@@ -622,7 +606,7 @@ Title:    "Immunization Example - 3. Emergency reinforcement"
 * performer.actor = Reference(org-uz-gent)
 * recorded = "2020-05-17"
 * occurrenceString = "Summer 2011"
-* encounter = Reference(demo-encounter)
+* extension[be-ext-vaccination-location].valueReference = Reference(org-uz-gent)
 
 
 Instance: immunization-example-not-given-stock
@@ -630,7 +614,6 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * language = #nl-BE
 * identifier.value = "6025645645645"
@@ -639,19 +622,19 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
 * status = #not-done
-* statusReason.coding.code =  http://terminology.hl7.org/CodeSystem/v3-ActReason#OSTOCK
+* statusReason.coding.code = #OSTOCK
 * statusReason.coding.display = "Geen voorraad"
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
 
-* vaccineCode.coding.code = http://snomed.info/sct#911000221103
+* vaccineCode.coding.code = #911000221103
 * vaccineCode.coding.display = "Hepatitis B"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 //* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* encounter = Reference(demo-encounter)
+* extension[be-ext-vaccination-location].valueReference = Reference(org-kind-en-gezin)
 
 
 
@@ -667,7 +650,6 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of immunization not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * language = #nl-BE
 * identifier.value = "6021840732"
@@ -686,7 +668,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 // * occurrenceString = "Summer 2011"
 * performer.actor = Reference(org-kind-en-gezin)
-* encounter = Reference(demo-encounter)
+* extension[be-ext-vaccination-location].valueReference = Reference(org-kind-en-gezin)
 * note.text = "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten"
 
 
@@ -696,7 +678,6 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * language = #nl-BE
 * identifier.value = "2687758923"
@@ -705,7 +686,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding.code = http://snomed.info/sct#911000221103
+* vaccineCode.coding.code = #911000221103
 * vaccineCode.coding.display = "Hepatitis B"
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
@@ -715,7 +696,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 //* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* encounter = Reference(demo-encounter)
+* extension[be-ext-vaccination-location].valueReference = Reference(org-kind-en-gezin)
 
 
 
@@ -724,7 +705,6 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination entered in error"
 Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * language = #nl-BE
 * identifier.value = "2687758923"
@@ -744,7 +724,7 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 //* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* encounter = Reference(demo-encounter)
+* extension[be-ext-vaccination-location].valueReference = Reference(org-kind-en-gezin)
 
 
 Instance: immunization-example-mistaken-entry-update
@@ -752,7 +732,6 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination entered in error"
 Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
-* contained[+] = demo-encounter
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * language = #nl-BE
 * identifier.value = "26877589231"
@@ -772,7 +751,7 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 //* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* encounter = Reference(demo-encounter)
+* extension[be-ext-vaccination-location].valueReference = Reference(org-kind-en-gezin)
 
 
 Instance: immunization-example-prescribed-vaccination
@@ -780,7 +759,6 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination entered in error"
 Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
-* contained[+] = demo-encounter
 * language = #nl-BE
 * identifier.value = "26877589231"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -798,7 +776,7 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 //* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* encounter = Reference(demo-encounter)
+* extension[be-ext-vaccination-location].valueReference = Reference(org-kind-en-gezin)
 
 
 Instance: observation-swelling
@@ -808,7 +786,7 @@ Description: "Example of vaccination reaction detail"
 Title:    "Swelling and redness"
 * language = #nl-BE
 * status = #final
-* code.coding[0].code = #16032376921
+* code.coding[0].code = #65124004
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[0].display = "Swelling (finding)"
 
@@ -817,7 +795,6 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination reaction"
 Title:    "Immunization Example - Immediate reaction (swelling and redness) upon administration"
-* contained[+] = demo-encounter
 * language = #nl-BE
 * identifier.value = "26877583455"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -834,7 +811,7 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 //* patient = Reference(pia)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * performer.actor = Reference(org-kind-en-gezin)
-* encounter = Reference(demo-encounter)
+* extension[be-ext-vaccination-location].valueReference = Reference(org-kind-en-gezin)
 * reaction.date = "2020-05-12"
 * reaction.detail = Reference(observation-swelling)
 * recorded = "2020-05-12"
@@ -847,22 +824,22 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 /*============================================= Example 2 =============================================*/
 
 Instance: othercode
-InstanceOf: BeVaccination
+InstanceOf: Immunization
 Usage: #example
+* meta.source = "#dLjvJf7nbN6fO26H"
+* meta.profile = "http://example.com/fhir/example/StructureDefinition/be-vaccination"
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
 * identifier.value = "e15cd3d6-cfd8-4f77-9c78-9eb1a0fe5671"
 * status = #completed
 * vaccineCode = https://ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code#other
-* vaccineCode.text = "If value is other, this cannot be empty"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"
 * occurrenceDateTime = "2016-07-04"
 * recorded = "2016-07-04"
-* extension[administeredProduct].extension[lotNumber].valueString  = "L00156"
+* lotNumber = "L00156"
 * doseQuantity.value = 1
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[=].actor.identifier.value = "NIHDI_ONE"
 * performer[+].actor.identifier.value = "ONE Nurse  1"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
-//* protocolApplied.doseNumberPositiveInt = 2
-//* protocolApplied.seriesDosesPositiveInt = 4
+* protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.seriesDosesPositiveInt = 4
