@@ -4,6 +4,15 @@ Id: be-vs-vaccination-bodysite
 Title: "BeVSVaccinationBodySite"
 Description:  "Vaccination Body Site Value Set"
 * ^status = #draft
+* include  http://snomed.info/sct#35259002 
+* include  http://snomed.info/sct#50092008 
+* include  http://snomed.info/sct#102291007 
+* include  http://snomed.info/sct#371309009 
+* include  http://snomed.info/sct#5742000 
+* include  http://snomed.info/sct#371305003 
+
+
+/*
 * include  http://snomed.info/sct#113345001
 * include  http://snomed.info/sct#53505006
 * include  http://snomed.info/sct#14975008
@@ -47,3 +56,4 @@ Description:  "Vaccination Body Site Value Set"
 * include  http://snomed.info/sct#76784001
 * include  http://snomed.info/sct#18911002
 * include  http://snomed.info/sct#89545001
+*/
