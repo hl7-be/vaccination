@@ -5,6 +5,7 @@ Title:          "BeVaccination"
 Description:    """ 
     Defines constraints and extensions on the immunization resource to represent an immunization event i.e. the administration of a vaccine."""
 
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * status MS
 * statusReason MS
 * vaccineCode MS

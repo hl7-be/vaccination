@@ -16,4 +16,5 @@ Description: "The product administered"
 * extension[lotNumber].value[x] only string
 * extension[expirationDate] ^short = "Expiration date of the administered product, if it is a code"
 * extension[expirationDate].value[x] only date
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
