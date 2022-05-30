@@ -3,6 +3,7 @@ Id: be-vs-vaccine-code
 Title: "BeVSVaccineCode"
 Description:  "Vaccine Code Value Set - the types of vaccines that are administered in Belgium (incomplete set of values - to be completed by NRC (FPS Health)"
 * ^status = #draft
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * codes from system BeCSVaccineCode
 * include http://snomed.info/sct#1119220001
 * include http://snomed.info/sct#1052328007
