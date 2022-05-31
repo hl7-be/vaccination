@@ -1,60 +1,437 @@
-ValueSet: BeVSVaccineCode
-Id: be-vs-vaccine-code
-Title: "BeVSVaccineCode"
-Description:  "Vaccine Code Value Set - the types of vaccines that are administered in Belgium (incomplete set of values - to be completed by NRC (FPS Health)"
-* ^status = #draft
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
-* codes from system BeCSVaccineCode
-* include http://snomed.info/sct#1119220001
-* include http://snomed.info/sct#1052328007
-* include http://snomed.info/sct#981000221107
-* include http://snomed.info/sct#1052330009
-* include http://snomed.info/sct#1119254000
-* include http://snomed.info/sct#787859002
-* include http://snomed.info/sct#871737006
-* include http://snomed.info/sct#961000221100
-* include http://snomed.info/sct#871804001
-* include http://snomed.info/sct#991000221105
-* include http://snomed.info/sct#871729003
-* include http://snomed.info/sct#871875004
-* include http://snomed.info/sct#871826000
-* include http://snomed.info/sct#871878002
-* include http://snomed.info/sct#871837004
-* include http://snomed.info/sct#871891001
-* include http://snomed.info/sct#871895005
-* include http://snomed.info/sct#871887006
-* include http://snomed.info/sct#871886002
-* include http://snomed.info/sct#871717007
-* include http://snomed.info/sct#871751006
-* include http://snomed.info/sct#871803007
-* include http://snomed.info/sct#871822003
-* include http://snomed.info/sct#871764007
-* include http://snomed.info/sct#836500008
-* include http://snomed.info/sct#911000221103
-* include http://snomed.info/sct#1991000221106
-* include http://snomed.info/sct#2001000221108
-* include http://snomed.info/sct#871767000
-* include http://snomed.info/sct#871724008
-* include http://snomed.info/sct#871758000
-* include http://snomed.info/sct#871765008
-* include http://snomed.info/sct#871831003
-* include http://snomed.info/sct#871908002
-* include http://snomed.info/sct#871817003
-* include http://snomed.info/sct#921000221108
-* include http://snomed.info/sct#871866001
-* include http://snomed.info/sct#871871008
-* include http://snomed.info/sct#1981000221108
-* include http://snomed.info/sct#871873006
-* include http://snomed.info/sct#871727001
-* include http://snomed.info/sct#871739009
-* include http://snomed.info/sct#871726005
-* include http://snomed.info/sct#871761004
-* include http://snomed.info/sct#871732000
-* include http://snomed.info/sct#1181000221105
-* include http://snomed.info/sct#871719005
-* include http://snomed.info/sct#871742003
-* include http://snomed.info/sct#1861000221106
-* include http://snomed.info/sct#871919004
-* include http://snomed.info/sct#871720004
-* include http://snomed.info/sct#871721000
-* include http://snomed.info/sct#28531000087107
+Instance: be-vs-vaccine-code
+InstanceOf: ValueSet
+Usage: #definition
+* status = #draft
+* name = "BeVSVaccineCode"
+* title = "BeVSVaccineCode"
+* description = "Vaccine Code Value Set - the types of vaccines that are administered in Belgium (incomplete set of values - to be completed by NRC (FPS Health)"
+* version = "1.0.0"
+* url = "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* extension.valueInteger = 1
+* compose.include[0].system = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code"
+* compose.include[+].system = "http://snomed.info/sct"
+* compose.include[=].concept.0.code = 1119220001
+* compose.include[=].concept.0.display = "23 valent polysaccharide against pneumonia"
+* compose.include[=].concept.0.designation[0].language = "fr-BE"
+* compose.include[=].concept.0.designation[=].value = "vaccin contenant uniquement l'antigène polysaccharide capsulaire des pneumocoques de sérotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F et 33F (23 types)"
+* compose.include[=].concept.0.designation[+].language = "nl-BE"
+* compose.include[=].concept.0.designation[=].value = "vaccin met enkel antigeen van polysacharidekapsel van pneumokokken serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F en 33F (23 types)"
+* compose.include[=].concept.0.designation[+].language = "en"
+* compose.include[=].concept.0.designation[=].value = "Streptococcus pneumoniae Danish serotype 1, 2, 3, 4, 5, 6B, 7F, 8, 9N, 9V, 10A, 11A, 12F, 14, 15B, 17F, 18C, 19A, 19F, 20, 22F, 23F, and 33F capsular polysaccharide antigens only vaccine product"
+* compose.include[=].concept.1.code = 1052328007
+* compose.include[=].concept.1.display = "7 valent polysaccharide against pneumonia"
+* compose.include[=].concept.1.designation[0].language = "fr-BE"
+* compose.include[=].concept.1.designation[=].value = "vaccin contenant l'antigène polysaccharide capsulaire conjugué des pneumocoques de sérotype  4, 6B, 9V, 14, 18C, 19F et 23F (7 types) "
+* compose.include[=].concept.1.designation[+].language = "nl-BE"
+* compose.include[=].concept.1.designation[=].value = "vaccin met geconjugeerd antigeen van polysacharidekapsel van pneumokokken serotype 4, 6B, 9V, 14, 18C, 19F en 23F (7 types)"
+* compose.include[=].concept.1.designation[+].language = "en"
+* compose.include[=].concept.1.designation[=].value = "Pneumococcal 4, 6B, 9V, 14, 18C, 19F, and 23F conjugate vaccine"
+* compose.include[=].concept.2.code = 981000221107
+* compose.include[=].concept.2.display = "Pneumococcal vaccine"
+* compose.include[=].concept.2.designation[0].language = "fr-BE"
+* compose.include[=].concept.2.designation[=].value = "vaccin pneumococcique"
+* compose.include[=].concept.2.designation[+].language = "nl-BE"
+* compose.include[=].concept.2.designation[=].value = "vaccin met enkel antigeen van Streptococcus pneumoniae"
+* compose.include[=].concept.2.designation[+].language = "en"
+* compose.include[=].concept.2.designation[=].value = "Pneumococcal vaccine"
+* compose.include[=].concept.3.code = 1052330009
+* compose.include[=].concept.3.display = "10 Valent polysaccharide against pneumonia"
+* compose.include[=].concept.3.designation[0].language = "fr-BE"
+* compose.include[=].concept.3.designation[=].value = "vaccin contenant l'antigène polysaccharide capsulaire conjugué des pneumocoques de sérotype  1, 4, 5, 6B, 7F, 9V, 14, 18C, 19F et 23F (10 types)"
+* compose.include[=].concept.3.designation[+].language = "nl-BE"
+* compose.include[=].concept.3.designation[=].value = "vaccin met geconjugeerd antigeen van polysacharidekapsel van pneumokokken serotype 1, 4, 5, 6B, 7F, 9V, 14, 18C, 19F en 23F (10 types)"
+* compose.include[=].concept.3.designation[+].language = "en"
+* compose.include[=].concept.3.designation[=].value = "Pneumococcal 10-valent conjugate vaccine"
+* compose.include[=].concept.4.code = 1119254000
+* compose.include[=].concept.4.display = "13 Valent polysaccharide against pneumonia"
+* compose.include[=].concept.4.designation[0].language = "fr-BE"
+* compose.include[=].concept.4.designation[=].value = "vaccin contenant l'antigène polysaccharide capsulaire conjugué des pneumocoques de sérotype  1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F et 23F (13 types)"
+* compose.include[=].concept.4.designation[+].language = "nl-BE"
+* compose.include[=].concept.4.designation[=].value = "vaccin met enkel antigeen van polysacharidekapsel van pneumokokken serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F en 23F (13 types)"
+* compose.include[=].concept.4.designation[+].language = "en"
+* compose.include[=].concept.4.designation[=].value = "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens (medicinal product)"
+* compose.include[=].concept.5.code = 787859002
+* compose.include[=].concept.5.display = "other"
+* compose.include[=].concept.5.designation[0].language = "fr-BE"
+* compose.include[=].concept.5.designation[=].value = "vaccin"
+* compose.include[=].concept.5.designation[+].language = "nl-BE"
+* compose.include[=].concept.5.designation[=].value = "vaccin"
+* compose.include[=].concept.5.designation[+].language = "en"
+* compose.include[=].concept.5.designation[=].value = "Vaccine product"
+* compose.include[=].concept.6.code = 871737006
+* compose.include[=].concept.6.display = "Mumps"
+* compose.include[=].concept.6.designation[0].language = "fr-BE"
+* compose.include[=].concept.6.designation[=].value = "vaccin contenant uniquement l'antigène du virus ourlien (myxovirus parotidis)"
+* compose.include[=].concept.6.designation[+].language = "nl-BE"
+* compose.include[=].concept.6.designation[=].value = "vaccin met enkel antigeen van parotitisvirus"
+* compose.include[=].concept.6.designation[+].language = "en"
+* compose.include[=].concept.6.designation[=].value = "Mumps orthorubulavirus antigen only vaccine product"
+* compose.include[=].concept.7.code = 961000221100
+* compose.include[=].concept.7.display = "Thyphoid"
+* compose.include[=].concept.7.designation[0].language = "fr-BE"
+* compose.include[=].concept.7.designation[=].value = "vaccin contenant uniquement l'antigène de Salmonella enterica subspecies enterica serovar Typhi"
+* compose.include[=].concept.7.designation[+].language = "nl-BE"
+* compose.include[=].concept.7.designation[=].value = "vaccin met enkel antigeen van Salmonella enterica subspecies enterica serovar Typhi"
+* compose.include[=].concept.7.designation[+].language = "en"
+* compose.include[=].concept.7.designation[=].value = "Typhoid vaccine"
+* compose.include[=].concept.8.code = 871804001
+* compose.include[=].concept.8.display = "Typhoid + hepatitis A"
+* compose.include[=].concept.8.designation[0].language = "fr-BE"
+* compose.include[=].concept.8.designation[=].value = "vaccin combiné contenant l'antigène de l'hépatite B et de Salmonella enterica subspecies enterica serovar Typhi"
+* compose.include[=].concept.8.designation[+].language = "nl-BE"
+* compose.include[=].concept.8.designation[=].value = "vaccin met enkel antigenen van hepatitis B en van Salmonella enterica subspecies enterica serovar Typhi"
+* compose.include[=].concept.8.designation[+].language = "en"
+* compose.include[=].concept.8.designation[=].value = "Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens only vaccine product"
+* compose.include[=].concept.9.code = 991000221105
+* compose.include[=].concept.9.display = "Cholera"
+* compose.include[=].concept.9.designation[0].language = "fr-BE"
+* compose.include[=].concept.9.designation[=].value = "Vaccin contenant uniquement l'antigène du Vibrio Cholerae"
+* compose.include[=].concept.9.designation[+].language = "nl-BE"
+* compose.include[=].concept.9.designation[=].value = "vaccin met uitsluitend antigeen van Vibrio cholerae"
+* compose.include[=].concept.9.designation[+].language = "en"
+* compose.include[=].concept.9.designation[=].value = "Cholera vaccine"
+* compose.include[=].concept.10.code = 871729003
+* compose.include[=].concept.10.display = "Diphteria"
+* compose.include[=].concept.10.designation[0].language = "fr-BE"
+* compose.include[=].concept.10.designation[=].value = "vaccin contenant uniquement l'antigène du Corynebacterium diphteriae"
+* compose.include[=].concept.10.designation[+].language = "nl-BE"
+* compose.include[=].concept.10.designation[=].value = "vaccin met enkel antigeen van Corynebacterium diphtheriae"
+* compose.include[=].concept.10.designation[+].language = "en"
+* compose.include[=].concept.10.designation[=].value = "Corynebacterium diphtheriae antigen only vaccine product"
+* compose.include[=].concept.11.code = 871875004
+* compose.include[=].concept.11.display = "Diphtheria + tetanus + pertussis"
+* compose.include[=].concept.11.designation[0].language = "fr-BE"
+* compose.include[=].concept.11.designation[=].value = "vaccin combiné contre la diphtérie, le tétanos et la coqueluche"
+* compose.include[=].concept.11.designation[+].language = "nl-BE"
+* compose.include[=].concept.11.designation[=].value = "vaccin tegen difterie, tetanus en kinkhoest"
+* compose.include[=].concept.11.designation[+].language = "en"
+* compose.include[=].concept.11.designation[=].value = "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"
+* compose.include[=].concept.12.code = 871826000
+* compose.include[=].concept.12.display = "Diphtheria + tetanus"
+* compose.include[=].concept.12.designation[0].language = "fr-BE"
+* compose.include[=].concept.12.designation[=].value = "vaccin combiné contre la diphtérie et le tétanos"
+* compose.include[=].concept.12.designation[+].language = "nl-BE"
+* compose.include[=].concept.12.designation[=].value = "vaccin met enkel antigenen van Corynebacterium diphtheriae en Clostridium tetani"
+* compose.include[=].concept.12.designation[+].language = "en"
+* compose.include[=].concept.12.designation[=].value = "Diphtheria and tetanus vaccine"
+* compose.include[=].concept.13.code = 871878002
+* compose.include[=].concept.13.display = "Diphtheria + tetanus + pertussis + poliomyelitis"
+* compose.include[=].concept.13.designation[0].language = "fr-BE"
+* compose.include[=].concept.13.designation[=].value = "vaccin combiné contre la  diphtérie, le tétanos, la coqueluche et la poliomyélite"
+* compose.include[=].concept.13.designation[+].language = "nl-BE"
+* compose.include[=].concept.13.designation[=].value = "vaccin tegen difterie, tetanus, kinkhoest en poliomyelitis"
+* compose.include[=].concept.13.designation[+].language = "en"
+* compose.include[=].concept.13.designation[=].value = "Diphtheria and pertussis and poliomyelitis and tetanus vaccine"
+* compose.include[=].concept.14.code = 871837004
+* compose.include[=].concept.14.display = "Diphtheria + tetanus + Polio"
+* compose.include[=].concept.14.designation[0].language = "fr-BE"
+* compose.include[=].concept.14.designation[=].value = "vaccin combiné contre la diphtérie, le tétanos et la poliomyélite"
+* compose.include[=].concept.14.designation[+].language = "nl-BE"
+* compose.include[=].concept.14.designation[=].value = "vaccin tegen difterie, tetanus en poliomyelitis"
+* compose.include[=].concept.14.designation[+].language = "en"
+* compose.include[=].concept.14.designation[=].value = "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)"
+* compose.include[=].concept.15.code = 871891001
+* compose.include[=].concept.15.display = " Diphtheria + tetanus + pertussis + poliomyelitis + hepatitis B"
+* compose.include[=].concept.15.designation[0].language = "fr-BE"
+* compose.include[=].concept.15.designation[=].value = "vaccin combiné contre la  diphtérie, le tétanos, la coqueluche, la poliomyélite et l' hépatite B"
+* compose.include[=].concept.15.designation[+].language = "nl-BE"
+* compose.include[=].concept.15.designation[=].value = "vaccin met antigeen van difterie-, tetanus-, kinkhoest- (acellulair), hepatitis B en geïnactiveerd 'whole' humaan poliovirus"
+* compose.include[=].concept.15.designation[+].language = "en"
+* compose.include[=].concept.15.designation[=].value = "Acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B and inactivated whole Human poliovirus antigens only vaccine product"
+* compose.include[=].concept.16.code = 871895005
+* compose.include[=].concept.16.display = "Diphtheria + tetanus + pertussis + poliomyelitis + haemophilus influenzae b + hepatitis B"
+* compose.include[=].concept.16.designation[0].language = "fr-BE"
+* compose.include[=].concept.16.designation[=].value = "vaccin combiné contre la diphtérie, le tétanos, la coqueluche, la poliomyélite, l'hemophilus influenzae de type b et l'hépatite B"
+* compose.include[=].concept.16.designation[+].language = "nl-BE"
+* compose.include[=].concept.16.designation[=].value = "vaccin tegen difterie, tetanus, kinkhoest, poliomyelitis, Haemophilus influenzae type b en hepatitis B"
+* compose.include[=].concept.16.designation[+].language = "en"
+* compose.include[=].concept.16.designation[=].value = "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)"
+* compose.include[=].concept.17.code = 871887006
+* compose.include[=].concept.17.display = "Diphtheria + tetanus + pertussis + poliomyelitis + haemophilus influenzae b"
+* compose.include[=].concept.17.designation[0].language = "fr-BE"
+* compose.include[=].concept.17.designation[=].value = "vaccin combiné contre la diphtérie, le tétanos, la coqueluche, la poliomyélite et  l'hemophilus influenzae B"
+* compose.include[=].concept.17.designation[+].language = "nl-BE"
+* compose.include[=].concept.17.designation[=].value = "vaccin tegen difterie, tetanus, kinkhoest, poliomyelitis en Haemophilus influenzae type b"
+* compose.include[=].concept.17.designation[+].language = "en"
+* compose.include[=].concept.17.designation[=].value = "Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens only vaccine product"
+* compose.include[=].concept.18.code = 871886002
+* compose.include[=].concept.18.display = "Diphtheria + tetanus + pertussis + haemophilus influenzae b + hepatitis B"
+* compose.include[=].concept.18.designation[0].language = "fr-BE"
+* compose.include[=].concept.18.designation[=].value = "vaccin combiné contre la diphtérie, le tétanos, la coqueluche, l'hemophilus influenzae de type b et l'hépatite B"
+* compose.include[=].concept.18.designation[+].language = "nl-BE"
+* compose.include[=].concept.18.designation[=].value = "vaccin tegen difterie, tetanus, kinkhoest, Haemophilus influenzaetype type b en hepatitis B"
+* compose.include[=].concept.18.designation[+].language = "en"
+* compose.include[=].concept.18.designation[=].value = "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus antigens (medicinal product)"
+* compose.include[=].concept.19.code = 871717007
+* compose.include[=].concept.19.display = "Yellow fever"
+* compose.include[=].concept.19.designation[0].language = "fr-BE"
+* compose.include[=].concept.19.designation[=].value = "vaccin contenant uniquement l'antigène du virus de la fièvre jaune"
+* compose.include[=].concept.19.designation[+].language = "nl-BE"
+* compose.include[=].concept.19.designation[=].value = "vaccin met enkel antigeen van gelekoortsvirus"
+* compose.include[=].concept.19.designation[+].language = "en"
+* compose.include[=].concept.19.designation[=].value = "Vaccine product containing only Yellow fever virus antigen (medicinal product)"
+* compose.include[=].concept.20.code = 871751006
+* compose.include[=].concept.20.display = "Hepatitis A"
+* compose.include[=].concept.20.designation[0].language = "fr-BE"
+* compose.include[=].concept.20.designation[=].value = "vaccin contenant uniquement l'antigène du virus de l'hépatite A"
+* compose.include[=].concept.20.designation[+].language = "nl-BE"
+* compose.include[=].concept.20.designation[=].value = "vaccin met enkel antigeen van hepatitis A-virus"
+* compose.include[=].concept.20.designation[+].language = "en"
+* compose.include[=].concept.20.designation[=].value = "Vaccine product containing only Hepatitis A virus antigen (medicinal product)"
+* compose.include[=].concept.21.code = 871803007
+* compose.include[=].concept.21.display = "Hepatitis A + B"
+* compose.include[=].concept.21.designation[0].language = "fr-BE"
+* compose.include[=].concept.21.designation[=].value = "vaccin combiné contre l'hépatite A et l'hépatite B"
+* compose.include[=].concept.21.designation[+].language = "nl-BE"
+* compose.include[=].concept.21.designation[=].value = "vaccin met enkel antigenen van hepatitis A-virus en hepatitis B-virus"
+* compose.include[=].concept.21.designation[+].language = "en"
+* compose.include[=].concept.21.designation[=].value = "Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)"
+* compose.include[=].concept.22.code = 871822003
+* compose.include[=].concept.22.display = "Hepatitis B"
+* compose.include[=].concept.22.designation[0].language = "fr-BE"
+* compose.include[=].concept.22.designation[=].value = "vaccin contenant uniquement l'antigène du virus de l'hépatite B"
+* compose.include[=].concept.22.designation[+].language = "nl-BE"
+* compose.include[=].concept.22.designation[=].value = "vaccin met enkel antigeen van hepatitis B-virus"
+* compose.include[=].concept.22.designation[+].language = "en"
+* compose.include[=].concept.22.designation[=].value = "Hepatitis B virus antigen only vaccine product"
+* compose.include[=].concept.23.code = 871764007
+* compose.include[=].concept.23.display = "Hib (haemophilus influenzae type B)"
+* compose.include[=].concept.23.designation[0].language = "fr-BE"
+* compose.include[=].concept.23.designation[=].value = "vaccin contenant uniquement l'antigène de l'Haemophilus influenzae de type b"
+* compose.include[=].concept.23.designation[+].language = "nl-BE"
+* compose.include[=].concept.23.designation[=].value = "vaccin met enkel antigeen van Haemophilus influenzae type b"
+* compose.include[=].concept.23.designation[+].language = "en"
+* compose.include[=].concept.23.designation[=].value = "Haemophilus influenzae type B antigen only vaccine product"
+* compose.include[=].concept.24.code = 836500008
+* compose.include[=].concept.24.display = "Haemophilus influenzae b + meningococcus C"
+* compose.include[=].concept.24.designation[0].language = "fr-BE"
+* compose.include[=].concept.24.designation[=].value = "vaccin combiné contre l'Haemophilus influenzae de type b et les méningocoques du groupe C"
+* compose.include[=].concept.24.designation[+].language = "nl-BE"
+* compose.include[=].concept.24.designation[=].value = "vaccin met enkel antigenen van Haemophilus influenzae type b en Neisseria meningitidis groep C"
+* compose.include[=].concept.24.designation[+].language = "en"
+* compose.include[=].concept.24.designation[=].value = "Vaccine product containing only Haemophilus influenzae type B and Neisseria meningitidis serogroup C antigens (medicinal product)"
+* compose.include[=].concept.25.code = 911000221103
+* compose.include[=].concept.25.display = "Human papillomavirus"
+* compose.include[=].concept.25.designation[0].language = "fr-BE"
+* compose.include[=].concept.25.designation[=].value = "vaccin contenant uniquement l'antigène du Papillomavirus humain"
+* compose.include[=].concept.25.designation[+].language = "nl-BE"
+* compose.include[=].concept.25.designation[=].value = "vaccin met enkel antigeen van humaan papillomavirus (HPV)"
+* compose.include[=].concept.25.designation[+].language = "en"
+* compose.include[=].concept.25.designation[=].value = "Vaccine product containing only Human papillomavirus antigen (medicinal product)"
+* compose.include[=].concept.26.code = 1991000221106
+* compose.include[=].concept.26.display = "Human papillomavirus (HPV 16 and 18)"
+* compose.include[=].concept.26.designation[0].language = "fr-BE"
+* compose.include[=].concept.26.designation[=].value = "vaccin contenant uniquement l'antigène du Papillomavirus humain (HPV) de type 16 et 18"
+* compose.include[=].concept.26.designation[+].language = "nl-BE"
+* compose.include[=].concept.26.designation[=].value = "vaccin met enkel antigenen van humaan papillomavirus (HPV) type 16 en 18"
+* compose.include[=].concept.26.designation[+].language = "en"
+* compose.include[=].concept.26.designation[=].value = "Vaccine product containing only Human papillomavirus 16 and 18 antigens (medicinal product)"
+* compose.include[=].concept.27.code = 2001000221108
+* compose.include[=].concept.27.display = "Human papillomavirus 6, 11, 16 and 18"
+* compose.include[=].concept.27.designation[0].language = "fr-BE"
+* compose.include[=].concept.27.designation[=].value = "vaccin contenant uniquement l'antigène du Papillomavirus humain (HPV) de type 6,11,16 et 18"
+* compose.include[=].concept.27.designation[+].language = "nl-BE"
+* compose.include[=].concept.27.designation[=].value = "vaccin met antigeen van humaan papillomavirus (HPV) 6, 11, 16 en 18"
+* compose.include[=].concept.27.designation[+].language = "en"
+* compose.include[=].concept.27.designation[=].value = "Human papillomavirus 6, 11, 16 and 18 antigens only vaccine product"
+* compose.include[=].concept.28.code = 871767000
+* compose.include[=].concept.28.display = " Human papillomavirus (HPV 6, 11, 16, 18, 31, 33, 45, 53, 58)"
+* compose.include[=].concept.28.designation[0].language = "fr-BE"
+* compose.include[=].concept.28.designation[=].value = "vaccin contenant uniquement l'antigène du Papillomavirus humain (HPV) de type 6,11,16,18,31,33,45,53 et 58"
+* compose.include[=].concept.28.designation[+].language = "nl-BE"
+* compose.include[=].concept.28.designation[=].value = ""
+* compose.include[=].concept.28.designation[+].language = "en"
+* compose.include[=].concept.28.designation[=].value = "Human papillomavirus 9 antigen only vaccine product"
+* compose.include[=].concept.29.code = 871724008
+* compose.include[=].concept.29.display = "Japanese encephalitis"
+* compose.include[=].concept.29.designation[0].language = "fr-BE"
+* compose.include[=].concept.29.designation[=].value = "vaccin contenant uniquement l'antigène du virus de l'Encéphalite japonaise"
+* compose.include[=].concept.29.designation[+].language = "nl-BE"
+* compose.include[=].concept.29.designation[=].value = "vaccin met enkel antigeen van Japanse-encefalitisvirus"
+* compose.include[=].concept.29.designation[+].language = "en"
+* compose.include[=].concept.29.designation[=].value = "Japanese encephalitis virus antigen only vaccine product"
+* compose.include[=].concept.30.code = 871758000
+* compose.include[=].concept.30.display = "Pertussis"
+* compose.include[=].concept.30.designation[0].language = "fr-BE"
+* compose.include[=].concept.30.designation[=].value = "vaccin contenant uniquement l'antigène de Bordetella pertussis (coqueluche)"
+* compose.include[=].concept.30.designation[+].language = "nl-BE"
+* compose.include[=].concept.30.designation[=].value = "vaccin met enkel antigeen van Bordetella pertussis (kinkhoest)"
+* compose.include[=].concept.30.designation[+].language = "en"
+* compose.include[=].concept.30.designation[=].value = "Pertussis vaccine"
+* compose.include[=].concept.31.code = 871765008
+* compose.include[=].concept.31.display = "Measles"
+* compose.include[=].concept.31.designation[0].language = "fr-BE"
+* compose.include[=].concept.31.designation[=].value = "vaccin rontenant uniquement l'antigène du virus de la rougeole"
+* compose.include[=].concept.31.designation[+].language = "nl-BE"
+* compose.include[=].concept.31.designation[=].value = "vaccin met enkel antigeen van mazelenvirus"
+* compose.include[=].concept.31.designation[+].language = "en"
+* compose.include[=].concept.31.designation[=].value = "Measles vaccine"
+* compose.include[=].concept.32.code = 871831003
+* compose.include[=].concept.32.display = "Measles + mumps + rubella"
+* compose.include[=].concept.32.designation[0].language = "fr-BE"
+* compose.include[=].concept.32.designation[=].value = "vaccin combiné contre la rougeole, les oreillons et la rubéole"
+* compose.include[=].concept.32.designation[+].language = "nl-BE"
+* compose.include[=].concept.32.designation[=].value = "vaccin tegen mazelen, bof en rubella"
+* compose.include[=].concept.32.designation[+].language = "en"
+* compose.include[=].concept.32.designation[=].value = "Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)"
+* compose.include[=].concept.33.code = 871908002
+* compose.include[=].concept.33.display = "Measles + mumps + rubella + varicella"
+* compose.include[=].concept.33.designation[0].language = "fr-BE"
+* compose.include[=].concept.33.designation[=].value = "vaccin combiné contre la rougeole, les oreillons, la rubéole et la varicelle"
+* compose.include[=].concept.33.designation[+].language = "nl-BE"
+* compose.include[=].concept.33.designation[=].value = "vaccin tegen mazelen, bof, rubella en windpokken"
+* compose.include[=].concept.33.designation[+].language = "en"
+* compose.include[=].concept.33.designation[=].value = "Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens only vaccine product"
+* compose.include[=].concept.34.code = 871817003
+* compose.include[=].concept.34.display = " Measles + rubella"
+* compose.include[=].concept.34.designation[0].language = "fr-BE"
+* compose.include[=].concept.34.designation[=].value = "vaccin combiné contre la rougeole et la rubéole"
+* compose.include[=].concept.34.designation[+].language = "nl-BE"
+* compose.include[=].concept.34.designation[=].value = "vaccin met enkel antigenen van mazelenvirus en rubellavirus"
+* compose.include[=].concept.34.designation[+].language = "en"
+* compose.include[=].concept.34.designation[=].value = "Measles morbillivirus and Rubella virus antigens only vaccine product"
+* compose.include[=].concept.35.code = 921000221108
+* compose.include[=].concept.35.display = "meningococcus"
+* compose.include[=].concept.35.designation[0].language = "fr-BE"
+* compose.include[=].concept.35.designation[=].value = "vaccin contenant uniquement l'antigène de Neisseria meningitidis"
+* compose.include[=].concept.35.designation[+].language = "nl-BE"
+* compose.include[=].concept.35.designation[=].value = "vaccin met enkel antigeen van Neisseria meningitidis"
+* compose.include[=].concept.35.designation[+].language = "en"
+* compose.include[=].concept.35.designation[=].value = "Neisseria meningitidis antigen only vaccine product"
+* compose.include[=].concept.36.code = 871866001
+* compose.include[=].concept.36.display = " Meningococcus C"
+* compose.include[=].concept.36.designation[0].language = "fr-BE"
+* compose.include[=].concept.36.designation[=].value = "vaccin contenant uniquement l'antigène de Neisseria menigitidis du sérogroupe C"
+* compose.include[=].concept.36.designation[+].language = "nl-BE"
+* compose.include[=].concept.36.designation[=].value = "vaccin met enkel antigeen van Neisseria meningitidis groep C"
+* compose.include[=].concept.36.designation[+].language = "en"
+* compose.include[=].concept.36.designation[=].value = "Vaccine product containing only Neisseria meningitidis serogroup C antigen (medicinal product)"
+* compose.include[=].concept.37.code = 871871008
+* compose.include[=].concept.37.display = " Meningococcus A, C"
+* compose.include[=].concept.37.designation[0].language = "fr-BE"
+* compose.include[=].concept.37.designation[=].value = "vaccin contenant uniquement les antigiènes des méningocoques (Neisseria menigitidis) des sérogroupes A et C"
+* compose.include[=].concept.37.designation[+].language = "nl-BE"
+* compose.include[=].concept.37.designation[=].value = "vaccin met enkel antigenen van Neisseria meningitidis groep A en C"
+* compose.include[=].concept.37.designation[+].language = "en"
+* compose.include[=].concept.37.designation[=].value = "Meningitis A and C vaccine"
+* compose.include[=].concept.38.code = 1981000221108
+* compose.include[=].concept.38.display = "Meningococcus B"
+* compose.include[=].concept.38.designation[0].language = "fr-BE"
+* compose.include[=].concept.38.designation[=].value = "vaccin contenant uniquement l'antigène de Neisseria menigitidis du sérogroupe B"
+* compose.include[=].concept.38.designation[+].language = "nl-BE"
+* compose.include[=].concept.38.designation[=].value = "vaccin met enkel antigeen van Neisseria meningitidis groep B"
+* compose.include[=].concept.38.designation[+].language = "en"
+* compose.include[=].concept.38.designation[=].value = "Vaccine product containing only Neisseria meningitidis serogroup B antigen (medicinal product)"
+* compose.include[=].concept.39.code = 871873006
+* compose.include[=].concept.39.display = "Meningococcus A, C, W,Y"
+* compose.include[=].concept.39.designation[0].language = "fr-BE"
+* compose.include[=].concept.39.designation[=].value = "vaccin contenant uniquement les antigiènes des méningocoques (Neisseria menigitidis) des sérogroupes A,C,W135 et Y"
+* compose.include[=].concept.39.designation[+].language = "nl-BE"
+* compose.include[=].concept.39.designation[=].value = "vaccin met enkel antigenen van Neisseria meningitidis groep A, C, W135 en Y"
+* compose.include[=].concept.39.designation[+].language = "en"
+* compose.include[=].concept.39.designation[=].value = "Vaccine product containing only Neisseria meningitidis serogroup A, C, W135 and Y antigens (medicinal product)"
+* compose.include[=].concept.40.code = 871727001
+* compose.include[=].concept.40.display = "Smallpox"
+* compose.include[=].concept.40.designation[0].language = "fr-BE"
+* compose.include[=].concept.40.designation[=].value = "vaccin contenant uniquement l'antigène du virus Vaccinia"
+* compose.include[=].concept.40.designation[+].language = "nl-BE"
+* compose.include[=].concept.40.designation[=].value = "vaccin met enkel antigeen van vacciniavirus (pokken)"
+* compose.include[=].concept.40.designation[+].language = "en"
+* compose.include[=].concept.40.designation[=].value = "Vaccine product containing only Vaccinia virus antigen (medicinal product)"
+* compose.include[=].concept.41.code = 871739009
+* compose.include[=].concept.41.display = " Poliomyelitis"
+* compose.include[=].concept.41.designation[0].language = "fr-BE"
+* compose.include[=].concept.41.designation[=].value = "vaccin contenant uniquement l'antigène du poliovirus humain"
+* compose.include[=].concept.41.designation[+].language = "nl-BE"
+* compose.include[=].concept.41.designation[=].value = "vaccin met enkel antigeen van humaan poliovirus"
+* compose.include[=].concept.41.designation[+].language = "en"
+* compose.include[=].concept.41.designation[=].value = "Vaccine product containing only Human poliovirus antigen (medicinal product)"
+* compose.include[=].concept.42.code = 871726005
+* compose.include[=].concept.42.display = "Rabies"
+* compose.include[=].concept.42.designation[0].language = "fr-BE"
+* compose.include[=].concept.42.designation[=].value = "vaccin contenant uniquement l'antigène du virus Rabies lyssa"
+* compose.include[=].concept.42.designation[+].language = "nl-BE"
+* compose.include[=].concept.42.designation[=].value = "vaccin met enkel antigeen van Rabies lyssavirus"
+* compose.include[=].concept.42.designation[+].language = "en"
+* compose.include[=].concept.42.designation[=].value = "Rabies vaccine"
+* compose.include[=].concept.43.code = 871761004
+* compose.include[=].concept.43.display = "Rotavirus"
+* compose.include[=].concept.43.designation[0].language = "fr-BE"
+* compose.include[=].concept.43.designation[=].value = "vaccin contenant uniquement l'antigène du virus Rotavirus"
+* compose.include[=].concept.43.designation[+].language = "nl-BE"
+* compose.include[=].concept.43.designation[=].value = "vaccin met enkel antigeen van rotavirus"
+* compose.include[=].concept.43.designation[+].language = "en"
+* compose.include[=].concept.43.designation[=].value = "Rotavirus vaccine"
+* compose.include[=].concept.44.code = 871732000
+* compose.include[=].concept.44.display = "Rubella"
+* compose.include[=].concept.44.designation[0].language = "fr-BE"
+* compose.include[=].concept.44.designation[=].value = "vaccin contenant uniquement l'antigène du virus rubella"
+* compose.include[=].concept.44.designation[+].language = "nl-BE"
+* compose.include[=].concept.44.designation[=].value = "vaccin met enkel antigeen van rubellavirus"
+* compose.include[=].concept.44.designation[+].language = "en"
+* compose.include[=].concept.44.designation[=].value = "Rubella virus antigen only vaccine product"
+* compose.include[=].concept.45.code = 1181000221105
+* compose.include[=].concept.45.display = "Influenza"
+* compose.include[=].concept.45.designation[0].language = "fr-BE"
+* compose.include[=].concept.45.designation[=].value = "vaccin contenant uniquement l'antigène du virus influenza"
+* compose.include[=].concept.45.designation[+].language = "nl-BE"
+* compose.include[=].concept.45.designation[=].value = "vaccin met enkel antigeen van influenzavirus"
+* compose.include[=].concept.45.designation[+].language = "en"
+* compose.include[=].concept.45.designation[=].value = "Influenza virus antigen only vaccine product"
+* compose.include[=].concept.46.code = 871719005
+* compose.include[=].concept.46.display = "Tick-borne encephalitis"
+* compose.include[=].concept.46.designation[0].language = "fr-BE"
+* compose.include[=].concept.46.designation[=].value = "vaccin contenant uniquement l'antigène du virus de la méningoencéphalite à tiques (TBE Tick-borne encephalitis)"
+* compose.include[=].concept.46.designation[+].language = "nl-BE"
+* compose.include[=].concept.46.designation[=].value = "vaccin met enkel antigeen van tekenencefalitisvirus"
+* compose.include[=].concept.46.designation[+].language = "en"
+* compose.include[=].concept.46.designation[=].value = "Tick-borne encephalitis virus antigen only vaccine product"
+* compose.include[=].concept.47.code = 871742003
+* compose.include[=].concept.47.display = "Tetanus"
+* compose.include[=].concept.47.designation[0].language = "fr-BE"
+* compose.include[=].concept.47.designation[=].value = "vaccin contenant uniquement l'antigène du Clostridium tetani"
+* compose.include[=].concept.47.designation[+].language = "nl-BE"
+* compose.include[=].concept.47.designation[=].value = "vaccin met enkel antigeen van Clostridium tetani"
+* compose.include[=].concept.47.designation[+].language = "en"
+* compose.include[=].concept.47.designation[=].value = "Vaccine product containing only Clostridium tetani antigen (medicinal product)"
+* compose.include[=].concept.48.code = 1861000221106
+* compose.include[=].concept.48.display = "Tuberculosis (BSG)"
+* compose.include[=].concept.48.designation[0].language = "fr-BE"
+* compose.include[=].concept.48.designation[=].value = "vaccin contenant uniquement l'antigène du bacille Calmette-Guérin (BCG)"
+* compose.include[=].concept.48.designation[+].language = "nl-BE"
+* compose.include[=].concept.48.designation[=].value = "vaccin met enkel antigeen van Bacillus Calmette-Guérin (BCG)"
+* compose.include[=].concept.48.designation[+].language = "en"
+* compose.include[=].concept.48.designation[=].value = "Bacillus Calmette-Guerin vaccine"
+* compose.include[=].concept.49.code = 871919004
+* compose.include[=].concept.49.display = "Varicella"
+* compose.include[=].concept.49.designation[0].language = "fr-BE"
+* compose.include[=].concept.49.designation[=].value = "vaccin contenant uniquement l'antigène de l'alphaherpès virus humain 3 (virus varicelle-zona)"
+* compose.include[=].concept.49.designation[+].language = "nl-BE"
+* compose.include[=].concept.49.designation[=].value = "vaccin met enkel antigeen van varicella-zostervirus"
+* compose.include[=].concept.49.designation[+].language = "en"
+* compose.include[=].concept.49.designation[=].value = "Human alphaherpesvirus 3 antigen only vaccine product"
+* compose.include[=].concept.50.code = 871720004
+* compose.include[=].concept.50.display = "Dengue"
+* compose.include[=].concept.50.designation[0].language = "fr-BE"
+* compose.include[=].concept.50.designation[=].value = "vaccin contenant uniquement l'antigène du virus de la dengue"
+* compose.include[=].concept.50.designation[+].language = "nl-BE"
+* compose.include[=].concept.50.designation[=].value = "vaccin met enkel antigeen van denguevirus"
+* compose.include[=].concept.50.designation[+].language = "en"
+* compose.include[=].concept.50.designation[=].value = "Vaccine product containing only Dengue virus antigen (medicinal product)"
+* compose.include[=].concept.51.code = 871721000
+* compose.include[=].concept.51.display = "Ebola"
+* compose.include[=].concept.51.designation[0].language = "fr-BE"
+* compose.include[=].concept.51.designation[=].value = "vaccin contenant uniquement l'antigène du virus Ebola"
+* compose.include[=].concept.51.designation[+].language = "nl-BE"
+* compose.include[=].concept.51.designation[=].value = "vaccin met enkel antigeen van Ebola-virus"
+* compose.include[=].concept.51.designation[+].language = "en"
+* compose.include[=].concept.51.designation[=].value = "Vaccine product containing only Ebolavirus antigen (medicinal product)"
+* compose.include[=].concept.52.code = 28531000087107
+* compose.include[=].concept.52.display = "COVID19"
+* compose.include[=].concept.52.designation[0].language = "fr-BE"
+* compose.include[=].concept.52.designation[=].value = "vaccin contre la covid-19 (SARS-COV-2)"
+* compose.include[=].concept.52.designation[+].language = "nl-BE"
+* compose.include[=].concept.52.designation[=].value = "vaccin tegen COVID-19"
+* compose.include[=].concept.52.designation[+].language = "en"
+* compose.include[=].concept.52.designation[=].value = "COVID-19 vaccine"
