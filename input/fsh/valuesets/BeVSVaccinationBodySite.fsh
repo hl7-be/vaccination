@@ -4,7 +4,7 @@ Id: be-vs-vaccination-bodysite
 Title: "BeVSVaccinationBodySite"
 Description:  "Vaccination Body Site Value Set"
 * ^status = #draft
-
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * include  http://snomed.info/sct#35259002 
 * include  http://snomed.info/sct#50092008 
 * include  http://snomed.info/sct#102291007 

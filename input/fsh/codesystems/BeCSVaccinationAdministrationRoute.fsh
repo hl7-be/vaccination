@@ -5,6 +5,7 @@ Description: "Vaccine Administration Route"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^content = #complete
+* ^caseSensitive = true
 * #IM "Instramuscular"
 * #IM ^designation[0].language = #fr-BE
 * #IM ^designation[=].value = "Intramusculaire"

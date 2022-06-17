@@ -5,6 +5,7 @@ Description: "Vaccination status Code System."
 * ^status = #draft
 * ^content = #complete
 * ^version = "0.1.0"
+* ^caseSensitive = true
 * #unconfirmed "unconfirmed"
 * #unconfirmed ^designation[0].language = #fr-BE
 * #unconfirmed ^designation[=].value = "non confirmé"
