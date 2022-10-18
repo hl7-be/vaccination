@@ -13,10 +13,10 @@ url: https://www.ehealth.fgov.be/standards/fhir/vaccination
 name: BeVaccination
 title: "HL7 Belgium Vaccination (Patient Dossier)"
 description: Belgian Patient profiles
-status: active
+status: draft
 license: CC0-1.0
 date: 2020-02-26
-version: 1.0.0
+version: 1.0.1
 releaseLabel: STU
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
@@ -198,9 +198,8 @@ FSHOnly: false
 #applyExtensionMetadataToRoot: false
 
 dependencies:
-  hl7.fhir.be.core: 2.0.0
+  hl7.fhir.be.core: 2.0.1
   hl7.fhir.be.medication: 1.0.0
   hl7.fhir.be.core-clinical: 1.0.0
-  hl7.terminology: 3.1.0
 
     
