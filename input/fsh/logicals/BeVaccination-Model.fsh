@@ -28,6 +28,7 @@ Parent: Element
 * bodyLaterality 0..1 CodeableConcept "The side of the body (for sites that occur on both sides of the body)"
 * location 0..1 Reference "The location where the immunization is performed." "a resource (Location) if one exists e.g. 'Location/kind-en-gezin-092375' which could be defining 'Kind en Gezin Gent Koepoortkaai' "
 * locationType 0..1 CodeableConcept "The location where the immunization administration was performed. This can be a text (e.g. 'at the physician's office' or a code e.g. '00078' meaning 'patient's home'"
+* cause 0..1 CodeableConcept "Is the vaccination due to pre or post exposition prophylaxis?" " "
 
 Mapping: BeModelVaccinationToBVaccination
 Source: BeModelVaccination
