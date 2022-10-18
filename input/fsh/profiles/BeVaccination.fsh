@@ -72,6 +72,9 @@ Description:    """
 // added 09-06
 * reasonReference MS
 * reasonReference ^short = "Why vaccination has occurred or not (reference to a finding)"
+* reasonCode MS
+* reasonCode from BeVSVaccinationReasonCode (preferred)
+* reasonCode ^short = "Can be used to indicate whether vaccination/prophylaxis took place pre- or post-exposition"
 
 // added constraint
 * obeys be-rule-vaccination-1 and be-rule-vaccination-2 and be-rule-vaccination-3
