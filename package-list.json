@@ -26,7 +26,7 @@
       "current": false
     },
     {
-      "version": "1.0.1",
+      "version": "1.0.1-test",
       "status": "trial-use",
       "desc": "eHealth FHIR Vaccination Profiles for Belgium",
       "sequence": "Trial Use",
