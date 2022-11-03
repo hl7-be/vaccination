@@ -33,7 +33,7 @@
       "intro": "eHealth FHIR Vaccination Profiles for Belgium",
       "category": "National Base",
       "org": "eHealth Platform",
-      "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.0.1",
+      "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.0.2",
       "fhirversion": "4.0.1",
       "date": "2022-10-19",
       "current": true
