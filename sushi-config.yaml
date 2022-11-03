@@ -16,7 +16,7 @@ description: Belgian Patient profiles
 status: active
 license: CC0-1.0
 date: 2020-02-26
-version: 1.0.1-test
+version: 1.0.2
 releaseLabel: STU
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
