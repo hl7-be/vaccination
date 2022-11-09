@@ -20,7 +20,6 @@ Description:    """
 * reaction MS
 * reaction.date 1..1
 * reaction ^short = "Reaction immediately after vaccination (15-30 minutes)"
-* performer MS
 * site MS
 * site from be-vs-vaccination-bodysite (required)
 * site.extension contains BeExtLaterality named bodyLaterality 0..1
@@ -31,6 +30,7 @@ Description:    """
 * identifier.value 1..1 MS
 * patient 1..1 MS
 * patient only Reference(BePatient)
+* performer MS
 * performer.actor 1..1 
 * performer.actor only Reference(BePractitioner or BeOrganization or BePractitionerRole)
 * location 0..0
@@ -77,7 +77,7 @@ Description:    """
 * reasonCode ^short = "Can be used to indicate whether vaccination/prophylaxis took place pre- or post-exposition"
 
 // added constraint
-* obeys be-rule-vaccination-1 and be-rule-vaccination-2 and be-rule-vaccination-3
+* obeys be-rule-vaccination-1 and be-rule-vaccination-2 and be-rule-vaccination-3 and be-rule-vaccination-4
 
 
 Invariant:   be-rule-vaccination-1
