@@ -6,11 +6,20 @@ Usage: #definition
 * title = "BeVSVaccineCode"
 * description = "Vaccine Code Value Set - the types of vaccines that are administered in Belgium (incomplete set of values - to be completed by NRC (FPS Health)"
 * version = "1.0.0"
+* experimental = false
 * url = "https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-vaccine-code"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension.valueInteger = 1
 * compose.include[0].system = "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code"
 * compose.include[=].concept[0].code = #other
+
+//50831000172102
+//* compose.include[+].version = "http://snomed.info/sct/11000172109"
+//* compose.include[=].system = "http://snomed.info/sct"
+//* compose.include[=].filter[0].property = #"concept"
+//* compose.include[=].filter[=].op = #"in"
+//* compose.include[=].filter[=].value = "50831000172102"
+
 * compose.include[+].system = "http://snomed.info/sct"
 * compose.include[=].concept[0].code = #1119220001
 * compose.include[=].concept[=].display = "23 valent polysaccharide against pneumonia"
@@ -23,7 +32,7 @@ Usage: #definition
 * compose.include[=].concept[+].code = #1052328007
 * compose.include[=].concept[=].display = "7 valent polysaccharide against pneumonia"
 * compose.include[=].concept[=].designation[0].language = #fr-BE
-* compose.include[=].concept[=].designation[=].value = "vaccin contenant l'antigène polysaccharide capsulaire conjugué des pneumocoques de sérotype  4, 6B, 9V, 14, 18C, 19F et 23F (7 types) "
+* compose.include[=].concept[=].designation[=].value = "vaccin contenant l'antigène polysaccharide capsulaire conjugué des pneumocoques de sérotype  4, 6B, 9V, 14, 18C, 19F et 23F (7 types)"
 * compose.include[=].concept[=].designation[+].language = #nl-BE
 * compose.include[=].concept[=].designation[=].value = "vaccin met geconjugeerd antigeen van polysacharidekapsel van pneumokokken serotype 4, 6B, 9V, 14, 18C, 19F en 23F (7 types)"
 * compose.include[=].concept[=].designation[+].language = #en
@@ -233,7 +242,7 @@ Usage: #definition
 * compose.include[=].concept[=].designation[0].language = #fr-BE
 * compose.include[=].concept[=].designation[=].value = "vaccin contenant uniquement l'antigène du Papillomavirus humain (HPV) de type 6,11,16,18,31,33,45,53 et 58"
 * compose.include[=].concept[=].designation[+].language = #nl-BE
-* compose.include[=].concept[=].designation[=].value = ""
+* compose.include[=].concept[=].designation[=].value = "vaccin met antigeen van humaan papillomavirus (HPV) 6,11,16,18,31,33,45,53 et 58"
 * compose.include[=].concept[=].designation[+].language = #en
 * compose.include[=].concept[=].designation[=].value = "Human papillomavirus 9 antigen only vaccine product"
 * compose.include[=].concept[+].code = #871724008
@@ -428,3 +437,19 @@ Usage: #definition
 * compose.include[=].concept[=].designation[=].value = "vaccin tegen COVID-19"
 * compose.include[=].concept[=].designation[+].language = #en
 * compose.include[=].concept[=].designation[=].value = "COVID-19 vaccine"
+* compose.include[=].concept[+].code = #1252709000 
+* compose.include[=].concept[=].display = "20 valent polysaccharide against pneumonia"
+* compose.include[=].concept[=].designation[0].language = #fr-BE
+* compose.include[=].concept[=].designation[=].value = "Produit vaccinal contenant uniquement du polysaccharide capsulaire de Streptococcus pneumoniae de sérotype danois 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F antigènes conjugués (médicament)"
+* compose.include[=].concept[=].designation[+].language = #nl-BE
+* compose.include[=].concept[=].designation[=].value = "Vaccinproduct dat alleen Streptococcus pneumoniae Deens serotype 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F capsulair polysaccharide bevat antigenen geconjugeerd (geneesmiddel)"
+* compose.include[=].concept[=].designation[+].language = #en
+* compose.include[=].concept[=].designation[=].value = "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 8, 9V, 10A, 11A, 12F, 14, 15B, 18C, 19A, 19F, 22F, 23F, 33F capsular polysaccharide antigens conjugated (medicinal product)"
+* compose.include[=].concept[+].code = #1252708008 
+* compose.include[=].concept[=].display = "15 valent polysaccharide against pneumonia"
+* compose.include[=].concept[=].designation[0].language = #fr-BE
+* compose.include[=].concept[=].designation[=].value = "Produit vaccinal contenant uniquement des antigènes polyosidiques capsulaires conjugués de Streptococcus pneumoniae de sérotype danois 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F et 33F (médicament)"
+* compose.include[=].concept[=].designation[+].language = #nl-BE
+* compose.include[=].concept[=].designation[=].value = "Vaccinproduct dat alleen Streptococcus pneumoniae Deens serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F en 33F capsulair polysaccharide-geconjugeerde antigenen bevat (geneesmiddel)"
+* compose.include[=].concept[=].designation[+].language = #en
+* compose.include[=].concept[=].designation[=].value = "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 22F, 23F, and 33F capsular polysaccharide conjugated antigens (medicinal product)" 
