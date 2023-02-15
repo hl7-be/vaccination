@@ -82,7 +82,7 @@ Description:    """
 
 Invariant:   be-rule-vaccination-1
 Description: "If vaccineCode.code is other, then vaccinecode text must exist"
-Expression:  "vaccineCode.coding.code = 'other'  implies vaccineCode.text.exists() "
+Expression:  "vaccineCode.coding.code = 'other'  implies vaccineCode.text.exists()"
 Severity:    #error
 
 
