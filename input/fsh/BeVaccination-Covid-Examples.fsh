@@ -91,7 +91,7 @@ Title:   "Jan's first COVID-19 vaccination"
 * encounter = Reference(demo-encounter-2)
 * extension[administeredProduct].extension[lotNumber].valueString = "B037453"
 * occurrenceDateTime = "2020-02-22"
-* manufacturer = Reference(org-pfizer)
+////* manufacturer = Reference(org-pfizer)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
@@ -125,7 +125,7 @@ Title:   "Jan's second failed COVID-19 vaccination"
 * encounter = Reference(demo-encounter-2)
 * extension[administeredProduct].extension[lotNumber].valueString = "B037471"
 * occurrenceDateTime = "2020-03-22"
-* manufacturer = Reference(org-pfizer)
+//* manufacturer = Reference(org-pfizer)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
@@ -157,7 +157,7 @@ Title:   "Jan's second successful COVID-19 vaccination"
 * encounter = Reference(demo-encounter-2)
 * extension[administeredProduct].extension[lotNumber].valueString = "B037477"
 * occurrenceDateTime = "2020-03-24"
-* manufacturer = Reference(org-pfizer)
+//* manufacturer = Reference(org-pfizer)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"

@@ -15,7 +15,7 @@ Title:   "Toto - First hexavalent vaccination"
 * encounter = Reference(demo-encounter)
 * extension[administeredProduct].extension[lotNumber].valueString = "L00156"
 * occurrenceDateTime = "2016-05-30"
-* manufacturer = Reference(org-sanofi)
+//* manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "NIHDI_ONE"

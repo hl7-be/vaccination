@@ -15,7 +15,7 @@ Title:   "Toto - 4th hexavalent vaccination"
 * extension[vaccination-confirmationStatus].valueCode = #confirmed
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
 * identifier.value = "1c4feb6a-275d-4029-9466-31b353710f84"
-* manufacturer = Reference(org-sanofi)
+//* manufacturer = Reference(org-sanofi)
 * occurrenceDateTime = "2017-06-23"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"

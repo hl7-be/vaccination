@@ -13,7 +13,7 @@ Title:   "Juan - 3rd hexa (effective)"
 * recorded = "2017-03-23"
 * extension[administeredProduct].extension[lotNumber].valueString = "L43476"
 * occurrenceDateTime = "2017-03-23"
-* manufacturer = Reference(org-sanofi)
+//* manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "NIHDI_ONE"

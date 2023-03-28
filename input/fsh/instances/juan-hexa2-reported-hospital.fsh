@@ -13,7 +13,7 @@ Title:   "Juan - 2nd hexa (hospital)"
 * recorded = "2016-07-29"
 * extension[administeredProduct].extension[lotNumber].valueString = "NA"
 * occurrenceDateTime = "2016-07-29"
-* manufacturer = Reference(org-sanofi)
+//* manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "NIHDI_HOSPITAL1"

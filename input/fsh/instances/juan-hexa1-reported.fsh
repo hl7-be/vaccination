@@ -16,7 +16,7 @@ Title:   "Juan - 1st hexa (reported)"
 * encounter = Reference(demo-encounter)
 * extension[administeredProduct].extension[lotNumber].valueString = "NA"
 * occurrenceDateTime = "2016-05-30"
-* manufacturer = Reference(org-sanofi)
+//* manufacturer = Reference(org-sanofi)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.value = "Reference(Spain)"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
