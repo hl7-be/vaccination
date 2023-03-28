@@ -17,5 +17,5 @@ Title:   "Aymeric - rotavirus 3rd dose"
 * vaccineCode.coding[0].code = #871761004
 //* protocolApplied.doseNumberPositiveInt = 3
 //* protocolApplied.seriesDosesPositiveInt = 3
-//* extension[vaccination-originalorder].valueReference = Reference(aymeric-rota)
+////* extension[vaccination-originalorder].valueReference = Reference(aymeric-rota)
 //* extension[vaccination-confirmationStatus].valueCode = #confirmed

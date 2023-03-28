@@ -17,5 +17,5 @@ Title:   "Gabriel - influenza vaccine"
 * vaccineCode.coding[0].code = #1181000221105
 //* protocolApplied.doseNumberString = "2020"
 //* protocolApplied.seriesDosesString = "Yearly"
-* extension[vaccination-originalorder].valueReference = Reference(order-gabriel-flu)
+//* extension[vaccination-originalorder].valueReference = Reference(order-gabriel-flu)
 //* extension[vaccination-confirmationStatus].valueCode = #confirmed

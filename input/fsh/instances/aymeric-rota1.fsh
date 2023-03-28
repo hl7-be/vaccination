@@ -16,5 +16,5 @@ Title:   "Aymeric - rotavirus 1st dose"
 * vaccineCode.coding[0].code = #871761004
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 3
-//* extension[vaccination-originalorder].valueReference = Reference(aymeric-rota)
+////* extension[vaccination-originalorder].valueReference = Reference(aymeric-rota)
 //* extension[vaccination-confirmationStatus].valueCode = #confirmed

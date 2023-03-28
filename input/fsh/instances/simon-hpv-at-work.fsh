@@ -15,5 +15,5 @@ Title:   "Simon HPV - work"
 * vaccineCode.coding[0].code = #911000221103
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 1
-* extension[vaccination-originalorder].valueReference = Reference(order-simon-hpv)
+//* extension[vaccination-originalorder].valueReference = Reference(order-simon-hpv)
 //* extension[vaccination-confirmationStatus].valueCode = #confirmed
