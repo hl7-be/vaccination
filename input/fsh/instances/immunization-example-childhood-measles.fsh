@@ -20,4 +20,4 @@ Title:    "Immunization Example - 2. childhood measles"
 * recorded = "2020"
 
 * occurrenceString = "Wanneer de patiënt 20 jaar oud was"
-* extension[be-ext-vaccination-location].valueCodeableConcept.text = "In Spain"
+//* extension[be-ext-vaccination-location].valueCodeableConcept.text = "In Spain"
