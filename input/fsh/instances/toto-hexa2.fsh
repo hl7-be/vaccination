@@ -25,6 +25,6 @@ Title:   "Toto - 2nd hexavalent vaccination"
 * vaccineCode.coding[0].code = #871895005
 //* protocolApplied.doseNumberPositiveInt = 2
 //* protocolApplied.seriesDosesPositiveInt = 4
-* extension[administeredProduct].extension[reference].valueReference.identifier.system = "http://snomed.info/sct"
-* extension[administeredProduct].extension[reference].valueReference.identifier.value = "3050176"
+//* extension[administeredProduct].extension[reference].valueReference.identifier.system = "http://snomed.info/sct"
+//* extension[administeredProduct].extension[reference].valueReference.identifier.value = "3050176"
 //* extension[vaccination-confirmationStatus].valueCode = #confirmed
