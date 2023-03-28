@@ -25,4 +25,4 @@ Title:   "Toto - 4th hexavalent  vaccination - skipped (fever)"
 * vaccineCode.coding[0].code = #871895005
 //* protocolApplied.doseNumberPositiveInt = 4
 //* protocolApplied.seriesDosesPositiveInt = 4
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed

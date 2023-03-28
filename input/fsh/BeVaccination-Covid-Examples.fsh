@@ -102,7 +102,7 @@ Title:   "Jan's first COVID-19 vaccination"
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].extension[reference].valueReference = Reference(pfizer-s0001)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed
 
 
 /*============================================= Example 2 =============================================*/
@@ -136,7 +136,7 @@ Title:   "Jan's second failed COVID-19 vaccination"
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].extension[reference].valueReference = Reference(pfizer-s0002)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 3 =============================================*/
 Instance: covid-jan-3
@@ -168,5 +168,5 @@ Title:   "Jan's second successful COVID-19 vaccination"
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].extension[reference].valueReference = Reference(pfizer-s0003)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed
 

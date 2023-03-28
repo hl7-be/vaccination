@@ -21,4 +21,4 @@ Title:   "Juan - 3rd hexa (effective)"
 * vaccineCode.coding[0].code = #871895005
 //* protocolApplied.doseNumberPositiveInt = 3
 //* protocolApplied.seriesDosesPositiveInt = 3
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed

@@ -15,4 +15,4 @@ Title:   "Julia - refuse HPV"
 * vaccineCode.coding[0].code = #911000221103
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed

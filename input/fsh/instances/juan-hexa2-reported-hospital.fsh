@@ -22,4 +22,4 @@ Title:   "Juan - 2nd hexa (hospital)"
 * vaccineCode.coding[0].code = #871895005
 //* protocolApplied.doseNumberPositiveInt = 2
 //* protocolApplied.seriesDosesPositiveInt = 3
-* extension[vaccination-confirmationStatus].valueCode = #unconfirmed
+//* extension[vaccination-confirmationStatus].valueCode = #unconfirmed

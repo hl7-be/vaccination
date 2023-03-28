@@ -17,4 +17,4 @@ Title:   "Aymeric - rotavirus 1st dose"
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 3
 //* extension[vaccination-originalorder].valueReference = Reference(aymeric-rota)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed

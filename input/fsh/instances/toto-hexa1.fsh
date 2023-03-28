@@ -26,4 +26,4 @@ Title:   "Toto - First hexavalent vaccination"
 //* protocolApplied.seriesDosesPositiveInt = 4
 * extension[administeredProduct].extension[reference].valueReference.identifier.system = "http://snomed.info/sct"
 * extension[administeredProduct].extension[reference].valueReference.identifier.value = "3050176"
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed

@@ -23,4 +23,4 @@ Title:   "Juan - 1st hexa (reported)"
 * vaccineCode.coding[0].code = #871895005
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 3
-* extension[vaccination-confirmationStatus].valueCode = #unconfirmed
+//* extension[vaccination-confirmationStatus].valueCode = #unconfirmed

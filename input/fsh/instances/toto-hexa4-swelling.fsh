@@ -12,7 +12,7 @@ Title:   "Toto - 4th hexavalent vaccination"
 * extension[administeredProduct].extension[lotNumber].valueString = "L16855"
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
 * identifier.value = "1c4feb6a-275d-4029-9466-31b353710f84"
 //* manufacturer = Reference(org-sanofi)

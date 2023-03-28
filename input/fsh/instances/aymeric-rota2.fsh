@@ -18,4 +18,4 @@ Title:   "Aymeric - rotavirus 2nd dose"
 //* protocolApplied.doseNumberPositiveInt = 2
 //* protocolApplied.seriesDosesPositiveInt = 3
 //* extension[vaccination-originalorder].valueReference = Reference(aymeric-rota)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed

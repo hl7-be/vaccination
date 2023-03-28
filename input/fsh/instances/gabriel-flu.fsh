@@ -18,4 +18,4 @@ Title:   "Gabriel - influenza vaccine"
 //* protocolApplied.doseNumberString = "2020"
 //* protocolApplied.seriesDosesString = "Yearly"
 * extension[vaccination-originalorder].valueReference = Reference(order-gabriel-flu)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed

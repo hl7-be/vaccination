@@ -18,4 +18,4 @@ Title:   "Eva - HPV 1st dose"
 * vaccineCode.coding[=].code = http://snomed.info/sct#911000221103
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed

@@ -18,4 +18,4 @@ Title:   "Eva - HPV 2nd dose"
 * vaccineCode.coding[0].code = #911000221103
 //* protocolApplied.doseNumberPositiveInt = 2
 //* protocolApplied.seriesDosesPositiveInt = 2
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed
