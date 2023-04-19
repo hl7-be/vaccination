@@ -5,8 +5,7 @@ Description: "Care Location Code System"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^content = #complete
-* ^caseSensitive = true
-* ^experimental = false 
+* ^caseSensitive = true 
 * #hospital "Hospital"
 * #hospital ^designation[0].language = #fr-BE
 * #hospital ^designation[=].value = "A l’hôpital"
