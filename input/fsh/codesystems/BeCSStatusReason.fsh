@@ -6,7 +6,6 @@ Description: "Vaccination reason status Code System."
 * ^content = #complete
 * ^version = "0.1.0"
 * ^caseSensitive = true
-* ^experimental = false
 * #OTHER "Other"
 * #OTHER ^designation[0].language = #fr-BE
 * #OTHER ^designation[=].value = "Autre"
