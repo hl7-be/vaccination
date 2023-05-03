@@ -1,6 +1,6 @@
 
 Logical: BeModelVaccination
-Parent: Element
+* ^description = "Logical Model for vaccination"
 * recorded 1..1 dateTime "The date and time when the administration of the vaccine was recorded" "The date and time when the administration of the vaccine was recorded - typically used when the vaccine event is recorded a posteriori."
 * patient 1..1 Reference(Patient) "The patient that received vaccination." "The patient that has received the vaccination."
 * vaccinationRequest 0..1 Reference "The patient-specific order or recommendation for the vaccination" "The patient-specific order or recommendation for the vaccination, for example a prescription or a request for vaccination for a patient by a physician, for example for optional vaccines."
@@ -62,7 +62,7 @@ Title: "BeModelVaccinationToBVaccination"
 
 
 Logical: BeModelVaccinationReduced
-Parent: Element
+* ^description = "Reduced Logical Model for vaccination"
 * patient 1..1 Reference(Patient) "The patient that received vaccination." "The patient that has received the vaccination."
 * performer 1..1 Reference(Practitioner) "The professional that administered the medication" "The professional that administered the medication. Use code \"unknown\" if not known."
 * administeredProduct 1..1 BackboneElement "The details of the product that was administered." "The details of the product that was administered"

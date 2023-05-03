@@ -82,7 +82,7 @@ Description:    """
 
 Invariant:   be-rule-vaccination-1
 Description: "If vaccineCode.code is other, then vaccinecode text must exist"
-Expression:  "vaccineCode.coding.code = 'other'  implies vaccineCode.text.exists() "
+Expression:  "vaccineCode.coding.code = 'other'  implies vaccineCode.text.exists()"
 Severity:    #error
 
 
@@ -98,5 +98,5 @@ Severity:    #error
 
 Invariant:   be-rule-vaccination-4
 Description: "The encounter should have a location from be-vs-care-location"
-Expression:  "encounter.empty() or encounter.resolve().location.physicalType.code.memberOf('https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location').anyTrue()"
+Expression:  "encounter.empty() or encounter.resolve().location.location.resolve().type.coding.memberOf('https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location').anyTrue()"
 Severity:    #error

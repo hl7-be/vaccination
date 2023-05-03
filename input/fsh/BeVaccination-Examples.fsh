@@ -10,7 +10,8 @@ Usage: #example
 * subject.identifier.value = "16032376921"
 * serviceProvider = Reference(org-one-brussels)
 * status = #finished
-* class = #AMB 
+* class = #AMB
+* location.location = Reference(demo-location) 
 
 Instance: angioedema
 InstanceOf: Observation
@@ -302,6 +303,7 @@ Usage: #example
 Description: "Example of vaccination entered in error"
 Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * language = #nl-BE
 * identifier.value = "2687758923"
@@ -330,6 +332,7 @@ Usage: #example
 Description: "Example of vaccination entered in error"
 Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-kind-en-gezin)
 * language = #nl-BE
 * identifier.value = "26877589231"
@@ -358,6 +361,7 @@ Usage: #example
 Description: "Example of vaccination entered in error"
 Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * language = #nl-BE
 * identifier.value = "26877589231"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -394,6 +398,7 @@ Usage: #example
 Description: "Example of vaccination reaction"
 Title:    "Immunization Example - Immediate reaction (swelling and redness) upon administration"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * language = #nl-BE
 * identifier.value = "26877583455"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
