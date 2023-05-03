@@ -6,7 +6,6 @@ Description:  "Vaccine Code Code System - set of Belgian codes for types of vacc
 * ^status = #draft
 * ^content = #fragment
 * ^caseSensitive = true
-* ^experimental = false
 * #other "other"
 
 

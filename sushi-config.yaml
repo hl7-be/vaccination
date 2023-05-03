@@ -13,7 +13,7 @@ url: https://www.ehealth.fgov.be/standards/fhir/vaccination
 name: BeVaccination
 title: "HL7 Belgium Vaccination (Patient Dossier)"
 description: Belgian Patient profiles
-status: active
+status: draft
 license: CC0-1.0
 date: 2020-02-26
 version: 1.0.2
@@ -165,10 +165,9 @@ menu:
   Home: index.html
   Guidance: guidance.html
   Artifacts:
-    Logical Models: artifacts.html#structures-logical-models
-    Profiles: artifacts.html#structures-resource-profiles
-    Extensions: artifacts.html#structures-extension-definitions
-    Value Sets: artifacts.html#terminology-value-sets
+    Profiles: artifacts.html#2
+    Extensions: artifacts.html#3
+    Value Sets: artifacts.html#4
   Changes: changes.html
   History: https://www.ehealth.fgov.be/standards/fhir/vaccination/history.html
 #  Downloads: downloads.html
@@ -190,7 +189,7 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
   apply-version: true
-  path-expansion-params: Parameters-terminology-expansion.json  
+  path-expansion-params: Parameters-terminology-expansion.json
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
