@@ -3,7 +3,7 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Simon HPV - work"
 Title:   "Simon HPV - work"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * status = #completed
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "80112136791"

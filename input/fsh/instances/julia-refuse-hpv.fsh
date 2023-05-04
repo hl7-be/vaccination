@@ -4,7 +4,7 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Julia - refuse HPV"
 Title:   "Julia - refuse HPV"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * status = #not-done
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "06092473240"

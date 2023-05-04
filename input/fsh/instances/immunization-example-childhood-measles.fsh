@@ -3,7 +3,7 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination in unknown date by unknown performer."
 Title:    "Immunization Example - 2. childhood measles"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "12345656523"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -16,7 +16,7 @@ Title:    "Immunization Example - 2. childhood measles"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * recorded = "2020"
 
 * occurrenceString = "Wanneer de patiënt 20 jaar oud was"

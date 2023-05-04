@@ -8,7 +8,7 @@ InstanceOf: Encounter
 Usage: #example
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "16032376921"
-* serviceProvider = Reference(org-one-brussels)
+* serviceProvider = Reference(org-regional-child-care-agency)
 * status = #finished
 * class = #AMB
 * location.location = Reference(demo-location) 
@@ -84,7 +84,7 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Toto normal vaccination"
 Title:    "Immunization Example - 1. Toto normal"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #fr-BE
 * identifier.value = "036a5f82-cad8-4b79-ae2b-a5f20374b60a"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -108,7 +108,7 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Juan normal vaccination"
 Title:    "Immunization Example - 2. Juan normal"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #fr-BE
 * identifier.value = "12345623"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -134,7 +134,7 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Juan normal vaccination"
 Title:    "Immunization Example - 1. Toto normal"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #fr-BE
 * identifier.value = "2971e099-4a47-4a8b-a725-e4889270a2d1"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -160,7 +160,7 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "HPV vaccination example"
 Title:    "Immunization Example - 1. HPV"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #fr-BE
 * identifier.value = "12345623"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -184,7 +184,7 @@ Usage: #example
 Description: "Example of vaccination in unknown date by an organization"
 Title:    "Immunization Example - 3. Emergency reinforcement"
 * contained[+] = demo-encounter
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "82786523"
 * identifier.system = "https://www.uzgent.be/vaccinatie/register"
@@ -196,8 +196,8 @@ Title:    "Immunization Example - 3. Emergency reinforcement"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 //* patient = Reference(pia)
-* extension[recorder].valueReference = Reference(org-uz-gent)
-* performer.actor = Reference(org-uz-gent)
+* extension[recorder].valueReference = Reference(org-research-hospital)
+* performer.actor = Reference(org-research-hospital)
 * recorded = "2020-05-17"
 * occurrenceString = "Summer 2011"
 * encounter = Reference(demo-encounter)
@@ -209,7 +209,7 @@ Usage: #example
 Description: "Example of vaccination not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
 * contained[+] = demo-encounter
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "6025645645645"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -227,8 +227,8 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 //* patient = Reference(pia)
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* performer.actor = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
+* performer.actor = Reference(org-regional-child-care-agency)
 * encounter = Reference(demo-encounter)
 
 
@@ -246,7 +246,7 @@ Usage: #example
 Description: "Example of immunization not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
 * contained[+] = demo-encounter
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "6021840732"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -261,9 +261,9 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * occurrenceDateTime = "2020-03-12"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 // * occurrenceString = "Summer 2011"
-* performer.actor = Reference(org-kind-en-gezin)
+* performer.actor = Reference(org-regional-child-care-agency)
 * encounter = Reference(demo-encounter)
 * note.text = "Patiënt heeft nu koorts, aanbevolen 1 ​​week te wachten"
 
@@ -275,7 +275,7 @@ Usage: #example
 Description: "Example of vaccination not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
 * contained[+] = demo-encounter
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "2687758923"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -291,8 +291,8 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 //* patient = Reference(pia)
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* performer.actor = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
+* performer.actor = Reference(org-regional-child-care-agency)
 * encounter = Reference(demo-encounter)
 
 
@@ -304,7 +304,7 @@ Description: "Example of vaccination entered in error"
 Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
 * contained[+] = demo-encounter
 * contained[+] = demo-location
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "2687758923"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -321,8 +321,8 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 //* patient = Reference(pia)
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* performer.actor = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
+* performer.actor = Reference(org-regional-child-care-agency)
 * encounter = Reference(demo-encounter)
 
 
@@ -333,7 +333,7 @@ Description: "Example of vaccination entered in error"
 Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
 * contained[+] = demo-encounter
 * contained[+] = demo-location
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "26877589231"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
@@ -350,8 +350,8 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 //* patient = Reference(pia)
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* performer.actor = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
+* performer.actor = Reference(org-regional-child-care-agency)
 * encounter = Reference(demo-encounter)
 
 
@@ -377,8 +377,8 @@ Title:    "Immunization Example - Mistaken entry of measles when patient means r
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 //* patient = Reference(pia)
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* performer.actor = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
+* performer.actor = Reference(org-regional-child-care-agency)
 * encounter = Reference(demo-encounter)
 
 
@@ -413,8 +413,8 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 //* patient = Reference(pia)
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
-* performer.actor = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
+* performer.actor = Reference(org-regional-child-care-agency)
 * encounter = Reference(demo-encounter)
 * reaction.date = "2020-05-12"
 * reaction.detail = Reference(observation-swelling)
@@ -441,9 +441,8 @@ Usage: #example
 * recorded = "2016-07-04"
 * extension[administeredProduct].extension[lotNumber].valueString  = "L00156"
 * doseQuantity.value = 1
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
-* performer[=].actor.identifier.value = "NIHDI_ONE"
-* performer[+].actor.identifier.value = "ONE Nurse  1"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
+* performer[=].actor.identifier.value = "10829059"
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 //* protocolApplied.doseNumberPositiveInt = 2
 //* protocolApplied.seriesDosesPositiveInt = 4
