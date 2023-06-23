@@ -3,7 +3,7 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Simon HPV - work"
 Title:   "Simon HPV - work"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * status = #completed
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "80112136791"
@@ -15,5 +15,5 @@ Title:   "Simon HPV - work"
 * vaccineCode.coding[0].code = #911000221103
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 1
-* extension[vaccination-originalorder].valueReference = Reference(order-simon-hpv)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-originalorder].valueReference = Reference(order-simon-hpv)
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed
