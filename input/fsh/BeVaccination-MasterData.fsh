@@ -7,62 +7,31 @@
 
 
 
-Instance: org-one-brussels
+Instance: org-regional-child-care-agency
 InstanceOf: BeOrganization
 Usage: #example
-Description: "ONE Brussels"
-Title:    "ONE Brussels"
+Description: "Regional Child Care Agency"
+Title:    "Regional Child Care Agency"
 * active = true
-* name = "ONE Brussels"
+* name = "Regional Child Care Agency"
 * identifier.value = "457213512"
 * identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"
 * telecom[0].system = #url
-* telecom[0].value = "https://www.one.be"
+* telecom[0].value = "https://regional.child.care.agency.be"
 * telecom[0].use = #work
 
-
-
-Instance: org-kind-en-gezin
+Instance: org-research-hospital
 InstanceOf: BeOrganization
 Usage: #example
-Description: "Kind end Gezin organisation"
-Title:    "Kind en Gezin"
-* active = true
-* name = "Kind en Gezin"
-* identifier.value = "457223509"
-* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"
-* telecom[0].system = #url
-* telecom[0].value = "https://www.kindengezin.be/"
-* telecom[0].use = #work
-
-Instance: org-uz-gent
-InstanceOf: BeOrganization
-Usage: #example
-Description: "UZ Gent organisation"
-Title:    "UZ Gent"
+Description: "Research and Training Hospital"
+Title:    "Research and Training Hospital"
 * active = true
 * name = "UZ Gent"
 * identifier.value = "4342357223509"
 * identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"
 * telecom[0].system = #url
-* telecom[0].value = "https://www.uzgent.be/"
+* telecom[0].value = "https://research.and.training.hospital.be/"
 * telecom[0].use = #work
-
-Instance: org-msd-belgium
-InstanceOf: BeOrganization
-Usage: #example
-Description: "MSD Belgium"
-* active = true
-* name = "MSD Belgium"
-* identifier.value = "111111111111"
-
-Instance: org-sanofi
-InstanceOf: BeOrganization
-Usage: #example
-Description: "Sanofi France"
-* active = true
-* name = "Sanofi France"
-* identifier.value = "111111111122"
 
 
 /*

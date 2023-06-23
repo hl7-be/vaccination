@@ -14,31 +14,22 @@ InstanceOf: Location
 * type = https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-care-location#kind-gezin
 
 
-Instance: org-pfizer
-InstanceOf: BeOrganization
-//Usage: #inline
-Description: "Pfizer Belgium"
-* active = true
-* name = "Pfizer - Belgium"
-* identifier.value = "0400.778.165"
-* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe"
-
-Instance: org-astrazeneca
+Instance: org-pharmaceutical-company
 InstanceOf: BeOrganization
 Usage: #inline
-Description: "AstraZeneca Belgium"
+Description: "Pharmaceutical Company Belgium"
 * active = true
-* name = "AstraZeneca - Belgium"
-* identifier.value = "0400.165.679"
+* name = "Pharmaceutical Company Belgium"
+* identifier.value = "0407.622.902"
 * identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe"
 
-Instance: org-vub-brussels
+Instance: org-university
 InstanceOf: BeOrganization
 //Usage: #inline
-Description: "AstraZeneca Belgium"
+Description: "Belgian Educational and Research Institution"
 * active = true
-* name = "AstraZeneca - Belgium"
-* identifier.value = "0400.165.679"
+* name = "Belgian Educational and Research Institution"
+* identifier.value = "0418766123"
 * identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe"
 
 
@@ -78,7 +69,7 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Jan's first COVID-19 vaccination"
 Title:   "Jan's first COVID-19 vaccination"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * contained[0] =  pfizer-s0001
 * contained[+] = demo-encounter-2
 * contained[+] = demo-location
@@ -91,18 +82,18 @@ Title:   "Jan's first COVID-19 vaccination"
 * encounter = Reference(demo-encounter-2)
 * extension[administeredProduct].extension[lotNumber].valueString = "B037453"
 * occurrenceDateTime = "2020-02-22"
-* manufacturer = Reference(org-pfizer)
+////* manufacturer = Reference(org-pharmaceutical-company)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.use = #official
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
-* performer[0].actor.identifier.value = "4605123"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
+* performer[0].actor.identifier.value = "10829059"
 * performer[0].actor.display = "Huisarts 1"
 * vaccineCode.coding = http://snomed.info/sct#28531000087107
 
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].extension[reference].valueReference = Reference(pfizer-s0001)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed
 
 
 /*============================================= Example 2 =============================================*/
@@ -111,7 +102,7 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Jan's second failed COVID-19 vaccination"
 Title:   "Jan's second failed COVID-19 vaccination"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * contained[0] =  pfizer-s0002
 * contained[+] = demo-encounter-2
 * contained[+] = demo-location
@@ -125,18 +116,18 @@ Title:   "Jan's second failed COVID-19 vaccination"
 * encounter = Reference(demo-encounter-2)
 * extension[administeredProduct].extension[lotNumber].valueString = "B037471"
 * occurrenceDateTime = "2020-03-22"
-* manufacturer = Reference(org-pfizer)
+//* manufacturer = Reference(org-pharmaceutical-company)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.use = #official
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
-* performer[0].actor.identifier.value = "4605123"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
+* performer[0].actor.identifier.value = "10829059"
 * performer[0].actor.display = "Huisarts 1"
 * vaccineCode.coding = http://snomed.info/sct#28531000087107
 
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].extension[reference].valueReference = Reference(pfizer-s0002)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed
 
 /*============================================= Example 3 =============================================*/
 Instance: covid-jan-3
@@ -144,7 +135,7 @@ InstanceOf: BeVaccination
 Usage: #example
 Description: "Jan's second successful COVID-19 vaccination"
 Title:   "Jan's second successful COVID-19 vaccination"
-* extension[recorder].valueReference = Reference(org-kind-en-gezin)
+* extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * contained[0] =  pfizer-s0003
 * contained[+] = demo-encounter-2
 * contained[+] = demo-location
@@ -157,16 +148,16 @@ Title:   "Jan's second successful COVID-19 vaccination"
 * encounter = Reference(demo-encounter-2)
 * extension[administeredProduct].extension[lotNumber].valueString = "B037477"
 * occurrenceDateTime = "2020-03-24"
-* manufacturer = Reference(org-pfizer)
+//* manufacturer = Reference(org-pharmaceutical-company)
 * doseQuantity.value = 1
 * performer[0].actor.identifier.use = #official
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
-* performer[0].actor.identifier.value = "4605123"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
+* performer[0].actor.identifier.value = "10829059"
 * performer[0].actor.display = "Huisarts 1"
 * vaccineCode.coding = http://snomed.info/sct#28531000087107
 
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
 * extension[administeredProduct].extension[reference].valueReference = Reference(pfizer-s0003)
-* extension[vaccination-confirmationStatus].valueCode = #confirmed
+//* extension[vaccination-confirmationStatus].valueCode = #confirmed
 
