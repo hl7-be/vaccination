@@ -6,5 +6,5 @@ Description:  "Vaccination reason code Value Set - the reasons for an vaccinatio
 * ^status = #draft
 * ^experimental = false
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
-* include  http://snomed.info/sct#409516001  
-* include  http://snomed.info/sct#1137457009  
+* include  $sct#409516001  
+* include  $sct#1137457009  

@@ -11,7 +11,7 @@ Title:    "Immunization Example - 2. childhood measles"
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding = http://snomed.info/sct#871765008
+* vaccineCode.coding = $sct#871765008
 //* patient = Reference(pia)
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"

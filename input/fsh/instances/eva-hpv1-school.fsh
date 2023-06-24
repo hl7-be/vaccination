@@ -15,7 +15,7 @@ Title:   "Eva - HPV 1st dose"
 * doseQuantity.value = 1
 * performer[0].actor.identifier.value = "Reference(School2)"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
-* vaccineCode.coding[=].code = http://snomed.info/sct#911000221103
+* vaccineCode.coding[=].code = $sct#911000221103
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
 //* extension[vaccination-confirmationStatus].valueCode = #confirmed

@@ -18,7 +18,7 @@ InstanceOf: Observation
 Usage: #example
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "16032376921"
-* code = http://snomed.info/sct#41291007
+* code = $sct#41291007
 * status = #final
 
 Instance: fever
@@ -26,7 +26,7 @@ InstanceOf: Observation
 Usage: #example
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "16032376921"
-* code = http://snomed.info/sct#386661006
+* code = $sct#386661006
 * status = #final
 
 
@@ -175,7 +175,7 @@ Title:    "Immunization Example - 3. Emergency reinforcement"
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding = http://snomed.info/sct#871742003
+* vaccineCode.coding = $sct#871742003
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
 //* patient = Reference(pia)
@@ -205,7 +205,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
 
-* vaccineCode.coding = http://snomed.info/sct#911000221103
+* vaccineCode.coding = $sct#911000221103
 * vaccineCode.coding.display = "Hepatitis B"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
@@ -240,7 +240,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * statusReason.coding = http://terminology.hl7.org/CodeSystem/v3-ActReason#MEDPREC
 * occurrenceDateTime = "2020-03-25"
 * recorded = "2020-05-26"
-* vaccineCode.coding = http://snomed.info/sct#871822003
+* vaccineCode.coding = $sct#871822003
 * occurrenceDateTime = "2020-03-12"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
@@ -266,7 +266,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding = http://snomed.info/sct#911000221103
+* vaccineCode.coding = $sct#911000221103
 * vaccineCode.coding.display = "Hepatitis B"
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
@@ -416,7 +416,7 @@ Usage: #example
 * identifier.system = "https://www.one.be/vaccination/immunisation-register"
 * identifier.value = "e15cd3d6-cfd8-4f77-9c78-9eb1a0fe5671"
 * status = #completed
-* vaccineCode = https://ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code#other
+* vaccineCode = https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccine-code#other
 * vaccineCode.text = "If value is other, this cannot be empty"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "16032376921"

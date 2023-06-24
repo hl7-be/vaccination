@@ -88,7 +88,7 @@ Title:   "Jan's first COVID-19 vaccination"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
 * performer[0].actor.identifier.value = "10829059"
 * performer[0].actor.display = "Huisarts 1"
-* vaccineCode.coding = http://snomed.info/sct#28531000087107
+* vaccineCode.coding = $sct#28531000087107
 
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
@@ -122,7 +122,7 @@ Title:   "Jan's second failed COVID-19 vaccination"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
 * performer[0].actor.identifier.value = "10829059"
 * performer[0].actor.display = "Huisarts 1"
-* vaccineCode.coding = http://snomed.info/sct#28531000087107
+* vaccineCode.coding = $sct#28531000087107
 
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
@@ -154,7 +154,7 @@ Title:   "Jan's second successful COVID-19 vaccination"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
 * performer[0].actor.identifier.value = "10829059"
 * performer[0].actor.display = "Huisarts 1"
-* vaccineCode.coding = http://snomed.info/sct#28531000087107
+* vaccineCode.coding = $sct#28531000087107
 
 //* protocolApplied.doseNumberPositiveInt = 1
 //* protocolApplied.seriesDosesPositiveInt = 2
