@@ -1,5 +1,6 @@
 
 Logical: BeModelVaccination
+Id: be-model-vaccination
 * ^description = "Logical Model for vaccination"
 * recorded 1..1 dateTime "The date and time when the administration of the vaccine was recorded" "The date and time when the administration of the vaccine was recorded - typically used when the vaccine event is recorded a posteriori."
 * patient 1..1 Reference(Patient) "The patient that received vaccination." "The patient that has received the vaccination."
@@ -28,7 +29,7 @@ Logical: BeModelVaccination
 * bodyLaterality 0..1 CodeableConcept "The side of the body (for sites that occur on both sides of the body)"
 * location 0..1 Reference "The location where the immunization is performed." "a resource (Location) if one exists e.g. 'Location/kind-en-gezin-092375' which could be defining 'Kind en Gezin Gent Koepoortkaai' "
 * locationType 0..1 CodeableConcept "The location where the immunization administration was performed. This can be a text (e.g. 'at the physician's office' or a code e.g. '00078' meaning 'patient's home'"
-* cause 0..1 CodeableConcept "Is the vaccination due to pre or post exposition prophylaxis?" " "
+* cause 0..1 CodeableConcept "Is the vaccination due to pre or post exposition prophylaxis?" "Is the vaccination due to pre or post exposition prophylaxis?"
 
 Mapping: BeModelVaccinationToBVaccination
 Source: BeModelVaccination
@@ -62,6 +63,7 @@ Title: "BeModelVaccinationToBVaccination"
 
 
 Logical: BeModelVaccinationReduced
+Id: be-model-vaccination-reduced
 * ^description = "Reduced Logical Model for vaccination"
 * patient 1..1 Reference(Patient) "The patient that received vaccination." "The patient that has received the vaccination."
 * performer 1..1 Reference(Practitioner) "The professional that administered the medication" "The professional that administered the medication. Use code \"unknown\" if not known."
@@ -75,5 +77,5 @@ Logical: BeModelVaccinationReduced
 * doseQuantity 0..1 BackboneElement "The number or quantity of product(s) that was administered - e.g. 1/2 dose" "The number or quantity of product(s) that was administered - e.g. 1/2 dose, etc."
 * targetDisease 1..1 CodeableConcept "The target disease for this vaccination." "The target disease for this vaccination."
 * sideEffects 0..1 Attachment "Any noted side effect from this vaccination." "Any noted side effect from this vaccination."
-* cause 0..1 CodeableConcept "Is the vaccination due to pre or post exposition prophylaxis?" " "
+* cause 0..1 CodeableConcept "Is the vaccination due to pre or post exposition prophylaxis?" "Is the vaccination due to pre or post exposition prophylaxis?"
 
