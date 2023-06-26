@@ -1,5 +1,6 @@
 
 Logical: BeModelVaccination
+Parent: Element
 Id: be-model-vaccination
 * ^description = "Logical Model for vaccination"
 * recorded 1..1 dateTime "The date and time when the administration of the vaccine was recorded" "The date and time when the administration of the vaccine was recorded - typically used when the vaccine event is recorded a posteriori."
@@ -63,6 +64,7 @@ Title: "BeModelVaccinationToBVaccination"
 
 
 Logical: BeModelVaccinationReduced
+Parent: Element
 Id: be-model-vaccination-reduced
 * ^description = "Reduced Logical Model for vaccination"
 * patient 1..1 Reference(Patient) "The patient that received vaccination." "The patient that has received the vaccination."
