@@ -8,7 +8,7 @@
   "desc": "eHealth FHIR Vaccination Profiles for Belgium",
   "desccmd": "eHealth FHIR Vaccination Profiles for Belgium",
   "title": "eHealth FHIR Vaccination Profiles for Belgium",
-  "ci-build" : "https://build.fhir.org/ig/hl7-be/vaccination",
+  "ci-build" : "http://build.fhir.org/ig/hl7-be/vaccination",
   "category": "National Base",
   "introduction": "eHealth FHIR Vaccination Profiles for Belgium",
 "date": "2023-06-25",
