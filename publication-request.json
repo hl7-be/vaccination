@@ -1,7 +1,7 @@
 ﻿{
   "package-id": "hl7.fhir.be.vaccination",
   "version": "1.0.3",
-  "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.0.2",
+  "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.0.3",
   "milestone" : true,
   "status": "release",
   "sequence": "Trial Use",
