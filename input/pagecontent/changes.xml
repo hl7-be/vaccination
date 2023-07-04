@@ -1,12 +1,26 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 	<p>
-    This provides a list of changes to the MyIG specification since its initial release
+    This provides a list of changes to the Vaccination specification since its initial release
   </p>
-  <a name="0.1.0"> </a>
+  <a name="1.1.0"> </a>
 	<p>
-		<b>2099-01-01 v0.1.0 - My IG R1 (STU ballot 1) Ballot Candidate</b> based on FHIR R4
+		<b>2023-02-17 v1.0.2 - Vaccination R1 (STU1)</b> based on FHIR R4
   </p>
   <ul>
-    <li>Initial version</li>
+    <li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.2">Release notes on GitHub</a></li>
+  </ul>
+  <a name="1.0.1"> </a>
+	<p>
+		<b>2022-10-19 v1.0.1 - Vaccination R1 (STU1)</b> based on FHIR R4
+  </p>
+  <ul>
+    <li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.1">Release notes on GitHub</a></li>
+  </ul>
+  <a name="1.0.0"> </a>
+	<p>
+		<b>2022-06-09 v1.0.0 - Vaccination R1 (STU1)</b> based on FHIR R4
+  </p>
+  <ul>
+    <li>Initial version <a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.0">Release notes on GitHub</a></li>
   </ul>
 </div>
