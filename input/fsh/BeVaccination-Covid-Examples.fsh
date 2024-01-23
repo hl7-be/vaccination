@@ -7,7 +7,7 @@ Usage: #example
 * subject.identifier.value = "16032376921"
 * location[+].location = Reference(demo-location)
 * status = #finished
-* class = #AMB
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
 
 Instance: demo-location
 InstanceOf: Location
