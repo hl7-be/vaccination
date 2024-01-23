@@ -10,7 +10,7 @@ Usage: #example
 * subject.identifier.value = "16032376921"
 * serviceProvider = Reference(org-regional-child-care-agency)
 * status = #finished
-* class = #AMB
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
 * location.location = Reference(demo-location) 
 
 Instance: angioedema
