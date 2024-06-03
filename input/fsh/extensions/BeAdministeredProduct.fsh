@@ -2,6 +2,8 @@ Extension: BeAdministeredProduct
 Id: be-ext-administeredProduct
 Title: "BeAdministeredProduct"
 Description: "The product administered"
+* ^context.type = #element
+* ^context.expression = "Immunization"
 * extension contains
     reference 0..1 MS and
     coded 0..1 MS and
