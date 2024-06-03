@@ -30,7 +30,7 @@ Description:    """
 * identifier.value 1..1 MS
 * patient 1..1 MS
 * patient only Reference(BePatient)
-* performer MS
+* performer 0..1 MS
 * performer.actor 1..1 
 * performer.actor only Reference(BePractitioner or BeOrganization or BePractitionerRole)
 * location 0..0
