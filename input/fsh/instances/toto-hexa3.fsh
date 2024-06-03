@@ -18,9 +18,8 @@ Title:   "Toto - 3rd hexavalent  vaccination"
 * occurrenceDateTime = "2016-09-01"
 //* manufacturer = Reference(org-pharmaceutical-company)
 * doseQuantity.value = 1
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
-* performer[0].actor.identifier.value = "10829059"
-* performer[1].actor.identifier.value = "Dr 1"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
+* performer[0].actor.identifier.value = "12312312312"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
 //* protocolApplied.doseNumberPositiveInt = 3
