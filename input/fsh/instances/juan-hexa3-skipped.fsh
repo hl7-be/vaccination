@@ -15,9 +15,8 @@ Title:   "Juan - 3rd hexa (not done)"
 * occurrenceDateTime = "2017-03-22"
 //* manufacturer = Reference(org-pharmaceutical-company)
 * doseQuantity.value = 1
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
-* performer[0].actor.identifier.value = "10829059"
-* performer[1].actor.identifier.value = "Dr 2"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
+* performer[0].actor.identifier.value = "12312312312"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
 //* protocolApplied.doseNumberPositiveInt = 3

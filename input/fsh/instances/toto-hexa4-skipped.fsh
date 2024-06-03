@@ -18,9 +18,8 @@ Title:   "Toto - 4th hexavalent  vaccination - skipped (fever)"
 * reasonReference = Reference(fever)
 * encounter = Reference(demo-encounter)
 * occurrenceDateTime = "2017-06-16"
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional"
-* performer[0].actor.identifier.value = "43180737"
-* performer[1].actor.identifier.value = "Nurse 2"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
+* performer[0].actor.identifier.value = "12312312312"
 * vaccineCode.coding[0].system = "http://snomed.info/sct"
 * vaccineCode.coding[0].code = #871895005
 //* protocolApplied.doseNumberPositiveInt = 4
