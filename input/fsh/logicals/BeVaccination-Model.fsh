@@ -31,6 +31,9 @@ Id: be-model-vaccination
 * location 0..1 Reference "The location where the immunization is performed." "a resource (Location) if one exists e.g. 'Location/kind-en-gezin-092375' which could be defining 'Kind en Gezin Gent Koepoortkaai' "
 * locationType 0..1 CodeableConcept "The location where the immunization administration was performed. This can be a text (e.g. 'at the physician's office' or a code e.g. '00078' meaning 'patient's home'"
 * cause 0..1 CodeableConcept "Is the vaccination due to pre or post exposition prophylaxis?" "Is the vaccination due to pre or post exposition prophylaxis?"
+* stockSource 0..1 CodeableConcept "The stock source where the product is originating from. This can be a specific location, if coded, or a type of location e.g. ''"
+
+
 
 Mapping: BeModelVaccinationToBVaccination
 Source: BeModelVaccination
