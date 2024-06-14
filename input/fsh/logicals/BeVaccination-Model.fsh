@@ -32,6 +32,13 @@ Id: be-model-vaccination
 * locationType 0..1 CodeableConcept "The location where the immunization administration was performed. This can be a text (e.g. 'at the physician's office' or a code e.g. '00078' meaning 'patient's home'"
 * cause 0..1 CodeableConcept "Is the vaccination due to pre or post exposition prophylaxis?" "Is the vaccination due to pre or post exposition prophylaxis?"
 
+* stockOrigin 0..1 Reference(Location) "The stock position where the product is originating from. This can be a specific location like a shelf, a warehouse, a building..."
+
+* stockFundingEntity 0..1 Reference(Organization) "The entity that is funding the provision of the vaccines"
+
+
+
+
 Mapping: BeModelVaccinationToBVaccination
 Source: BeModelVaccination
 Target: "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"

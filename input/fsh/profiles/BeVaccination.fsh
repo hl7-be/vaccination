@@ -61,6 +61,9 @@ Description:    """
 * route from be-vs-vaccination-administration-route 
 * statusReason from be-vs-vaccination-status-reason (required)
 
+* extension contains BeVaccinationStockLocation named vaccination-stock-location 0..1
+* extension contains BeVaccinationStockFundingOrganization named vaccination-stock-funding-organization 0..1
+
 
 //* protocolApplied.targetDisease MS
 //* protocolApplied.targetDisease from be-vs-vaccine-target-disease (example)
