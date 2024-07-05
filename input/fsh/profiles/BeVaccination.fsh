@@ -30,7 +30,7 @@ Description:    """
 * identifier.value 1..1 MS
 * patient 1..1 MS
 * patient only Reference(BePatient)
-* performer MS
+* performer 0..1 MS
 * performer.actor 1..1 
 * performer.actor only Reference(BePractitioner or BeOrganization or BePractitionerRole)
 * location 0..0
@@ -60,6 +60,9 @@ Description:    """
 * extension contains BeExtSimpleNote named note 0..1
 * route from be-vs-vaccination-administration-route 
 * statusReason from be-vs-vaccination-status-reason (required)
+
+* extension contains BeVaccinationStockLocation named vaccination-stock-location 0..1
+* extension contains BeVaccinationStockFundingOrganization named vaccination-stock-funding-organization 0..1
 
 
 //* protocolApplied.targetDisease MS
