@@ -205,7 +205,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
 
-* vaccineCode.coding = $sct#911000221103
+* vaccineCode.coding = $sct#871822003
 * vaccineCode.coding.display = "Hepatitis B"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
@@ -266,7 +266,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding = $sct#911000221103
+* vaccineCode.coding = $sct#871822003
 * vaccineCode.coding.display = "Hepatitis B"
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
@@ -389,7 +389,7 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding.code = #911000221103
+* vaccineCode.coding.code = #871765008
 * vaccineCode.coding.system = "http://snomed.info/sct"
 * vaccineCode.coding.display = "Measles"
 * occurrenceDateTime = "2020-05-12"
