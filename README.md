@@ -1,7 +1,6 @@
 Vaccination IG from Patient Dossier
 
 
-
 ---
 This is an empty IG
 <br> </br>
