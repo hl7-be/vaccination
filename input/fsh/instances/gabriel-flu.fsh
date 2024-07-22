@@ -4,6 +4,7 @@ InstanceOf: BeVaccination
 Usage: #example 
 Description: "Gabriel - influenza vaccine"
 Title:   "Gabriel - influenza vaccine"
+* extension[administeredProduct].extension[coded].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes#4670576
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * status = #completed
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
