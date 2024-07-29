@@ -471,3 +471,11 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 * ^compose.include[=].concept[=].designation[=].value = "Mazelen + bof"
 * ^compose.include[=].concept[=].designation[+].language = #"en"
 * ^compose.include[=].concept[=].designation[=].value = "Measles and mumps vaccine"
+* ^compose.include[=].concept[+].code = #51311000087100
+* ^compose.include[=].concept[=].display = "Vaccine product containing only Human orthopneumovirus antigen (medicinal product)"
+* ^compose.include[=].concept[=].designation[0].language = #"fr-BE"
+* ^compose.include[=].concept[=].designation[=].value = "vaccin contre le RSV"
+* ^compose.include[=].concept[=].designation[+].language = #"nl-BE"
+* ^compose.include[=].concept[=].designation[=].value = "RSV"
+* ^compose.include[=].concept[=].designation[+].language = #"en"
+* ^compose.include[=].concept[=].designation[=].value = " RSV (respiratory syncytial virus) vaccine"
