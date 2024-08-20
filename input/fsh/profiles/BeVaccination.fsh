@@ -100,6 +100,6 @@ Expression:  "reaction.detail.empty() or reaction.detail.resolve().code.memberOf
 Severity:    #error
 
 Invariant:   be-rule-vaccination-4
-Description: "The encounter should have a location from be-vs-care-location"
+Description: "Why should the encounter have a location from be-vs-care-location and that be an error?"
 Expression:  "encounter.empty() or encounter.resolve().location.location.resolve().type.coding.memberOf('https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location').anyTrue()"
 Severity:    #error
