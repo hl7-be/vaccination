@@ -167,6 +167,7 @@ Usage: #example
 Description: "Example of vaccination in unknown date by an organization"
 Title:    "Immunization Example - 3. Emergency reinforcement"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "82786523"
@@ -192,6 +193,7 @@ Usage: #example
 Description: "Example of vaccination not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "6025645645645"
@@ -229,6 +231,7 @@ Usage: #example
 Description: "Example of immunization not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "6021840732"
@@ -258,6 +261,7 @@ Usage: #example
 Description: "Example of vaccination not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "2687758923"
