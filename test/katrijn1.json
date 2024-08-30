@@ -1,0 +1,113 @@
+{
+    "resourceType": "Immunization",
+    "id": "recorder-logical-reference",
+    "meta": {
+        "profile": [ 
+
+"https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+        ]
+    },
+    "extension": [
+        {
+            "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder", 
+            "valueReference": {
+                "identifier": {
+                    "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi", 
+                    "value": "???"
+                }
+            }
+        },
+        {
+            "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-vaccination-stock-location", 
+            "valueReference": {
+                "identifier": {
+                    "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-professional", 
+                    "value": "???"
+                }
+            }
+        },
+        {
+            "extension": [
+                {
+                    "url": "coded",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes", 
+                                "code": "???"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "url": "lotNumber",
+                    "valueString": "???"
+                },
+                {
+                    "url": "expirationDate",
+                    "valueString": "YYY-MM-DD"
+                }
+            ],
+            "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct" 
+        },
+        {
+            "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-simple-note", 
+            "text": "???"
+        }
+    ],
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct", 
+                "code": "???"
+            }
+        ]
+    },
+    "occurenceDateTime": "???",
+    "recorded": "???",
+    "doseQuantity": {
+        "value": "???"
+    },
+    "patient": {
+        "identifier": {
+            "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin", 
+            "value": "???"
+        }
+    },
+    "performer": [
+        {
+            "actor": {
+                "identifier": {
+                    "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi", 
+                    "value": "???"
+                }
+            }
+        }
+    ],
+    "Encounter": [
+        {
+            "location": [
+                {
+                    "location": [
+                        {
+                            "address": [
+                                {
+                                    "country": "???"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "route": {
+        "coding": [
+            {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route", 
+                "code": "???"
+            }
+        ]
+    }
+}
