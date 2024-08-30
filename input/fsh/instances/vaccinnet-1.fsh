@@ -1,5 +1,4 @@
 Alias: $be-ns-cnk-codes = https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes
-Alias: $sct = http://snomed.info/sct
 Alias: $be-cs-vaccination-administration-route = https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route
 
 Instance: vaccinnet-1
@@ -24,23 +23,23 @@ Usage: #example
 * doseQuantity.value = 1
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "90083191801"
-* encounter = Reference(demo-encounter)
+* encounter = Reference(demo-encounter-1)
 * performer.actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"
 * performer.actor.identifier.value = "10182803004"
 * route = $be-cs-vaccination-administration-route#IM
-* contained[0] = demo-location
-* contained[+] = demo-encounter
+* contained[0] = demo-location-1
+* contained[+] = demo-encounter-1
 
-Instance: demo-location
+Instance: demo-location-1
 InstanceOf: Location
 Usage: #inline
 * address.country = "BEL"
 
-Instance: demo-encounter
+Instance: demo-encounter-1
 InstanceOf: Encounter
 Usage: #inline
 * status = #finished
 * class.code = #AMB
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "16032376921"
-* location.location = Reference(demo-location)
+* location.location = Reference(demo-location-1)
