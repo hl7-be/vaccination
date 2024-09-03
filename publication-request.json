@@ -12,6 +12,7 @@
   "category": "National Base",
   "introduction": "eHealth FHIR Vaccination Profiles for Belgium",
 "date": "2023-06-25",
-"mode": "milestone"   
+"mode": "milestone",
+"first": false   
 }
 
