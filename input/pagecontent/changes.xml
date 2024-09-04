@@ -1,26 +1,26 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-	<p>
+<html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+	<html:p>
     This provides a list of changes to the Vaccination specification since its initial release
-  </p>
-  <a name="1.1.0"> </a>
-	<p>
-		<b>2023-02-17 v1.0.2 - Vaccination R1 (STU1)</b> based on FHIR R4
-  </p>
-  <ul>
-    <li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.2">Release notes on GitHub</a></li>
-  </ul>
-  <a name="1.0.1"> </a>
-	<p>
-		<b>2022-10-19 v1.0.1 - Vaccination R1 (STU1)</b> based on FHIR R4
-  </p>
-  <ul>
-    <li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.1">Release notes on GitHub</a></li>
-  </ul>
-  <a name="1.0.0"> </a>
-	<p>
-		<b>2022-06-09 v1.0.0 - Vaccination R1 (STU1)</b> based on FHIR R4
-  </p>
-  <ul>
-    <li>Initial version <a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.0">Release notes on GitHub</a></li>
-  </ul>
-</div>
+  </html:p>
+  <a name="1.1.0">  </a><p><b>2023-06-25 v1.1.0 - HL7 Belgium Vaccination (Patient Dossier)</b> based on FHIR 4.0.1</p><ul><li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.1.0">Release notes on GitHub</a></li></ul><html:a name="1.1.0"> </html:a>
+	<html:p>
+		<html:b>2023-02-17 v1.0.2 - Vaccination R1 (STU1)</html:b> based on FHIR R4
+  </html:p>
+  <html:ul>
+    <html:li><html:a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.2">Release notes on GitHub</html:a></html:li>
+  </html:ul>
+  <html:a name="1.0.1"> </html:a>
+	<html:p>
+		<html:b>2022-10-19 v1.0.1 - Vaccination R1 (STU1)</html:b> based on FHIR R4
+  </html:p>
+  <html:ul>
+    <html:li><html:a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.1">Release notes on GitHub</html:a></html:li>
+  </html:ul>
+  <html:a name="1.0.0"> </html:a>
+	<html:p>
+		<html:b>2022-06-09 v1.0.0 - Vaccination R1 (STU1)</html:b> based on FHIR R4
+  </html:p>
+  <html:ul>
+    <html:li>Initial version <html:a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.0">Release notes on GitHub</html:a></html:li>
+  </html:ul>
+</html:div>
