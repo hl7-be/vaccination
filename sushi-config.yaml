@@ -169,6 +169,9 @@ menu:
     Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
     Value Sets: artifacts.html#terminology-value-sets
+    Code Systems: artifacts.html#terminology-code-systems
+    Naming Systems: artifacts.html#terminology-naming-systems
+    Examples: artifacts.html#example-example-instances
   Changes: changes.html
   History: https://www.ehealth.fgov.be/standards/fhir/vaccination/history.html
 #  Downloads: downloads.html

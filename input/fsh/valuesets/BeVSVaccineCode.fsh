@@ -478,4 +478,4 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 * ^compose.include[=].concept[=].designation[+].language = #"nl-BE"
 * ^compose.include[=].concept[=].designation[=].value = "RSV"
 * ^compose.include[=].concept[=].designation[+].language = #"en"
-* ^compose.include[=].concept[=].designation[=].value = " RSV (respiratory syncytial virus) vaccine"
+* ^compose.include[=].concept[=].designation[=].value = "RSV (respiratory syncytial virus) vaccine"
