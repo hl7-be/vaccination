@@ -13,7 +13,7 @@ url: https://www.ehealth.fgov.be/standards/fhir/vaccination
 name: BeVaccination
 title: "HL7 Belgium Vaccination (Patient Dossier)"
 description: Belgian Patient profiles
-status: active
+status: draft
 license: CC0-1.0
 date: 2023-06-25
 version: 1.1.0
