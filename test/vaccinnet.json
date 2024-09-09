@@ -1,0 +1,118 @@
+{
+  "resourceType": "Immunization",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-vaccination"
+    ]
+  },
+  "language": "nl-BE",
+ 
+  
+  "extension": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-recorder",
+      "valueReference": {
+                "identifier": {
+                    "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                    "value": "10182803004"
+                }
+            }
+    },
+    {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct",
+        "extension": [
+            {
+                "url": "coded",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+                            "code": "1149939"
+                        }
+                    ]
+                }
+            }
+        ]
+        
+    }
+  ],
+  "identifier": [
+        {
+            "system": "https://www.kindengezin.be/vaccinatie/vaccination-register",
+            "value": "910C6BBCF1C13FA0434D15CCF5609AE8"
+        }
+    ],
+    
+  "status": "completed",
+  "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/11000172109",
+                "code": "871751006"
+            }
+        ]
+    },
+    "occurrenceDateTime" : "2024-01-05",
+    "recorded": "2024-01-05",
+    "doseQuantity": {
+        "value": 1
+    },
+    "patient": {
+        "identifier": {
+            "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+            "value": "90083191801"
+        }
+    },
+    "encounter" : {
+    "reference" : "#demo-encounter"
+  },
+    "performer": [
+        {
+            "actor": {
+                "identifier": {
+                    "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi",
+                    "value": "10182803004"
+                }
+            }
+        }
+    ],
+    "route": {
+        "coding": [
+            {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/vaccination/CodeSystem/be-cs-vaccination-administration-route",
+                "code": "IM"
+            }
+        ]
+    },
+    "contained": [
+    {
+      "resourceType": "Location",
+      "id": "demo-location",
+      "address": {
+                "country": "BEL"
+            }
+    },
+    {
+      "resourceType": "Encounter",
+      "id": "demo-encounter",
+      "status": "finished",
+      "class": {
+        "code": "AMB"
+      },
+      "subject": {
+        "identifier": {
+          "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+          "value": "16032376921"
+        }
+      },
+      "location": [
+        {
+          "location": {
+            "reference": "#demo-location"
+          }
+        }
+      ]
+    }
+  ]
+}

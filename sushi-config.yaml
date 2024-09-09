@@ -16,7 +16,7 @@ description: Belgian Patient profiles
 status: active
 license: CC0-1.0
 date: 2023-06-25
-version: 1.0.3
+version: 1.1.0
 releaseLabel: STU
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
@@ -169,6 +169,9 @@ menu:
     Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
     Value Sets: artifacts.html#terminology-value-sets
+    Code Systems: artifacts.html#terminology-code-systems
+    Naming Systems: artifacts.html#terminology-naming-systems
+    Examples: artifacts.html#example-example-instances
   Changes: changes.html
   History: https://www.ehealth.fgov.be/standards/fhir/vaccination/history.html
 #  Downloads: downloads.html
@@ -202,7 +205,7 @@ FSHOnly: false
 #applyExtensionMetadataToRoot: false
 
 dependencies:
-  hl7.fhir.be.core: 2.0.1
+  hl7.fhir.be.core: 2.1.2
   hl7.fhir.be.medication: 1.0.0
   hl7.fhir.be.core-clinical: 1.0.0
 

@@ -167,6 +167,7 @@ Usage: #example
 Description: "Example of vaccination in unknown date by an organization"
 Title:    "Immunization Example - 3. Emergency reinforcement"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "82786523"
@@ -192,6 +193,7 @@ Usage: #example
 Description: "Example of vaccination not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "6025645645645"
@@ -205,7 +207,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
 
-* vaccineCode.coding = $sct#911000221103
+* vaccineCode.coding = $sct#871822003
 * vaccineCode.coding.display = "Hepatitis B"
 * patient.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * patient.identifier.value = "59050937740"
@@ -229,6 +231,7 @@ Usage: #example
 Description: "Example of immunization not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "6021840732"
@@ -258,6 +261,7 @@ Usage: #example
 Description: "Example of vaccination not performed due to lack of stock"
 Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
 * contained[+] = demo-encounter
+* contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
 * language = #nl-BE
 * identifier.value = "2687758923"
@@ -266,7 +270,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding = $sct#911000221103
+* vaccineCode.coding = $sct#871822003
 * vaccineCode.coding.display = "Hepatitis B"
 * occurrenceDateTime = "2020-03-12"
 * recorded = "2020-03-12"
@@ -389,7 +393,7 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
-* vaccineCode.coding.code = #911000221103
+* vaccineCode.coding.code = #871765008
 * vaccineCode.coding.system = "http://snomed.info/sct"
 * vaccineCode.coding.display = "Measles"
 * occurrenceDateTime = "2020-05-12"

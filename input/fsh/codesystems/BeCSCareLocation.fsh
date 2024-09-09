@@ -2,8 +2,6 @@ CodeSystem: BeCSCareLocation
 Id: be-cs-care-location
 Title: "BeCSCareLocation"
 Description: "Care Location Code System"
-* ^version = "0.1.0"
-* ^status = #draft
 * ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false 

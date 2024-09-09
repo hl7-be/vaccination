@@ -85,13 +85,13 @@ Description:    """
 
 Invariant:   be-rule-vaccination-1
 Description: "If vaccineCode.code is other, then vaccinecode text must exist"
-Expression:  "vaccineCode.coding.code = 'other'  implies vaccineCode.text.exists()"
+Expression:  "(vaccineCode.coding.where(code = 'other').exists() or vaccineCode.coding.where(code = '787859002' and system = 'http://snomed.info/sct').exists() ) implies vaccineCode.text.exists()"
 Severity:    #error
 
 
 Invariant:   be-rule-vaccination-2
 Description: "The product code SHALL be cnk, cti extended or atc"
-Expression:  "(extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').value as CodeableConcept).exists().not() or (extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').value as CodeableConcept).coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes').exists()  or (extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').value as CodeableConcept).coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code').exists() or (extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').value as CodeableConcept).coding.where(system = 'http://whocc.no/atc').exists()"
+Expression:  "(extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').select($this.value as CodeableConcept)).exists().not() or (extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').select($this.value as CodeableConcept)).coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes').exists()  or (extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').select($this.value as CodeableConcept)).coding.where(system = 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code').exists() or (extension('https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-ext-administeredProduct').extension('coded').select($this.value as CodeableConcept)).coding.where(system = 'http://whocc.no/atc').exists()"
 Severity:    #error
 
 Invariant:   be-rule-vaccination-3
@@ -100,6 +100,6 @@ Expression:  "reaction.detail.empty() or reaction.detail.resolve().code.memberOf
 Severity:    #error
 
 Invariant:   be-rule-vaccination-4
-Description: "The encounter should have a location from be-vs-care-location"
-Expression:  "encounter.empty() or encounter.resolve().location.location.resolve().type.coding.memberOf('https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location').anyTrue()"
+Description: "If the encounter has a location, and it has a type, its type should be from be-vs-care-location"
+Expression:  "encounter.empty() or encounter.resolve().location.empty() or encounter.resolve().location.location.resolve().type.empty() or encounter.resolve().location.location.resolve().type.coding.memberOf('https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location').anyTrue()"
 Severity:    #error
