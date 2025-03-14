@@ -413,7 +413,7 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 
 * $sct#871839001 "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)"
   * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "???"
+  * ^designation[=].value = "vaccin combiné contenant uniquement les antigènes de Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae et l'Haemophilus influenza de type B"
   * ^designation[+].language = #nl-BE
   * ^designation[=].value = "vaccin met uitsluitend Corynebacterium diphtheriae-Ag, Bordetella pertussis-Ag, Clostridium tetani-Ag en Haemophilus influenzae type b-Ag"
   * ^designation[+].language = #en
@@ -421,15 +421,15 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 
 * $sct#1252690003 "Vaccine product containing only Neisseria meningitidis serogroup A antigen (medicinal product)"
   * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "???"
+  * ^designation[=].value = "vaccin contre le méningocoque A"
   * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "???"
+  * ^designation[=].value = "vaccin enkel tegen meningokok A"
   * ^designation[+].language = #en
   * ^designation[=].value = "Meningococcus serogroup A vaccine"
 
 * $sct#51451000087105 "Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"
   * ^designation[0].language = #fr-BE
-  * ^designation[=].value = "???"
+  * ^designation[=].value = "vaccin pneumococcique conjugué 13-valent"
   * ^designation[+].language = #nl-BE
   * ^designation[=].value = "vaccin met uitsluitend geconjugeerde Streptococcus pneumoniae-Ag van kapselpolysachariden van Deens serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F en 23F"
   * ^designation[+].language = #en
