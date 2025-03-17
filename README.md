@@ -20,5 +20,6 @@ Issues and change requests are managed here:
 Issues:  __https://github.com/hl7-be/vaccination/issues__  
 Kanban board:  __https://github.com/hl7-be/vaccination/projects/1__  
 
+
 ---
  
