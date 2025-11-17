@@ -7,11 +7,6 @@
   "sequence": "Trial Use",
   "desc": "eHealth FHIR Vaccination Profiles for Belgium",
   "desccmd": "eHealth FHIR Vaccination Profiles for Belgium",
-  "title": "eHealth FHIR Vaccination Profiles for Belgium",
-  "ci-build" : "http://build.fhir.org/ig/hl7-be/vaccination",
-  "category": "National Base",
-  "introduction": "eHealth FHIR Vaccination Profiles for Belgium",
-"date": "2025-11-17",
 "mode": "milestone",
 "first": false   
 }
