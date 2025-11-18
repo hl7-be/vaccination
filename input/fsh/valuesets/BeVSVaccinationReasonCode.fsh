@@ -20,3 +20,8 @@ Description:  "Vaccination reason code Value Set - the reasons for an vaccinatio
 * $sct#1137457009 "Pre-exposure prophylaxis (procedure)"
 * $sct#1137457009 ^designation[0].language = #nl-BE
 * $sct#1137457009 ^designation[=].value = "profylaxe voorafgaand aan blootstelling"
+
+/*
+* include  $sct#409516001 
+* include  $sct#1137457009 
+*/
