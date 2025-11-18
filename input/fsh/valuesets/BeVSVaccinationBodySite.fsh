@@ -15,13 +15,33 @@ Description:  "Vaccination Body Site Value Set"
     
 *   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org
 """
+* $sct#35259002 "Deltoid muscle"
+* $sct#35259002 ^designation[0].language = #nl-BE
+* $sct#35259002 ^designation[=].value = "structuur van musculus deltoideus"
+* $sct#50092008 "Muscle of thigh"
+* $sct#50092008 ^designation[0].language = #nl-BE
+* $sct#50092008 ^designation[=].value = "musculus skeleti femoris"
+* $sct#102291007 "Muscle of buttock"
+* $sct#102291007 ^designation[0].language = #nl-BE
+* $sct#102291007 ^designation[=].value = "structuur van spier van bil"
+* $sct#371309009 "Skin structure of upper arm (body structure)"
+* $sct#371309009 ^designation[0].language = #nl-BE
+* $sct#371309009 ^designation[=].value = "structuur van huid van bovenarm"
+* $sct#5742000 "Skin of forearm"
+* $sct#5742000 ^designation[0].language = #nl-BE
+* $sct#5742000 ^designation[=].value = "structuur van huid van antebrachium"
+* $sct#371305003 "Skin structure of thigh (body structure)"
+* $sct#371305003 ^designation[0].language = #nl-BE
+* $sct#371305003 ^designation[=].value = "huid van bovenbeen"
+
+/*
 * include  $sct#35259002 
 * include  $sct#50092008 
 * include  $sct#102291007 
 * include  $sct#371309009 
 * include  $sct#5742000 
 * include  $sct#371305003 
-
+*/
 
 /*
 * include  $sct#113345001
