@@ -415,7 +415,7 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
   * ^designation[0].language = #fr-BE
   * ^designation[=].value = "vaccin combiné contenant uniquement les antigènes de Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae et l'Haemophilus influenza de type B"
   * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "vaccin met uitsluitend Corynebacterium diphtheriae-Ag, Bordetella pertussis-Ag, Clostridium tetani-Ag en Haemophilus influenzae type b-Ag"
+  * ^designation[=].value = "Difterie + tetanus + kinkhoest + Haemophilus influenzae b"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)"
 
@@ -423,7 +423,7 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
   * ^designation[0].language = #fr-BE
   * ^designation[=].value = "vaccin contre le méningocoque A"
   * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "vaccin enkel tegen meningokok A"
+  * ^designation[=].value = "Meningokok A"
   * ^designation[+].language = #en
   * ^designation[=].value = "Meningococcus serogroup A vaccine"
 
@@ -431,6 +431,6 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
   * ^designation[0].language = #fr-BE
   * ^designation[=].value = "vaccin pneumococcique conjugué 13-valent"
   * ^designation[+].language = #nl-BE
-  * ^designation[=].value = "vaccin met uitsluitend geconjugeerde Streptococcus pneumoniae-Ag van kapselpolysachariden van Deens serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F en 23F"
+  * ^designation[=].value = "Pneumokokken 13 types"
   * ^designation[+].language = #en
   * ^designation[=].value = " Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"
