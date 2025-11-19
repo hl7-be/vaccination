@@ -434,3 +434,19 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
   * ^designation[=].value = "Pneumokokken 13 types"
   * ^designation[+].language = #en
   * ^designation[=].value = " Vaccine product containing only Streptococcus pneumoniae Danish serotype 1, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"
+
+* $sct#1345202008 "Vaccine product containing only Chikungunya virus antigen (medicinal product)"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "produit vaccinal contenant uniquement l'antigène du virus Chikungunya"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Chikungunya"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Vaccine product containing only Chikungunya virus antigen (medicinal product)"
+
+* $sct#777424002 "Product containing only Respiratory syncytial virus immune globulin (medicinal product)"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "produit contenant uniquement de l'immunoglobuline contre le virus respiratoire syncytial"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "RSV (antilichaam)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Product containing only Respiratory syncytial virus immune globulin (medicinal product)"
