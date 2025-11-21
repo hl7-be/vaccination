@@ -390,6 +390,7 @@ Title:    "Immunization Example - Immediate reaction (swelling and redness) upon
 * identifier.value = "26877583455"
 * identifier.system = "https://www.kindengezin.be/vaccinatie/vaccination-register"
 * status = #completed
+* reasonCode = $sct#409516001 "profylaxe na blootstelling"
 * performer[0].actor.identifier.use = #official
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
