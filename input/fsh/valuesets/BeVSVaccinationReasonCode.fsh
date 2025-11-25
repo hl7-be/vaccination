@@ -14,5 +14,14 @@ Description:  "Vaccination reason code Value Set - the reasons for an vaccinatio
     
 *   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org
 """
-* include  $sct#409516001  
-* include  $sct#1137457009  
+* $sct#409516001 "Post-exposure prophylaxis (procedure)"
+* $sct#409516001 ^designation[0].language = #nl-BE
+* $sct#409516001 ^designation[=].value = "profylaxe na blootstelling"
+* $sct#1137457009 "Pre-exposure prophylaxis (procedure)"
+* $sct#1137457009 ^designation[0].language = #nl-BE
+* $sct#1137457009 ^designation[=].value = "profylaxe voorafgaand aan blootstelling"
+
+/*
+* include  $sct#409516001 
+* include  $sct#1137457009 
+*/
