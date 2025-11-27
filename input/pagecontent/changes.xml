@@ -2,6 +2,9 @@
 	<html:p>
     This provides a list of changes to the Vaccination specification since its initial release
   </html:p>
+  <a name="1.1.2">  </a>
+	<p><b>2025-11-27 v1.1.2 - HL7 Belgium Vaccination (Patient Dossier)</b> based on FHIR 4.0.1</p>
+	<ul><li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.1.2">Release notes on GitHub</a></li></ul>
   <a name="1.1.1">  </a>
 	<p><b>2025-03-24 v1.1.1 - HL7 Belgium Vaccination (Patient Dossier)</b> based on FHIR 4.0.1</p>
 	<ul><li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.1.1">Release notes on GitHub</a></li></ul>
