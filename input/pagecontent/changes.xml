@@ -2,8 +2,24 @@
 	<html:p>
     This provides a list of changes to the Vaccination specification since its initial release
   </html:p>
-  <a name="1.1.1">  </a><p><b>2023-06-25 v1.1.1 - HL7 Belgium Vaccination (Patient Dossier)</b> based on FHIR 4.0.1</p><ul><li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.1.1">Release notes on GitHub</a></li></ul><a name="1.1.0">  </a><p><b>2023-06-25 v1.1.0 - HL7 Belgium Vaccination (Patient Dossier)</b> based on FHIR 4.0.1</p><ul><li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.1.0">Release notes on GitHub</a></li></ul><html:a name="1.1.0"> </html:a>
-	<html:p>
+  <a name="1.1.2">  </a>
+	<p><b>2025-11-27 v1.1.2 - HL7 Belgium Vaccination (Patient Dossier)</b> based on FHIR 4.0.1</p>
+	<ul><li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.1.2">Release notes on GitHub</a></li></ul>
+  <a name="1.1.1">  </a>
+	<p><b>2025-03-24 v1.1.1 - HL7 Belgium Vaccination (Patient Dossier)</b> based on FHIR 4.0.1</p>
+	<ul><li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.1.1">Release notes on GitHub</a></li></ul>
+  <a name="1.1.0">  </a>
+	<p><b>2024-09-06 v1.1.0 - HL7 Belgium Vaccination (Patient Dossier)</b> based on FHIR 4.0.1</p>
+	<ul><li><a href="https://github.com/hl7-be/vaccination/releases/tag/v1.1.0">Release notes on GitHub</a></li></ul>
+  <html:a name="1.0.3"> </html:a>
+  <html:p>
+		<html:b>2023-06-30 v1.0.3 - Vaccination R1 (STU1)</html:b> based on FHIR R4
+  </html:p>
+  <html:ul>
+    <html:li><html:a href="https://github.com/hl7-be/vaccination/releases/tag/v1.0.3">Release notes on GitHub</html:a></html:li>
+  </html:ul>
+  <html:a name="1.0.2"> </html:a>
+  <html:p>
 		<html:b>2023-02-17 v1.0.2 - Vaccination R1 (STU1)</html:b> based on FHIR R4
   </html:p>
   <html:ul>

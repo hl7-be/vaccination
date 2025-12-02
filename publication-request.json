@@ -1,17 +1,12 @@
 {
   "package-id": "hl7.fhir.be.vaccination",
-  "version": "1.1.1",
-  "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.1.1",
+  "version": "1.1.2",
+  "path": "https://www.ehealth.fgov.be/standards/fhir/vaccination/1.1.2",
   "milestone" : true,
   "status": "release",
   "sequence": "Trial Use",
   "desc": "eHealth FHIR Vaccination Profiles for Belgium",
   "desccmd": "eHealth FHIR Vaccination Profiles for Belgium",
-  "title": "eHealth FHIR Vaccination Profiles for Belgium",
-  "ci-build" : "http://build.fhir.org/ig/hl7-be/vaccination",
-  "category": "National Base",
-  "introduction": "eHealth FHIR Vaccination Profiles for Belgium",
-"date": "2023-06-25",
 "mode": "milestone",
 "first": false   
 }
