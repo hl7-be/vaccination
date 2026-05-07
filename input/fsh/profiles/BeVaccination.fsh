@@ -102,4 +102,4 @@ Severity:    #error
 Invariant:   be-rule-vaccination-4
 Description: "If the encounter has a location, and it has a type, its type should be from be-vs-care-location"
 Expression:  "encounter.empty() or encounter.resolve().location.empty() or encounter.resolve().location.location.resolve().type.empty() or encounter.resolve().location.location.resolve().type.coding.memberOf('https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location').anyTrue()"
-Severity:    #error
+Severity:    #warning
