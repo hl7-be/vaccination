@@ -80,7 +80,8 @@ Description:    """
 * reasonCode ^short = "Can be used to indicate whether vaccination/prophylaxis took place pre- or post-exposition"
 
 // added constraint
-* obeys be-rule-vaccination-1 and be-rule-vaccination-2 and be-rule-vaccination-3 and be-rule-vaccination-4
+* obeys be-rule-vaccination-1 and be-rule-vaccination-2 and be-rule-vaccination-3
+//and be-rule-vaccination-4
 
 
 Invariant:   be-rule-vaccination-1
