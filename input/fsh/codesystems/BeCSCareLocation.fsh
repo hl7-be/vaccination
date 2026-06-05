@@ -30,6 +30,13 @@ Description: "Care Location Code System"
 * #workplace ^designation[=].value = "Au cabinet"
 * #workplace ^designation[+].language = #nl-BE
 * #workplace ^designation[=].value = "In het kantoor"
+//
+* #patient-workplace "Patient workplace"
+* #patient-workplace ^designation[0].language = #fr-BE
+* #patient-workplace ^designation[=].value = "Lieu de travail du patient"
+* #patient-workplace ^designation[+].language = #nl-BE
+* #patient-workplace ^designation[=].value = "Werkplek van de patiënt"
+//
 * #medical-center "Medical center"
 * #medical-center ^designation[0].language = #fr-BE
 * #medical-center ^designation[=].value = "En maison médicale"
