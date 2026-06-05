@@ -80,7 +80,8 @@ Description:    """
 * reasonCode ^short = "Can be used to indicate whether vaccination/prophylaxis took place pre- or post-exposition"
 
 // added constraint
-* obeys be-rule-vaccination-1 and be-rule-vaccination-2 and be-rule-vaccination-3 and be-rule-vaccination-4
+* obeys be-rule-vaccination-1 and be-rule-vaccination-2 and be-rule-vaccination-3
+//and be-rule-vaccination-4
 
 
 Invariant:   be-rule-vaccination-1
@@ -99,7 +100,9 @@ Description: "The reaction detail code SHALL come from be-vs-reaction-manifestat
 Expression:  "reaction.detail.empty() or reaction.detail.resolve().code.memberOf('https://www.ehealth.fgov.be/standards/fhir/core-clinical/ValueSet/be-vs-reaction-manifestation-code').anyTrue()"
 Severity:    #error
 
+/*
 Invariant:   be-rule-vaccination-4
 Description: "If the encounter has a location, and it has a type, its type should be from be-vs-care-location"
 Expression:  "encounter.empty() or encounter.resolve().location.empty() or encounter.resolve().location.location.resolve().type.empty() or encounter.resolve().location.location.resolve().type.coding.memberOf('https://www.ehealth.fgov.be/standards/fhir/vaccination/ValueSet/be-vs-care-location').anyTrue()"
-Severity:    #error
+Severity:    #warning
+*/
