@@ -9,13 +9,13 @@
 
 id: hl7.fhir.be.vaccination
 canonical: https://www.ehealth.fgov.be/standards/fhir/vaccination
-url: https://www.ehealth.fgov.be/standards/fhir/vaccination
+#url: https://www.ehealth.fgov.be/standards/fhir/vaccination
 name: BeVaccination
 title: "HL7 Belgium Vaccination (Patient Dossier)"
 description: Belgian Patient profiles
 status: active
 license: CC0-1.0
-date: 2026-05-22
+date: 2026-06-05
 version: 1.1.3
 releaseLabel: STU
 

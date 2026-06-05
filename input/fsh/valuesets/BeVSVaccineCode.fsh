@@ -274,7 +274,7 @@ Description: "Vaccine Code Value Set - the types of vaccines that are administer
 * $sct#871919004 ^designation[0].language = #fr-BE
 * $sct#871919004 ^designation[=].value = "vaccin contre la varicelle et le zona"
 * $sct#871919004 ^designation[+].language = #nl-BE
-* $sct#871919004 ^designation[=].value = "Windpokken"
+* $sct#871919004 ^designation[=].value = "vaccin met enkel antigeen van varicella-zostervirus"
 * $sct#871919004 ^designation[+].language = #en
 * $sct#871919004 ^designation[=].value = "Varicella-zoster vaccine"
 * $sct#1052328007 "Vaccine product containing only Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated (medicinal product)"

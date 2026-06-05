@@ -112,6 +112,7 @@ Title:    "Immunization Example - 2. Juan normal"
 /*
 This will first get the consent refusal and will be posted on ONE
 */
+/* Removed: failed copy-paste of iex2 with an incorrect title.
 Instance: iex3
 InstanceOf: BeVaccination
 Usage: #example
@@ -134,7 +135,7 @@ Title:    "Immunization Example - 1. Toto normal"
 
 * vaccineCode.coding[1].code = #911000221103
 * vaccineCode.coding[1].system = "http://snomed.info/sct"
-
+*/
 
 
 
@@ -228,8 +229,8 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 Instance: immunization-example-not-given-contraindication
 InstanceOf: BeVaccination
 Usage: #example
-Description: "Example of immunization not performed due to lack of stock"
-Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
+Description: "Example of immunization not performed due to a medical precaution"
+Title:    "Immunization Example - 4. Not done due to medical precaution"
 * contained[+] = demo-encounter
 * contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
@@ -241,7 +242,7 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * performer[0].actor.identifier.value = "79121137740"
 * statusReason.coding = http://terminology.hl7.org/CodeSystem/v3-ActReason#MEDPREC
-* occurrenceDateTime = "2020-03-25"
+//* occurrenceDateTime = "2020-03-25"
 * recorded = "2020-05-26"
 * vaccineCode.coding = $sct#871822003
 * occurrenceDateTime = "2020-03-12"
@@ -258,8 +259,8 @@ Title:    "Immunization Example - 4. not done due to not enough stock. This can 
 Instance: immunization-example-not-given-refusal
 InstanceOf: BeVaccination
 Usage: #example
-Description: "Example of vaccination not performed due to lack of stock"
-Title:    "Immunization Example - 4. not done due to not enough stock. This can happen when there are surges or any disruption in the supply chain"
+Description: "Example of vaccination not performed due to patient refusal"
+Title:    "Immunization Example - 4. Not done due to patient refusal"
 * contained[+] = demo-encounter
 * contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
@@ -288,7 +289,7 @@ Instance: immunization-example-mistaken-entry
 InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination entered in error"
-Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
+Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola (1)"
 * contained[+] = demo-encounter
 * contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
@@ -317,7 +318,7 @@ Instance: immunization-example-mistaken-entry-update
 InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination entered in error"
-Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
+Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola (2)"
 * contained[+] = demo-encounter
 * contained[+] = demo-location
 * extension[recorder].valueReference = Reference(org-regional-child-care-agency)
@@ -346,7 +347,7 @@ Instance: immunization-example-prescribed-vaccination
 InstanceOf: BeVaccination
 Usage: #example
 Description: "Example of vaccination entered in error"
-Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola"
+Title:    "Immunization Example - Mistaken entry of measles when patient means rubeola (3)"
 * contained[+] = demo-encounter
 * contained[+] = demo-location
 * language = #nl-BE
